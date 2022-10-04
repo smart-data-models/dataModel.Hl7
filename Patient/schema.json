@@ -22,8 +22,11 @@
     {
       "properties": {
         "resourceType": {
+          "type": "string",
           "description": "Property. This is a Patient resource",
-          "const": "Patient"
+          "enum": [
+            "Patient"
+          ]
         },
         "id": {
           "description": "Property. The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
