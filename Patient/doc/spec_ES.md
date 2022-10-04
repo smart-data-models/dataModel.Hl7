@@ -1734,6 +1734,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _birthDate:    
@@ -3447,6 +3448,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _deceasedBoolean:    
@@ -5160,6 +5162,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _deceasedDateTime:    
@@ -6873,6 +6876,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _gender:    
@@ -8586,6 +8590,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _implicitRules:    
@@ -10299,6 +10304,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _language:    
@@ -12012,6 +12018,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _multipleBirthBoolean:    
@@ -13725,6 +13732,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _multipleBirthInteger:    
@@ -15438,6 +15446,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     active:    
@@ -26733,6 +26742,7 @@ Patient:
             The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
           pattern: ^\S*$    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     maritalStatus:    
@@ -28802,6 +28812,7 @@ Patient:
           description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     meta:    
@@ -33724,6 +33735,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _expression:    
                 additionalProperties: false    
                 description: 'Extensions for expression'    
@@ -33736,6 +33748,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _language:    
                 additionalProperties: false    
                 description: 'Extensions for language'    
@@ -33748,6 +33761,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _name:    
                 additionalProperties: false    
                 description: 'Extensions for name'    
@@ -33760,6 +33774,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _reference:    
                 additionalProperties: false    
                 description: 'Extensions for reference'    
@@ -33772,6 +33787,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               description:    
                 description: 'A brief, natural language description of the condition that effectively communicates the intended semantics.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -33797,6 +33813,7 @@ Patient:
                   - application/x-fhir-query    
                   - text/cql-identifier    
                   - text/cql-expression    
+                type: string    
               name:    
                 description: 'A short name assigned to the expression to allow for multiple reuse of the expression in the context where it is defined.'    
                 pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -39199,6 +39216,7 @@ Patient:
             - empty    
       required:    
         - div    
+      type: object    
       x-ngsi:    
         type: Property    
     type:    
@@ -39443,7 +39461,7 @@ Patient:
 }  
 ```  
 #### Paciente NGSI-v2 normalizado Ejemplo  
-Aquí hay un ejemplo de un Paciente en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un Paciente en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "resourceType": {  
