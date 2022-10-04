@@ -23742,6 +23742,7 @@
           "type": "boolean"
         },
         "_active": {
+          "type": "object",
           "description": "Property. Extensions for active",
           "properties": {
             "id": {
@@ -27134,6 +27135,7 @@
           "type": "string"
         },
         "_gender": {
+          "type": "object",
           "description": "Property. Extensions for gender",
           "properties": {
             "id": {
@@ -29456,6 +29458,7 @@
           "type": "string"
         },
         "_birthDate": {
+          "type": "object",
           "description": "Property. Extensions for birthDate",
           "properties": {
             "id": {
@@ -31778,6 +31781,7 @@
           "type": "boolean"
         },
         "_deceasedBoolean": {
+          "type": "object",
           "description": "Property. Extensions for deceasedBoolean",
           "properties": {
             "id": {
@@ -34100,6 +34104,7 @@
           "type": "string"
         },
         "_deceasedDateTime": {
+          "type": "object",
           "description": "Property. Extensions for deceasedDateTime",
           "properties": {
             "id": {
@@ -37040,6 +37045,7 @@
           "type": "array"
         },
         "maritalStatus": {
+          "type": "object",
           "description": "Property. This field contains a patient's most recent marital (civil) status.",
           "properties": {
             "id": {
@@ -39836,6 +39842,7 @@
           "type": "boolean"
         },
         "_multipleBirthBoolean": {
+          "type": "object",
           "description": "Property. Extensions for multipleBirthBoolean",
           "properties": {
             "id": {
@@ -42158,6 +42165,7 @@
           "type": "number"
         },
         "_multipleBirthInteger": {
+          "type": "object",
           "description": "Property. Extensions for multipleBirthInteger",
           "properties": {
             "id": {
@@ -47764,6 +47772,7 @@
           "type": "array"
         },
         "managingOrganization": {
+          "type": "object",
           "description": "Property. Organization that is the custodian of the patient record.",
           "properties": {
             "id": {
