@@ -12,7 +12,7 @@
 多くのシステムでは、このプロパティを使用して、組織のビジネス・ルールに基づき、一定期間診察を受けていない患者などを非現用患者としてマークしています。  
 これは、患者リストをフィルタリングして、非アクティブな患者を除外するためによく使用されます。  
 死亡した患者も同じ理由で非アクティブとマークされることがありますが、死亡後しばらくの間はアクティブである可能性があります。  - `address`: 個人の住所。  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `birthDate`: 個人の生年月日。  - `communication`: 患者さんの健康に関するコミュニケーションに使用される可能性のある言語。  - `contact`: 患者さんの連絡先（保護者、パートナー、友人など）。  - `contained`: これらのリソースは、それを含むリソースとは別に独立した存在ではなく、独立して識別することも、独立したトランザクションのスコープを持つこともできない。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `deceasedBoolean`: 個人が死亡しているか否かを示す。  - `deceasedDateTime`: 個人が死亡しているか否かを示す。  - `description`: このアイテムの説明  - `extension`: リソースの基本的な定義に含まれない追加情報を表現するために使用することができる。拡張の使用を安全かつ管理しやすくするために，拡張の定義と使用に適用される厳密なガバナンスのセットが存在する。どのような実装者でも拡張機能を定義できるが，拡張機能の定義の一部として満たすべき一連の要件がある(SHALL)。  - `gender`: 管理上の性別-管理および記録保持の目的で、患者が持つとみなされる性別。  - `generalPractitioner`: 患者さんが指名した医療機関  - `id`: リソースの URL で使用される、リソースの論理 ID。一度割り当てられたら、この値は決して変更されません。  - `identifier`: この患者を識別するための識別子。  - `implicitRules`: リソースが構築されたときに従った一連の規則への参照であり、コンテンツを処理するときに理解しなければならないもの。多くの場合、これは他のプロファイルなどとともに特別な規則を定義する実装ガイドへの参照である。  - `language`: リソースが記述されているベース言語。  - `link`: 同じ実際の患者に関する他の患者リソースへのリンク。  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `managingOrganization`: 患者記録の保管者である組織。  - `maritalStatus`: このフィールドには、患者の直近の婚姻（市民）状態が含まれる。  - `meta`: リソースに関するメタデータ。これは、インフラストラクチャによって維持されるコンテンツです。コンテンツの変更は、必ずしもリソースのバージョン変更と関連するとは限りません。  - `modifierExtension`: リソースの基本的な定義に含まれない追加情報を表すために使用され、その情報を含む要素の理解および/または含む要素の子孫の理解を変更することができる。通常，修飾子要素は，否定又は修飾を提供する。拡張の使用を安全かつ管理しやすくするために，拡張の定義及び使用に適用される厳密な統制の集合がある。どのような実装者でも拡張を定義することができますが、拡張の定義の一部として満たされなければならない一連の要求事項があります(SHALL)。リソースを処理するアプリケーションは、修飾子の拡張をチェックすることが要求されます。  
-修飾子拡張は、Resource または DomainResource の要素の意味を変更してはならない (modifierExtension自体の意味を変更してはならないことを含む)。  - `multipleBirthBoolean`: 患者が複数に属しているかどうかを示す（boolean）、または実際の出生順を示す（integer）。  - `multipleBirthInteger`: 患者が複数に属しているかどうかを示す（boolean）、または実際の出生順を示す（integer）。  - `name`: 個人に関連する名前。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `photo`: 患者さんのイメージ。  - `resourceType`: これは患者さんの資料です  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `telecom`: 個人と連絡を取ることができる連絡先（電話番号やメールアドレスなど）。  - `text`: リソースの要約を含み、人間にリソースの内容を表現するために使用できる、人間が読めるナラティブ（Narrative）。ナラティブは構造化されたデータをすべてコード化する必要はないが、人間がナラティブを読むだけでも「臨床的に安全」であるような十分な詳細情報を含むことが要求される。リソース定義は、臨床的安全性を確保するために、どのような内容をナラティブで表現すべきかを定義することができる。  - `type`: NGSIエンティティタイプ。それはPatientでなければならない    
+修飾子拡張は、Resource または DomainResource の要素の意味を変更してはならない (modifierExtension自体の意味を変更してはならないことを含む)。  - `multipleBirthBoolean`: 患者が複数に属しているかどうかを示す（boolean）、または実際の出生順を示す（integer）。  - `multipleBirthInteger`: 患者が複数に属しているかどうかを示す（boolean）、または実際の出生順を示す（integer）。  - `name`: 個人に関連する名前。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `photo`: 患者さんのイメージ。  - `resourceType`: これは患者さんの資料です  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `telecom`: 個人と連絡を取ることができる連絡先（電話番号やメールアドレスなど）。  - `text`: リソースの要約を含み、人間にリソースの内容を表現するために使用できる、人間が読めるナラティブ（Narrative）。ナラティブは構造化されたデータをすべてコード化する必要はないが、人間がナラティブを読むだけでも「臨床的に安全」であるような十分な詳細情報を含むことが要求される。リソース定義は、臨床的安全性を確保するために、どのような内容をナラティブで表現すべきかを定義することができる。  - `type`: NGSIエンティティタイプ。それはPatientでなければならない    
 必要なプロパティ  
 - `id`  - `type`    
 HL7 標準のオリジナルバージョン 4.3 からマッピングされたデータモデル http://hl7.org/fhir/patient.html  
@@ -1734,6 +1734,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _birthDate:    
@@ -3447,6 +3448,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _deceasedBoolean:    
@@ -5160,6 +5162,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _deceasedDateTime:    
@@ -6873,6 +6876,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _gender:    
@@ -8586,6 +8590,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _implicitRules:    
@@ -10299,6 +10304,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _language:    
@@ -12012,6 +12018,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _multipleBirthBoolean:    
@@ -13725,6 +13732,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _multipleBirthInteger:    
@@ -15438,6 +15446,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     active:    
@@ -26733,6 +26742,7 @@ Patient:
             The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
           pattern: ^\S*$    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     maritalStatus:    
@@ -28802,6 +28812,7 @@ Patient:
           description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     meta:    
@@ -33724,6 +33735,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _expression:    
                 additionalProperties: false    
                 description: 'Extensions for expression'    
@@ -33736,6 +33748,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _language:    
                 additionalProperties: false    
                 description: 'Extensions for language'    
@@ -33748,6 +33761,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _name:    
                 additionalProperties: false    
                 description: 'Extensions for name'    
@@ -33760,6 +33774,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _reference:    
                 additionalProperties: false    
                 description: 'Extensions for reference'    
@@ -33772,6 +33787,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               description:    
                 description: 'A brief, natural language description of the condition that effectively communicates the intended semantics.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -33797,6 +33813,7 @@ Patient:
                   - application/x-fhir-query    
                   - text/cql-identifier    
                   - text/cql-expression    
+                type: string    
               name:    
                 description: 'A short name assigned to the expression to allow for multiple reuse of the expression in the context where it is defined.'    
                 pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -39199,6 +39216,7 @@ Patient:
             - empty    
       required:    
         - div    
+      type: object    
       x-ngsi:    
         type: Property    
     type:    
