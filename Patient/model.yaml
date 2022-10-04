@@ -39289,7 +39289,7 @@ Patient:
   type: object
   x-derived-from: http://hl7.org/fhir/json-schema/4.3
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
-  x-license-url: https://github.com/smart-data-models/dataModel.Hl7/blob/master/Patient/LICENSE.md
+  x-license-url:
   x-model-schema: https://smart-data-models.github.io/dataModel.HL7/Patient/schema.json
   x-model-tags: HL7
   x-version: 0.0.1
