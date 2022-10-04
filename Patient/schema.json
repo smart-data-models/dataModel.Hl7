@@ -3652,6 +3652,7 @@
           "type": "string"
         },
         "_implicitRules": {
+          "type": "object",
           "description": "Property. Extensions for implicitRules",
           "properties": {
             "id": {
@@ -5974,6 +5975,7 @@
           "type": "string"
         },
         "_language": {
+          "type": "object",
           "description": "Property. Extensions for language",
           "properties": {
             "id": {
@@ -8291,6 +8293,7 @@
           "additionalProperties": false
         },
         "text": {
+          "type": "object",
           "description": "Property. A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
           "properties": {
             "id": {
@@ -21608,6 +21611,7 @@
                     "type": "string"
                   },
                   "_description": {
+                    "type": "object",
                     "description": "Extensions for description",
                     "properties": {
                       "id": {
@@ -21630,6 +21634,7 @@
                     "type": "string"
                   },
                   "_name": {
+                    "type": "object",
                     "description": "Extensions for name",
                     "properties": {
                       "id": {
@@ -21647,6 +21652,7 @@
                     "additionalProperties": false
                   },
                   "language": {
+                    "type": "string",
                     "description": "The media type of the language for the expression.",
                     "enum": [
                       "text/cql",
@@ -21657,6 +21663,7 @@
                     ]
                   },
                   "_language": {
+                    "type": "object",
                     "description": "Extensions for language",
                     "properties": {
                       "id": {
@@ -21679,6 +21686,7 @@
                     "type": "string"
                   },
                   "_expression": {
+                    "type": "object",
                     "description": "Extensions for expression",
                     "properties": {
                       "id": {
@@ -21701,6 +21709,7 @@
                     "type": "string"
                   },
                   "_reference": {
+                    "type": "object",
                     "description": "Extensions for reference",
                     "properties": {
                       "id": {
