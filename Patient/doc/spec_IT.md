@@ -11,7 +11,7 @@
 - `_active`: Estensioni per le attività attive  - `_birthDate`: Estensioni per birthDate  - `_deceasedBoolean`: Estensioni per deceasedBoolean  - `_deceasedDateTime`: Estensioni per deceasedDateTime  - `_gender`: Estensioni per il genere  - `_implicitRules`: Estensioni per implicitRules  - `_language`: Estensioni per la lingua  - `_multipleBirthBoolean`: Estensioni per multipleBirthBoolean  - `_multipleBirthInteger`: Estensioni per multipleBirthInteger  - `active`: Se il record del paziente è in uso attivo.  
 Molti sistemi utilizzano questa proprietà per contrassegnare come non correnti i pazienti che non sono stati visitati per un certo periodo di tempo, in base alle regole aziendali dell'organizzazione.  
 Viene spesso utilizzata per filtrare gli elenchi di pazienti per escludere i pazienti inattivi.  
-Anche i pazienti deceduti possono essere contrassegnati come inattivi per le stesse ragioni, ma possono rimanere attivi per un certo periodo di tempo dopo la morte.  - `address`: Un indirizzo per l'individuo.  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `birthDate`: La data di nascita dell'individuo.  - `communication`: Un linguaggio che può essere utilizzato per comunicare con il paziente in merito alla sua salute.  - `contact`: Una persona di riferimento (ad es. tutore, partner, amico) per il paziente.  - `contained`: Queste risorse non hanno un'esistenza indipendente dalla risorsa che le contiene: non possono essere identificate in modo indipendente e non possono avere un proprio ambito di transazione indipendente.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `deceasedBoolean`: Indica se l'individuo è deceduto o meno.  - `deceasedDateTime`: Indica se l'individuo è deceduto o meno.  - `description`: Descrizione dell'articolo  - `extension`: Può essere utilizzato per rappresentare informazioni aggiuntive che non fanno parte della definizione di base della risorsa. Per rendere l'uso delle estensioni sicuro e gestibile, esiste un rigoroso insieme di regole applicate alla definizione e all'uso delle estensioni. Sebbene qualsiasi implementatore possa definire un'estensione, esiste un insieme di requisiti che DEVONO essere soddisfatti come parte della definizione dell'estensione.  - `gender`: Genere amministrativo - il genere che il paziente viene considerato per scopi amministrativi e di registrazione.  - `generalPractitioner`: Il fornitore di cure nominato dal paziente.  - `id`: L'id logico della risorsa, utilizzato nell'URL della risorsa. Una volta assegnato, questo valore non cambia mai.  - `identifier`: Un identificatore per questo paziente.  - `implicitRules`: Un riferimento a un insieme di regole che sono state seguite quando la risorsa è stata costruita e che devono essere comprese durante l'elaborazione del contenuto. Spesso si tratta di un riferimento a una guida all'implementazione che definisce le regole speciali insieme ad altri profili, ecc.  - `language`: La lingua di base in cui è scritta la risorsa.  - `link`: Collegamento a un'altra risorsa paziente che riguarda lo stesso paziente.  - `location`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `managingOrganization`: Organizzazione che custodisce la cartella clinica del paziente.  - `maritalStatus`: Questo campo contiene l'ultimo stato civile del paziente.  - `meta`: I metadati sulla risorsa. Si tratta di contenuti mantenuti dall'infrastruttura. Le modifiche al contenuto potrebbero non essere sempre associate a modifiche di versione della risorsa.  - `modifierExtension`: Può essere usato per rappresentare informazioni aggiuntive che non fanno parte della definizione di base della risorsa e che modificano la comprensione dell'elemento che lo contiene e/o la comprensione dei discendenti dell'elemento contenente. Di solito gli elementi modificatori forniscono una negazione o una qualificazione. Per rendere l'uso delle estensioni sicuro e gestibile, esiste un rigoroso insieme di regole applicate alla definizione e all'uso delle estensioni. Sebbene qualsiasi implementatore possa definire un'estensione, esiste una serie di requisiti che DEVONO essere soddisfatti come parte della definizione dell'estensione. Le applicazioni che elaborano una risorsa sono tenute a verificare la presenza di estensioni modificatrici.  
+Anche i pazienti deceduti possono essere contrassegnati come inattivi per gli stessi motivi, ma possono essere attivi per un certo periodo di tempo dopo la morte.  - `address`: Un indirizzo per l'individuo.  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `birthDate`: La data di nascita dell'individuo.  - `communication`: Un linguaggio che può essere utilizzato per comunicare con il paziente in merito alla sua salute.  - `contact`: Una persona di riferimento (ad es. tutore, partner, amico) per il paziente.  - `contained`: Queste risorse non hanno un'esistenza indipendente dalla risorsa che le contiene: non possono essere identificate indipendentemente e non possono avere un proprio ambito di transazione indipendente.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `deceasedBoolean`: Indica se l'individuo è deceduto o meno.  - `deceasedDateTime`: Indica se l'individuo è deceduto o meno.  - `description`: Descrizione dell'articolo  - `extension`: Può essere utilizzato per rappresentare informazioni aggiuntive che non fanno parte della definizione di base della risorsa. Per rendere l'uso delle estensioni sicuro e gestibile, esiste un rigoroso insieme di regole applicate alla definizione e all'uso delle estensioni. Sebbene qualsiasi implementatore possa definire un'estensione, esiste un insieme di requisiti che DEVONO essere soddisfatti come parte della definizione dell'estensione.  - `gender`: Genere amministrativo - il genere che il paziente viene considerato per scopi amministrativi e di registrazione.  - `generalPractitioner`: Il fornitore di cure nominato dal paziente.  - `id`: L'id logico della risorsa, utilizzato nell'URL della risorsa. Una volta assegnato, questo valore non cambia mai.  - `identifier`: Un identificatore per questo paziente.  - `implicitRules`: Un riferimento a un insieme di regole che sono state seguite quando la risorsa è stata costruita e che devono essere comprese durante l'elaborazione del contenuto. Spesso si tratta di un riferimento a una guida all'implementazione che definisce le regole speciali insieme ad altri profili, ecc.  - `language`: La lingua di base in cui è scritta la risorsa.  - `link`: Collegamento a un'altra risorsa paziente che riguarda lo stesso paziente.  - `location`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `managingOrganization`: Organizzazione che custodisce la cartella clinica del paziente.  - `maritalStatus`: Questo campo contiene l'ultimo stato civile del paziente.  - `meta`: I metadati sulla risorsa. Si tratta di contenuti mantenuti dall'infrastruttura. Le modifiche al contenuto potrebbero non essere sempre associate alle modifiche di versione della risorsa.  - `modifierExtension`: Può essere usato per rappresentare informazioni aggiuntive che non fanno parte della definizione di base della risorsa e che modificano la comprensione dell'elemento che lo contiene e/o la comprensione dei discendenti dell'elemento contenente. Di solito gli elementi modificatori forniscono una negazione o una qualificazione. Per rendere l'uso delle estensioni sicuro e gestibile, esiste un rigoroso insieme di regole applicate alla definizione e all'uso delle estensioni. Sebbene qualsiasi implementatore possa definire un'estensione, esiste una serie di requisiti che DEVONO essere soddisfatti come parte della definizione dell'estensione. Le applicazioni che elaborano una risorsa sono tenute a verificare la presenza di estensioni modificatrici.  
 Le estensioni del modificatore NON devono modificare il significato di alcun elemento di Resource o DomainResource (compreso il significato di modifierExtension).  - `multipleBirthBoolean`: Indica se il paziente fa parte di un multiplo (booleano) o indica l'ordine di nascita effettivo (intero).  - `multipleBirthInteger`: Indica se il paziente fa parte di un multiplo (booleano) o indica l'ordine di nascita effettivo (intero).  - `name`: Un nome associato all'individuo.  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `photo`: Immagine del paziente.  - `resourceType`: Questa è una risorsa per i pazienti  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `telecom`: Un recapito (ad esempio, un numero di telefono o un indirizzo e-mail) con il quale l'individuo può essere contattato.  - `text`: Una narrazione leggibile dall'uomo che contiene un riassunto della risorsa e può essere usata per rappresentare il contenuto della risorsa a un essere umano. Non è necessario che la narrazione codifichi tutti i dati strutturati, ma è necessario che contenga dettagli sufficienti a rendere "clinicamente sicura" per un essere umano la semplice lettura della narrazione. Le definizioni delle risorse possono definire quali contenuti devono essere rappresentati nella narrazione per garantire la sicurezza clinica.  - `type`: Tipo di entità NGSI. Deve essere Paziente    
 Proprietà richieste  
 - `id`  - `type`    
@@ -1734,6 +1734,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _birthDate:    
@@ -3447,6 +3448,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _deceasedBoolean:    
@@ -5160,6 +5162,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _deceasedDateTime:    
@@ -6873,6 +6876,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _gender:    
@@ -8586,6 +8590,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _implicitRules:    
@@ -10299,6 +10304,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _language:    
@@ -12012,6 +12018,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _multipleBirthBoolean:    
@@ -13725,6 +13732,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     _multipleBirthInteger:    
@@ -15438,6 +15446,7 @@ Patient:
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     active:    
@@ -26733,6 +26742,7 @@ Patient:
             The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
           pattern: ^\S*$    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     maritalStatus:    
@@ -28802,6 +28812,7 @@ Patient:
           description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
           pattern: '^[ \r\n\t\S]+$'    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     meta:    
@@ -33724,6 +33735,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _expression:    
                 additionalProperties: false    
                 description: 'Extensions for expression'    
@@ -33736,6 +33748,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _language:    
                 additionalProperties: false    
                 description: 'Extensions for language'    
@@ -33748,6 +33761,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _name:    
                 additionalProperties: false    
                 description: 'Extensions for name'    
@@ -33760,6 +33774,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _reference:    
                 additionalProperties: false    
                 description: 'Extensions for reference'    
@@ -33772,6 +33787,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               description:    
                 description: 'A brief, natural language description of the condition that effectively communicates the intended semantics.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -33797,6 +33813,7 @@ Patient:
                   - application/x-fhir-query    
                   - text/cql-identifier    
                   - text/cql-expression    
+                type: string    
               name:    
                 description: 'A short name assigned to the expression to allow for multiple reuse of the expression in the context where it is defined.'    
                 pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -39199,6 +39216,7 @@ Patient:
             - empty    
       required:    
         - div    
+      type: object    
       x-ngsi:    
         type: Property    
     type:    
