@@ -11,8 +11,8 @@
 - `_active`: Erweiterungen für aktive  - `_birthDate`: Erweiterungen für birthDate  - `_deceasedBoolean`: Erweiterungen für deceasedBoolean  - `_deceasedDateTime`: Erweiterungen für deceasedDateTime  - `_gender`: Erweiterungen für Gender  - `_implicitRules`: Erweiterungen für implicitRules  - `_language`: Erweiterungen für Sprache  - `_multipleBirthBoolean`: Erweiterungen für multipleBirthBoolean  - `_multipleBirthInteger`: Erweiterungen für multipleBirthInteger  - `active`: Ob dieser Patientendatensatz aktiv verwendet wird.  
 Viele Systeme verwenden diese Eigenschaft, um Patienten als nicht aktuell zu kennzeichnen, z. B. solche, die über einen bestimmten Zeitraum hinweg nicht gesehen wurden, basierend auf den Geschäftsregeln einer Organisation.  
 Sie wird häufig zum Filtern von Patientenlisten verwendet, um inaktive Patienten auszuschließen.  
-Verstorbene Patienten können aus denselben Gründen als inaktiv gekennzeichnet werden, können aber auch noch einige Zeit nach dem Tod aktiv sein.  - `address`: Eine Adresse für die Person.  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `birthDate`: Das Geburtsdatum der Person.  - `communication`: Eine Sprache, die verwendet werden kann, um mit dem Patienten über seine Gesundheit zu kommunizieren.  - `contact`: Eine Kontaktperson (z. B. Vormund, Partner, Freund) für den Patienten.  - `contained`: Diese Ressourcen haben keine eigenständige Existenz neben der Ressource, die sie enthält - sie können weder unabhängig identifiziert werden, noch können sie einen eigenen unabhängigen Transaktionsbereich haben.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `deceasedBoolean`: Gibt an, ob die Person verstorben ist oder nicht.  - `deceasedDateTime`: Gibt an, ob die Person verstorben ist oder nicht.  - `description`: Eine Beschreibung dieses Artikels  - `extension`: Kann verwendet werden, um zusätzliche Informationen darzustellen, die nicht Teil der Basisdefinition der Ressource sind. Um die Verwendung von Erweiterungen sicher und handhabbar zu machen, gelten strenge Regeln für die Definition und Verwendung von Erweiterungen. Obwohl jeder Implementierer eine Erweiterung definieren kann, gibt es eine Reihe von Anforderungen, die als Teil der Definition der Erweiterung erfüllt werden MÜSSEN.  - `gender`: Administratives Geschlecht - das Geschlecht, das der Patient für Verwaltungs- und Archivierungszwecke hat.  - `generalPractitioner`: Der vom Patienten benannte Leistungserbringer.  - `id`: Die logische ID der Ressource, wie sie in der URL für die Ressource verwendet wird. Einmal zugewiesen, ändert sich dieser Wert nie.  - `identifier`: Eine Kennung für diesen Patienten.  - `implicitRules`: Ein Verweis auf eine Reihe von Regeln, die bei der Erstellung der Ressource befolgt wurden und die bei der Verarbeitung des Inhalts beachtet werden müssen. Häufig handelt es sich dabei um einen Verweis auf einen Implementierungsleitfaden, in dem die speziellen Regeln zusammen mit anderen Profilen usw. definiert sind.  - `language`: Die Basissprache, in der die Ressource geschrieben ist.  - `link`: Link zu einer anderen Patientenressource, die denselben Patienten betrifft.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `managingOrganization`: Organisation, die für die Aufbewahrung der Patientenakte zuständig ist.  - `maritalStatus`: Dieses Feld enthält den letzten Familienstand (Zivilstand) eines Patienten.  - `meta`: Die Metadaten über die Ressource. Dies ist ein Inhalt, der von der Infrastruktur gepflegt wird. Änderungen am Inhalt sind nicht immer mit Versionsänderungen an der Ressource verbunden.  - `modifierExtension`: Kann verwendet werden, um zusätzliche Informationen darzustellen, die nicht Teil der Basisdefinition der Ressource sind und die das Verständnis des Elements, das sie enthält, und/oder das Verständnis der Nachkommen des enthaltenen Elements verändern. In der Regel bieten Modifier-Elemente eine Negation oder Qualifikation. Um die Verwendung von Erweiterungen sicher und handhabbar zu machen, gelten strenge Regeln für die Definition und Verwendung von Erweiterungen. Obwohl jeder Implementierer eine Erweiterung definieren darf, gibt es eine Reihe von Anforderungen, die als Teil der Definition der Erweiterung erfüllt werden MÜSSEN. Anwendungen, die eine Ressource verarbeiten, müssen auf Modifier-Erweiterungen prüfen.  
-Modifier-Erweiterungen MÜSSEN die Bedeutung der Elemente von Resource oder DomainResource NICHT ändern (auch nicht die Bedeutung von modifierExtension selbst).  - `multipleBirthBoolean`: Zeigt an, ob der Patient zu einem Mehrfachgeborenen gehört (boolesch) oder gibt die tatsächliche Geburtsreihenfolge an (ganze Zahl).  - `multipleBirthInteger`: Zeigt an, ob der Patient zu einem Mehrfachgeborenen gehört (boolesch) oder gibt die tatsächliche Geburtsreihenfolge an (ganze Zahl).  - `name`: Ein mit der Person verbundener Name.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `photo`: Bild des Patienten.  - `resourceType`: Dies ist eine Ressource für Patienten  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `telecom`: Eine Kontaktangabe (z. B. eine Telefonnummer oder eine E-Mail-Adresse), unter der die Person kontaktiert werden kann.  - `text`: Ein für den Menschen lesbarer Text, der eine Zusammenfassung der Ressource enthält und verwendet werden kann, um den Inhalt der Ressource für einen Menschen darzustellen. Der Text muss nicht alle strukturierten Daten kodieren, aber er muss so detailliert sein, dass ein Mensch den Text "klinisch sicher" lesen kann. In den Ressourcendefinitionen kann festgelegt werden, welche Inhalte im Narrativ dargestellt werden sollten, um die klinische Sicherheit zu gewährleisten.  - `type`: NGSI-Entitätstyp. Es muss Patient sein    
+Verstorbene Patienten können aus denselben Gründen als inaktiv gekennzeichnet werden, können aber auch noch einige Zeit nach dem Tod aktiv sein.  - `address`: Eine Adresse für die Person.  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `birthDate`: Das Geburtsdatum der Person.  - `communication`: Eine Sprache, die verwendet werden kann, um mit dem Patienten über seine Gesundheit zu kommunizieren.  - `contact`: Eine Kontaktperson (z. B. Vormund, Partner, Freund) für den Patienten.  - `contained`: Diese Ressourcen haben keine eigenständige Existenz neben der Ressource, die sie enthält - sie können weder unabhängig identifiziert werden, noch können sie einen eigenen unabhängigen Transaktionsbereich haben.  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `deceasedBoolean`: Gibt an, ob die Person verstorben ist oder nicht.  - `deceasedDateTime`: Gibt an, ob die Person verstorben ist oder nicht.  - `description`: Eine Beschreibung dieses Artikels  - `extension`: Kann verwendet werden, um zusätzliche Informationen darzustellen, die nicht Teil der Basisdefinition der Ressource sind. Um die Verwendung von Erweiterungen sicher und handhabbar zu machen, gelten strenge Regeln für die Definition und Verwendung von Erweiterungen. Obwohl jeder Implementierer eine Erweiterung definieren kann, gibt es eine Reihe von Anforderungen, die als Teil der Definition der Erweiterung erfüllt werden MÜSSEN.  - `gender`: Administratives Geschlecht - das Geschlecht, das der Patient für Verwaltungs- und Archivierungszwecke hat.  - `generalPractitioner`: Der von den Patienten benannte Pflegedienstleister.  - `id`: Die logische ID der Ressource, wie sie in der URL für die Ressource verwendet wird. Einmal zugewiesen, ändert sich dieser Wert nie.  - `identifier`: Eine Kennung für diesen Patienten.  - `implicitRules`: Ein Verweis auf eine Reihe von Regeln, die bei der Erstellung der Ressource befolgt wurden und die bei der Verarbeitung des Inhalts beachtet werden müssen. Häufig handelt es sich dabei um einen Verweis auf einen Implementierungsleitfaden, in dem die speziellen Regeln zusammen mit anderen Profilen usw. definiert sind.  - `language`: Die Basissprache, in der die Ressource geschrieben ist.  - `link`: Link zu einer anderen Patientenressource, die denselben Patienten betrifft.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `managingOrganization`: Organisation, die für die Aufbewahrung der Patientenakte zuständig ist.  - `maritalStatus`: Dieses Feld enthält den letzten Familienstand (Zivilstand) des Patienten.  - `meta`: Die Metadaten über die Ressource. Dies ist ein Inhalt, der von der Infrastruktur gepflegt wird. Änderungen am Inhalt sind nicht immer mit Versionsänderungen an der Ressource verbunden.  - `modifierExtension`: Kann verwendet werden, um zusätzliche Informationen darzustellen, die nicht Teil der Basisdefinition der Ressource sind und die das Verständnis des Elements, das sie enthält, und/oder das Verständnis der Nachkommen der enthaltenen Elemente verändern. In der Regel bieten Modifier-Elemente eine Negation oder Qualifikation. Um die Verwendung von Erweiterungen sicher und handhabbar zu machen, gelten strenge Regeln für die Definition und Verwendung von Erweiterungen. Obwohl jeder Implementierer eine Erweiterung definieren darf, gibt es eine Reihe von Anforderungen, die als Teil der Definition der Erweiterung erfüllt werden MÜSSEN. Anwendungen, die eine Ressource verarbeiten, müssen auf Modifier-Erweiterungen prüfen.  
+Modifier-Erweiterungen MÜSSEN die Bedeutung der Elemente von Resource oder DomainResource NICHT ändern (auch nicht die Bedeutung von modifierExtension selbst).  - `multipleBirthBoolean`: Zeigt an, ob der Patient Teil eines Mehrfachs ist (boolesch) oder gibt die tatsächliche Geburtsreihenfolge an (ganze Zahl).  - `multipleBirthInteger`: Zeigt an, ob der Patient zu einem Mehrfachgeborenen gehört (boolesch) oder gibt die tatsächliche Geburtsreihenfolge an (ganze Zahl).  - `name`: Ein mit der Person verbundener Name.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `photo`: Bild des Patienten.  - `resourceType`: Dies ist eine Ressource für Patienten  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `telecom`: Eine Kontaktangabe (z. B. eine Telefonnummer oder eine E-Mail-Adresse), unter der die Person kontaktiert werden kann.  - `text`: Ein für den Menschen lesbarer Text, der eine Zusammenfassung der Ressource enthält und verwendet werden kann, um den Inhalt der Ressource für einen Menschen darzustellen. Der Text muss nicht alle strukturierten Daten kodieren, aber er muss so detailliert sein, dass es für einen Menschen klinisch sicher ist, den Text nur zu lesen. In den Ressourcendefinitionen kann festgelegt werden, welche Inhalte im Narrativ dargestellt werden sollten, um die klinische Sicherheit zu gewährleisten.  - `type`: NGSI-Entitätstyp. Es muss Patient sein    
 Erforderliche Eigenschaften  
 - `id`  - `type`    
 Datenmodelle, die von der ursprünglichen Version 4.3 des HL7-Standards http://hl7.org/fhir/patient.html übernommen wurden.  
@@ -44,6 +44,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBase64Binary:    
                 additionalProperties: false    
                 description: 'Extensions for valueBase64Binary'    
@@ -56,6 +57,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBoolean:    
                 additionalProperties: false    
                 description: 'Extensions for valueBoolean'    
@@ -68,6 +70,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCanonical:    
                 additionalProperties: false    
                 description: 'Extensions for valueCanonical'    
@@ -80,6 +83,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCode:    
                 additionalProperties: false    
                 description: 'Extensions for valueCode'    
@@ -92,6 +96,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDate:    
                 additionalProperties: false    
                 description: 'Extensions for valueDate'    
@@ -104,6 +109,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDateTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueDateTime'    
@@ -116,6 +122,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDecimal:    
                 additionalProperties: false    
                 description: 'Extensions for valueDecimal'    
@@ -128,6 +135,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueId:    
                 additionalProperties: false    
                 description: 'Extensions for valueId'    
@@ -140,6 +148,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInstant:    
                 additionalProperties: false    
                 description: 'Extensions for valueInstant'    
@@ -152,6 +161,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInteger:    
                 additionalProperties: false    
                 description: 'Extensions for valueInteger'    
@@ -164,6 +174,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueMarkdown:    
                 additionalProperties: false    
                 description: 'Extensions for valueMarkdown'    
@@ -176,6 +187,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueOid:    
                 additionalProperties: false    
                 description: 'Extensions for valueOid'    
@@ -188,6 +200,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valuePositiveInt:    
                 additionalProperties: false    
                 description: 'Extensions for valuePositiveInt'    
@@ -200,6 +213,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueString:    
                 additionalProperties: false    
                 description: 'Extensions for valueString'    
@@ -212,6 +226,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueTime'    
@@ -224,6 +239,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUnsignedInt:    
                 additionalProperties: false    
                 description: 'Extensions for valueUnsignedInt'    
@@ -236,6 +252,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUri:    
                 additionalProperties: false    
                 description: 'Extensions for valueUri'    
@@ -248,6 +265,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUrl:    
                 additionalProperties: false    
                 description: 'Extensions for valueUrl'    
@@ -260,6 +278,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUuid:    
                 additionalProperties: false    
                 description: 'Extensions for valueUuid'    
@@ -272,6 +291,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -366,6 +386,7 @@ Patient:
                       - temp    
                       - old    
                       - billing    
+                type: object    
               valueAge:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -393,7 +414,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -412,6 +433,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueAnnotation:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -446,6 +468,7 @@ Patient:
                   time:    
                     description: 'Indicates when this particular annotation was made.'    
                     type: string    
+                type: object    
               valueAttachment:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -506,6 +529,7 @@ Patient:
                   url:    
                     description: 'A location where the data can be accessed.'    
                     type: string    
+                type: object    
               valueBase64Binary:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^(\s*([0-9a-zA-Z\+/=]){4}\s*)+$    
@@ -545,6 +569,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               valueCodeableReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -563,6 +588,7 @@ Patient:
                   reference:    
                     description: 'A reference to a resource the provides exact details about the information being referenced.'    
                     type: string    
+                type: object    
               valueCoding:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -605,6 +631,7 @@ Patient:
                   version:    
                     description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                     type: string    
+                type: object    
               valueContactDetail:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -628,6 +655,7 @@ Patient:
                     items:    
                       type: string    
                     type: array    
+                type: object    
               valueContactPoint:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -679,6 +707,7 @@ Patient:
                   value:    
                     description: 'The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).'    
                     type: string    
+                type: object    
               valueContributor:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -712,6 +741,7 @@ Patient:
                       - editor    
                       - reviewer    
                       - endorser    
+                type: object    
               valueCount:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -739,7 +769,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -758,6 +788,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDataRequirement:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -818,6 +849,7 @@ Patient:
                   type:    
                     description: 'The type of the required data, specified as the type name of a resource. For profiles, this value is set to the type of the base resource of the profile.'    
                     type: string    
+                type: object    
               valueDate:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$    
@@ -857,7 +889,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -876,6 +908,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDosage:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -954,6 +987,7 @@ Patient:
                   timing:    
                     description: 'When medication should be administered.'    
                     type: string    
+                type: object    
               valueDuration:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -981,7 +1015,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -1000,6 +1034,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueExpression:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -1047,6 +1082,7 @@ Patient:
                   reference:    
                     description: 'A URI that defines where the expression is found.'    
                     type: string    
+                type: object    
               valueHumanName:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -1117,6 +1153,7 @@ Patient:
                       - anonymous    
                       - old    
                       - maiden    
+                type: object    
               valueId:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -1165,6 +1202,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               valueInstant:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$    
@@ -1201,6 +1239,7 @@ Patient:
                   value:    
                     description: 'Numerical value (with implicit precision).'    
                     type: string    
+                type: object    
               valueOid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:oid:[0-2](\.(0|[1-9][0-9]*))+$    
@@ -1256,6 +1295,7 @@ Patient:
                   use:    
                     description: 'Whether the parameter is input or output for the module.'    
                     type: string    
+                type: object    
               valuePeriod:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -1280,6 +1320,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valuePositiveInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[1-9][0-9]*$    
@@ -1311,7 +1352,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -1330,6 +1371,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -1348,6 +1390,7 @@ Patient:
                   low:    
                     description: 'The low limit. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valueRatio:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -1366,6 +1409,7 @@ Patient:
                   numerator:    
                     description: 'The value of the numerator.'    
                     type: string    
+                type: object    
               valueRatioRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -1387,6 +1431,7 @@ Patient:
                   lowNumerator:    
                     description: 'The value of the low limit numerator.'    
                     type: string    
+                type: object    
               valueReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -1422,6 +1467,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               valueRelatedArtifact:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -1478,6 +1524,7 @@ Patient:
                   url:    
                     description: 'A url for the artifact that can be followed to access the actual content.'    
                     type: string    
+                type: object    
               valueSampledData:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -1531,6 +1578,7 @@ Patient:
                     type: string    
                 required:    
                   - origin    
+                type: object    
               valueSignature:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -1581,6 +1629,7 @@ Patient:
                 required:    
                   - type    
                   - who    
+                type: object    
               valueString:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -1624,6 +1673,7 @@ Patient:
                   repeat:    
                     description: 'A set of rules that describe when the event is scheduled.'    
                     type: string    
+                type: object    
               valueTriggerDefinition:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -1684,6 +1734,7 @@ Patient:
                       - data-removed    
                       - data-accessed    
                       - data-access-ended    
+                type: object    
               valueUnsignedInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[0]|([1-9][0-9]*)$    
@@ -1725,10 +1776,12 @@ Patient:
                     type: string    
                 required:    
                   - code    
+                type: object    
               valueUuid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                 type: string    
+            type: object    
           type: array    
         id:    
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -1758,6 +1811,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBase64Binary:    
                 additionalProperties: false    
                 description: 'Extensions for valueBase64Binary'    
@@ -1770,6 +1824,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBoolean:    
                 additionalProperties: false    
                 description: 'Extensions for valueBoolean'    
@@ -1782,6 +1837,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCanonical:    
                 additionalProperties: false    
                 description: 'Extensions for valueCanonical'    
@@ -1794,6 +1850,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCode:    
                 additionalProperties: false    
                 description: 'Extensions for valueCode'    
@@ -1806,6 +1863,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDate:    
                 additionalProperties: false    
                 description: 'Extensions for valueDate'    
@@ -1818,6 +1876,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDateTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueDateTime'    
@@ -1830,6 +1889,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDecimal:    
                 additionalProperties: false    
                 description: 'Extensions for valueDecimal'    
@@ -1842,6 +1902,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueId:    
                 additionalProperties: false    
                 description: 'Extensions for valueId'    
@@ -1854,6 +1915,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInstant:    
                 additionalProperties: false    
                 description: 'Extensions for valueInstant'    
@@ -1866,6 +1928,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInteger:    
                 additionalProperties: false    
                 description: 'Extensions for valueInteger'    
@@ -1878,6 +1941,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueMarkdown:    
                 additionalProperties: false    
                 description: 'Extensions for valueMarkdown'    
@@ -1890,6 +1954,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueOid:    
                 additionalProperties: false    
                 description: 'Extensions for valueOid'    
@@ -1902,6 +1967,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valuePositiveInt:    
                 additionalProperties: false    
                 description: 'Extensions for valuePositiveInt'    
@@ -1914,6 +1980,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueString:    
                 additionalProperties: false    
                 description: 'Extensions for valueString'    
@@ -1926,6 +1993,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueTime'    
@@ -1938,6 +2006,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUnsignedInt:    
                 additionalProperties: false    
                 description: 'Extensions for valueUnsignedInt'    
@@ -1950,6 +2019,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUri:    
                 additionalProperties: false    
                 description: 'Extensions for valueUri'    
@@ -1962,6 +2032,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUrl:    
                 additionalProperties: false    
                 description: 'Extensions for valueUrl'    
@@ -1974,6 +2045,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUuid:    
                 additionalProperties: false    
                 description: 'Extensions for valueUuid'    
@@ -1986,6 +2058,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -2080,6 +2153,7 @@ Patient:
                       - temp    
                       - old    
                       - billing    
+                type: object    
               valueAge:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -2107,7 +2181,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -2126,6 +2200,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueAnnotation:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -2160,6 +2235,7 @@ Patient:
                   time:    
                     description: 'Indicates when this particular annotation was made.'    
                     type: string    
+                type: object    
               valueAttachment:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -2220,6 +2296,7 @@ Patient:
                   url:    
                     description: 'A location where the data can be accessed.'    
                     type: string    
+                type: object    
               valueBase64Binary:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^(\s*([0-9a-zA-Z\+/=]){4}\s*)+$    
@@ -2259,6 +2336,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               valueCodeableReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -2277,6 +2355,7 @@ Patient:
                   reference:    
                     description: 'A reference to a resource the provides exact details about the information being referenced.'    
                     type: string    
+                type: object    
               valueCoding:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -2319,6 +2398,7 @@ Patient:
                   version:    
                     description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                     type: string    
+                type: object    
               valueContactDetail:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -2342,6 +2422,7 @@ Patient:
                     items:    
                       type: string    
                     type: array    
+                type: object    
               valueContactPoint:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -2393,6 +2474,7 @@ Patient:
                   value:    
                     description: 'The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).'    
                     type: string    
+                type: object    
               valueContributor:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -2426,6 +2508,7 @@ Patient:
                       - editor    
                       - reviewer    
                       - endorser    
+                type: object    
               valueCount:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -2453,7 +2536,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -2472,6 +2555,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDataRequirement:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -2532,6 +2616,7 @@ Patient:
                   type:    
                     description: 'The type of the required data, specified as the type name of a resource. For profiles, this value is set to the type of the base resource of the profile.'    
                     type: string    
+                type: object    
               valueDate:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$    
@@ -2571,7 +2656,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -2590,6 +2675,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDosage:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -2668,6 +2754,7 @@ Patient:
                   timing:    
                     description: 'When medication should be administered.'    
                     type: string    
+                type: object    
               valueDuration:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -2695,7 +2782,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -2714,6 +2801,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueExpression:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -2761,6 +2849,7 @@ Patient:
                   reference:    
                     description: 'A URI that defines where the expression is found.'    
                     type: string    
+                type: object    
               valueHumanName:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -2831,6 +2920,7 @@ Patient:
                       - anonymous    
                       - old    
                       - maiden    
+                type: object    
               valueId:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -2879,6 +2969,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               valueInstant:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$    
@@ -2915,6 +3006,7 @@ Patient:
                   value:    
                     description: 'Numerical value (with implicit precision).'    
                     type: string    
+                type: object    
               valueOid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:oid:[0-2](\.(0|[1-9][0-9]*))+$    
@@ -2970,6 +3062,7 @@ Patient:
                   use:    
                     description: 'Whether the parameter is input or output for the module.'    
                     type: string    
+                type: object    
               valuePeriod:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -2994,6 +3087,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valuePositiveInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[1-9][0-9]*$    
@@ -3025,7 +3119,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -3044,6 +3138,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -3062,6 +3157,7 @@ Patient:
                   low:    
                     description: 'The low limit. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valueRatio:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -3080,6 +3176,7 @@ Patient:
                   numerator:    
                     description: 'The value of the numerator.'    
                     type: string    
+                type: object    
               valueRatioRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -3101,6 +3198,7 @@ Patient:
                   lowNumerator:    
                     description: 'The value of the low limit numerator.'    
                     type: string    
+                type: object    
               valueReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -3136,6 +3234,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               valueRelatedArtifact:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -3192,6 +3291,7 @@ Patient:
                   url:    
                     description: 'A url for the artifact that can be followed to access the actual content.'    
                     type: string    
+                type: object    
               valueSampledData:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -3245,6 +3345,7 @@ Patient:
                     type: string    
                 required:    
                   - origin    
+                type: object    
               valueSignature:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -3295,6 +3396,7 @@ Patient:
                 required:    
                   - type    
                   - who    
+                type: object    
               valueString:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -3338,6 +3440,7 @@ Patient:
                   repeat:    
                     description: 'A set of rules that describe when the event is scheduled.'    
                     type: string    
+                type: object    
               valueTriggerDefinition:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -3398,6 +3501,7 @@ Patient:
                       - data-removed    
                       - data-accessed    
                       - data-access-ended    
+                type: object    
               valueUnsignedInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[0]|([1-9][0-9]*)$    
@@ -3439,10 +3543,12 @@ Patient:
                     type: string    
                 required:    
                   - code    
+                type: object    
               valueUuid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                 type: string    
+            type: object    
           type: array    
         id:    
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -3472,6 +3578,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBase64Binary:    
                 additionalProperties: false    
                 description: 'Extensions for valueBase64Binary'    
@@ -3484,6 +3591,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBoolean:    
                 additionalProperties: false    
                 description: 'Extensions for valueBoolean'    
@@ -3496,6 +3604,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCanonical:    
                 additionalProperties: false    
                 description: 'Extensions for valueCanonical'    
@@ -3508,6 +3617,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCode:    
                 additionalProperties: false    
                 description: 'Extensions for valueCode'    
@@ -3520,6 +3630,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDate:    
                 additionalProperties: false    
                 description: 'Extensions for valueDate'    
@@ -3532,6 +3643,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDateTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueDateTime'    
@@ -3544,6 +3656,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDecimal:    
                 additionalProperties: false    
                 description: 'Extensions for valueDecimal'    
@@ -3556,6 +3669,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueId:    
                 additionalProperties: false    
                 description: 'Extensions for valueId'    
@@ -3568,6 +3682,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInstant:    
                 additionalProperties: false    
                 description: 'Extensions for valueInstant'    
@@ -3580,6 +3695,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInteger:    
                 additionalProperties: false    
                 description: 'Extensions for valueInteger'    
@@ -3592,6 +3708,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueMarkdown:    
                 additionalProperties: false    
                 description: 'Extensions for valueMarkdown'    
@@ -3604,6 +3721,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueOid:    
                 additionalProperties: false    
                 description: 'Extensions for valueOid'    
@@ -3616,6 +3734,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valuePositiveInt:    
                 additionalProperties: false    
                 description: 'Extensions for valuePositiveInt'    
@@ -3628,6 +3747,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueString:    
                 additionalProperties: false    
                 description: 'Extensions for valueString'    
@@ -3640,6 +3760,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueTime'    
@@ -3652,6 +3773,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUnsignedInt:    
                 additionalProperties: false    
                 description: 'Extensions for valueUnsignedInt'    
@@ -3664,6 +3786,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUri:    
                 additionalProperties: false    
                 description: 'Extensions for valueUri'    
@@ -3676,6 +3799,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUrl:    
                 additionalProperties: false    
                 description: 'Extensions for valueUrl'    
@@ -3688,6 +3812,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUuid:    
                 additionalProperties: false    
                 description: 'Extensions for valueUuid'    
@@ -3700,6 +3825,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -3794,6 +3920,7 @@ Patient:
                       - temp    
                       - old    
                       - billing    
+                type: object    
               valueAge:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -3821,7 +3948,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -3840,6 +3967,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueAnnotation:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -3874,6 +4002,7 @@ Patient:
                   time:    
                     description: 'Indicates when this particular annotation was made.'    
                     type: string    
+                type: object    
               valueAttachment:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -3934,6 +4063,7 @@ Patient:
                   url:    
                     description: 'A location where the data can be accessed.'    
                     type: string    
+                type: object    
               valueBase64Binary:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^(\s*([0-9a-zA-Z\+/=]){4}\s*)+$    
@@ -3973,6 +4103,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               valueCodeableReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -3991,6 +4122,7 @@ Patient:
                   reference:    
                     description: 'A reference to a resource the provides exact details about the information being referenced.'    
                     type: string    
+                type: object    
               valueCoding:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -4033,6 +4165,7 @@ Patient:
                   version:    
                     description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                     type: string    
+                type: object    
               valueContactDetail:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -4056,6 +4189,7 @@ Patient:
                     items:    
                       type: string    
                     type: array    
+                type: object    
               valueContactPoint:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -4107,6 +4241,7 @@ Patient:
                   value:    
                     description: 'The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).'    
                     type: string    
+                type: object    
               valueContributor:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -4140,6 +4275,7 @@ Patient:
                       - editor    
                       - reviewer    
                       - endorser    
+                type: object    
               valueCount:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -4167,7 +4303,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -4186,6 +4322,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDataRequirement:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -4246,6 +4383,7 @@ Patient:
                   type:    
                     description: 'The type of the required data, specified as the type name of a resource. For profiles, this value is set to the type of the base resource of the profile.'    
                     type: string    
+                type: object    
               valueDate:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$    
@@ -4285,7 +4423,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -4304,6 +4442,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDosage:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -4382,6 +4521,7 @@ Patient:
                   timing:    
                     description: 'When medication should be administered.'    
                     type: string    
+                type: object    
               valueDuration:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -4409,7 +4549,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -4428,6 +4568,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueExpression:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -4475,6 +4616,7 @@ Patient:
                   reference:    
                     description: 'A URI that defines where the expression is found.'    
                     type: string    
+                type: object    
               valueHumanName:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -4545,6 +4687,7 @@ Patient:
                       - anonymous    
                       - old    
                       - maiden    
+                type: object    
               valueId:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -4593,6 +4736,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               valueInstant:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$    
@@ -4629,6 +4773,7 @@ Patient:
                   value:    
                     description: 'Numerical value (with implicit precision).'    
                     type: string    
+                type: object    
               valueOid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:oid:[0-2](\.(0|[1-9][0-9]*))+$    
@@ -4684,6 +4829,7 @@ Patient:
                   use:    
                     description: 'Whether the parameter is input or output for the module.'    
                     type: string    
+                type: object    
               valuePeriod:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -4708,6 +4854,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valuePositiveInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[1-9][0-9]*$    
@@ -4739,7 +4886,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -4758,6 +4905,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -4776,6 +4924,7 @@ Patient:
                   low:    
                     description: 'The low limit. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valueRatio:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -4794,6 +4943,7 @@ Patient:
                   numerator:    
                     description: 'The value of the numerator.'    
                     type: string    
+                type: object    
               valueRatioRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -4815,6 +4965,7 @@ Patient:
                   lowNumerator:    
                     description: 'The value of the low limit numerator.'    
                     type: string    
+                type: object    
               valueReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -4850,6 +5001,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               valueRelatedArtifact:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -4906,6 +5058,7 @@ Patient:
                   url:    
                     description: 'A url for the artifact that can be followed to access the actual content.'    
                     type: string    
+                type: object    
               valueSampledData:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -4959,6 +5112,7 @@ Patient:
                     type: string    
                 required:    
                   - origin    
+                type: object    
               valueSignature:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -5009,6 +5163,7 @@ Patient:
                 required:    
                   - type    
                   - who    
+                type: object    
               valueString:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -5052,6 +5207,7 @@ Patient:
                   repeat:    
                     description: 'A set of rules that describe when the event is scheduled.'    
                     type: string    
+                type: object    
               valueTriggerDefinition:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -5112,6 +5268,7 @@ Patient:
                       - data-removed    
                       - data-accessed    
                       - data-access-ended    
+                type: object    
               valueUnsignedInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[0]|([1-9][0-9]*)$    
@@ -5153,10 +5310,12 @@ Patient:
                     type: string    
                 required:    
                   - code    
+                type: object    
               valueUuid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                 type: string    
+            type: object    
           type: array    
         id:    
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -5186,6 +5345,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBase64Binary:    
                 additionalProperties: false    
                 description: 'Extensions for valueBase64Binary'    
@@ -5198,6 +5358,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBoolean:    
                 additionalProperties: false    
                 description: 'Extensions for valueBoolean'    
@@ -5210,6 +5371,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCanonical:    
                 additionalProperties: false    
                 description: 'Extensions for valueCanonical'    
@@ -5222,6 +5384,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCode:    
                 additionalProperties: false    
                 description: 'Extensions for valueCode'    
@@ -5234,6 +5397,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDate:    
                 additionalProperties: false    
                 description: 'Extensions for valueDate'    
@@ -5246,6 +5410,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDateTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueDateTime'    
@@ -5258,6 +5423,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDecimal:    
                 additionalProperties: false    
                 description: 'Extensions for valueDecimal'    
@@ -5270,6 +5436,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueId:    
                 additionalProperties: false    
                 description: 'Extensions for valueId'    
@@ -5282,6 +5449,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInstant:    
                 additionalProperties: false    
                 description: 'Extensions for valueInstant'    
@@ -5294,6 +5462,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInteger:    
                 additionalProperties: false    
                 description: 'Extensions for valueInteger'    
@@ -5306,6 +5475,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueMarkdown:    
                 additionalProperties: false    
                 description: 'Extensions for valueMarkdown'    
@@ -5318,6 +5488,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueOid:    
                 additionalProperties: false    
                 description: 'Extensions for valueOid'    
@@ -5330,6 +5501,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valuePositiveInt:    
                 additionalProperties: false    
                 description: 'Extensions for valuePositiveInt'    
@@ -5342,6 +5514,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueString:    
                 additionalProperties: false    
                 description: 'Extensions for valueString'    
@@ -5354,6 +5527,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueTime'    
@@ -5366,6 +5540,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUnsignedInt:    
                 additionalProperties: false    
                 description: 'Extensions for valueUnsignedInt'    
@@ -5378,6 +5553,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUri:    
                 additionalProperties: false    
                 description: 'Extensions for valueUri'    
@@ -5390,6 +5566,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUrl:    
                 additionalProperties: false    
                 description: 'Extensions for valueUrl'    
@@ -5402,6 +5579,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUuid:    
                 additionalProperties: false    
                 description: 'Extensions for valueUuid'    
@@ -5414,6 +5592,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -5508,6 +5687,7 @@ Patient:
                       - temp    
                       - old    
                       - billing    
+                type: object    
               valueAge:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -5535,7 +5715,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -5554,6 +5734,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueAnnotation:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -5588,6 +5769,7 @@ Patient:
                   time:    
                     description: 'Indicates when this particular annotation was made.'    
                     type: string    
+                type: object    
               valueAttachment:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -5648,6 +5830,7 @@ Patient:
                   url:    
                     description: 'A location where the data can be accessed.'    
                     type: string    
+                type: object    
               valueBase64Binary:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^(\s*([0-9a-zA-Z\+/=]){4}\s*)+$    
@@ -5687,6 +5870,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               valueCodeableReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -5705,6 +5889,7 @@ Patient:
                   reference:    
                     description: 'A reference to a resource the provides exact details about the information being referenced.'    
                     type: string    
+                type: object    
               valueCoding:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -5747,6 +5932,7 @@ Patient:
                   version:    
                     description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                     type: string    
+                type: object    
               valueContactDetail:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -5770,6 +5956,7 @@ Patient:
                     items:    
                       type: string    
                     type: array    
+                type: object    
               valueContactPoint:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -5821,6 +6008,7 @@ Patient:
                   value:    
                     description: 'The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).'    
                     type: string    
+                type: object    
               valueContributor:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -5854,6 +6042,7 @@ Patient:
                       - editor    
                       - reviewer    
                       - endorser    
+                type: object    
               valueCount:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -5881,7 +6070,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -5900,6 +6089,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDataRequirement:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -5960,6 +6150,7 @@ Patient:
                   type:    
                     description: 'The type of the required data, specified as the type name of a resource. For profiles, this value is set to the type of the base resource of the profile.'    
                     type: string    
+                type: object    
               valueDate:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$    
@@ -5999,7 +6190,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -6018,6 +6209,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDosage:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -6096,6 +6288,7 @@ Patient:
                   timing:    
                     description: 'When medication should be administered.'    
                     type: string    
+                type: object    
               valueDuration:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -6123,7 +6316,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -6142,6 +6335,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueExpression:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -6189,6 +6383,7 @@ Patient:
                   reference:    
                     description: 'A URI that defines where the expression is found.'    
                     type: string    
+                type: object    
               valueHumanName:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -6259,6 +6454,7 @@ Patient:
                       - anonymous    
                       - old    
                       - maiden    
+                type: object    
               valueId:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -6307,6 +6503,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               valueInstant:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$    
@@ -6343,6 +6540,7 @@ Patient:
                   value:    
                     description: 'Numerical value (with implicit precision).'    
                     type: string    
+                type: object    
               valueOid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:oid:[0-2](\.(0|[1-9][0-9]*))+$    
@@ -6398,6 +6596,7 @@ Patient:
                   use:    
                     description: 'Whether the parameter is input or output for the module.'    
                     type: string    
+                type: object    
               valuePeriod:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -6422,6 +6621,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valuePositiveInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[1-9][0-9]*$    
@@ -6453,7 +6653,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -6472,6 +6672,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -6490,6 +6691,7 @@ Patient:
                   low:    
                     description: 'The low limit. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valueRatio:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -6508,6 +6710,7 @@ Patient:
                   numerator:    
                     description: 'The value of the numerator.'    
                     type: string    
+                type: object    
               valueRatioRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -6529,6 +6732,7 @@ Patient:
                   lowNumerator:    
                     description: 'The value of the low limit numerator.'    
                     type: string    
+                type: object    
               valueReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -6564,6 +6768,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               valueRelatedArtifact:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -6620,6 +6825,7 @@ Patient:
                   url:    
                     description: 'A url for the artifact that can be followed to access the actual content.'    
                     type: string    
+                type: object    
               valueSampledData:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -6673,6 +6879,7 @@ Patient:
                     type: string    
                 required:    
                   - origin    
+                type: object    
               valueSignature:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -6723,6 +6930,7 @@ Patient:
                 required:    
                   - type    
                   - who    
+                type: object    
               valueString:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -6766,6 +6974,7 @@ Patient:
                   repeat:    
                     description: 'A set of rules that describe when the event is scheduled.'    
                     type: string    
+                type: object    
               valueTriggerDefinition:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -6826,6 +7035,7 @@ Patient:
                       - data-removed    
                       - data-accessed    
                       - data-access-ended    
+                type: object    
               valueUnsignedInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[0]|([1-9][0-9]*)$    
@@ -6867,10 +7077,12 @@ Patient:
                     type: string    
                 required:    
                   - code    
+                type: object    
               valueUuid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                 type: string    
+            type: object    
           type: array    
         id:    
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -6900,6 +7112,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBase64Binary:    
                 additionalProperties: false    
                 description: 'Extensions for valueBase64Binary'    
@@ -6912,6 +7125,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBoolean:    
                 additionalProperties: false    
                 description: 'Extensions for valueBoolean'    
@@ -6924,6 +7138,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCanonical:    
                 additionalProperties: false    
                 description: 'Extensions for valueCanonical'    
@@ -6936,6 +7151,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCode:    
                 additionalProperties: false    
                 description: 'Extensions for valueCode'    
@@ -6948,6 +7164,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDate:    
                 additionalProperties: false    
                 description: 'Extensions for valueDate'    
@@ -6960,6 +7177,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDateTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueDateTime'    
@@ -6972,6 +7190,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDecimal:    
                 additionalProperties: false    
                 description: 'Extensions for valueDecimal'    
@@ -6984,6 +7203,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueId:    
                 additionalProperties: false    
                 description: 'Extensions for valueId'    
@@ -6996,6 +7216,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInstant:    
                 additionalProperties: false    
                 description: 'Extensions for valueInstant'    
@@ -7008,6 +7229,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInteger:    
                 additionalProperties: false    
                 description: 'Extensions for valueInteger'    
@@ -7020,6 +7242,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueMarkdown:    
                 additionalProperties: false    
                 description: 'Extensions for valueMarkdown'    
@@ -7032,6 +7255,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueOid:    
                 additionalProperties: false    
                 description: 'Extensions for valueOid'    
@@ -7044,6 +7268,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valuePositiveInt:    
                 additionalProperties: false    
                 description: 'Extensions for valuePositiveInt'    
@@ -7056,6 +7281,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueString:    
                 additionalProperties: false    
                 description: 'Extensions for valueString'    
@@ -7068,6 +7294,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueTime'    
@@ -7080,6 +7307,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUnsignedInt:    
                 additionalProperties: false    
                 description: 'Extensions for valueUnsignedInt'    
@@ -7092,6 +7320,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUri:    
                 additionalProperties: false    
                 description: 'Extensions for valueUri'    
@@ -7104,6 +7333,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUrl:    
                 additionalProperties: false    
                 description: 'Extensions for valueUrl'    
@@ -7116,6 +7346,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUuid:    
                 additionalProperties: false    
                 description: 'Extensions for valueUuid'    
@@ -7128,6 +7359,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -7222,6 +7454,7 @@ Patient:
                       - temp    
                       - old    
                       - billing    
+                type: object    
               valueAge:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -7249,7 +7482,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -7268,6 +7501,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueAnnotation:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -7302,6 +7536,7 @@ Patient:
                   time:    
                     description: 'Indicates when this particular annotation was made.'    
                     type: string    
+                type: object    
               valueAttachment:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -7362,6 +7597,7 @@ Patient:
                   url:    
                     description: 'A location where the data can be accessed.'    
                     type: string    
+                type: object    
               valueBase64Binary:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^(\s*([0-9a-zA-Z\+/=]){4}\s*)+$    
@@ -7401,6 +7637,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               valueCodeableReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -7419,6 +7656,7 @@ Patient:
                   reference:    
                     description: 'A reference to a resource the provides exact details about the information being referenced.'    
                     type: string    
+                type: object    
               valueCoding:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -7461,6 +7699,7 @@ Patient:
                   version:    
                     description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                     type: string    
+                type: object    
               valueContactDetail:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -7484,6 +7723,7 @@ Patient:
                     items:    
                       type: string    
                     type: array    
+                type: object    
               valueContactPoint:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -7535,6 +7775,7 @@ Patient:
                   value:    
                     description: 'The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).'    
                     type: string    
+                type: object    
               valueContributor:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -7568,6 +7809,7 @@ Patient:
                       - editor    
                       - reviewer    
                       - endorser    
+                type: object    
               valueCount:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -7595,7 +7837,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -7614,6 +7856,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDataRequirement:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -7674,6 +7917,7 @@ Patient:
                   type:    
                     description: 'The type of the required data, specified as the type name of a resource. For profiles, this value is set to the type of the base resource of the profile.'    
                     type: string    
+                type: object    
               valueDate:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$    
@@ -7713,7 +7957,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -7732,6 +7976,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDosage:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -7810,6 +8055,7 @@ Patient:
                   timing:    
                     description: 'When medication should be administered.'    
                     type: string    
+                type: object    
               valueDuration:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -7837,7 +8083,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -7856,6 +8102,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueExpression:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -7903,6 +8150,7 @@ Patient:
                   reference:    
                     description: 'A URI that defines where the expression is found.'    
                     type: string    
+                type: object    
               valueHumanName:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -7973,6 +8221,7 @@ Patient:
                       - anonymous    
                       - old    
                       - maiden    
+                type: object    
               valueId:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -8021,6 +8270,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               valueInstant:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$    
@@ -8057,6 +8307,7 @@ Patient:
                   value:    
                     description: 'Numerical value (with implicit precision).'    
                     type: string    
+                type: object    
               valueOid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:oid:[0-2](\.(0|[1-9][0-9]*))+$    
@@ -8112,6 +8363,7 @@ Patient:
                   use:    
                     description: 'Whether the parameter is input or output for the module.'    
                     type: string    
+                type: object    
               valuePeriod:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -8136,6 +8388,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valuePositiveInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[1-9][0-9]*$    
@@ -8167,7 +8420,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -8186,6 +8439,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -8204,6 +8458,7 @@ Patient:
                   low:    
                     description: 'The low limit. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valueRatio:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -8222,6 +8477,7 @@ Patient:
                   numerator:    
                     description: 'The value of the numerator.'    
                     type: string    
+                type: object    
               valueRatioRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -8243,6 +8499,7 @@ Patient:
                   lowNumerator:    
                     description: 'The value of the low limit numerator.'    
                     type: string    
+                type: object    
               valueReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -8278,6 +8535,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               valueRelatedArtifact:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -8334,6 +8592,7 @@ Patient:
                   url:    
                     description: 'A url for the artifact that can be followed to access the actual content.'    
                     type: string    
+                type: object    
               valueSampledData:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -8387,6 +8646,7 @@ Patient:
                     type: string    
                 required:    
                   - origin    
+                type: object    
               valueSignature:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -8437,6 +8697,7 @@ Patient:
                 required:    
                   - type    
                   - who    
+                type: object    
               valueString:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -8480,6 +8741,7 @@ Patient:
                   repeat:    
                     description: 'A set of rules that describe when the event is scheduled.'    
                     type: string    
+                type: object    
               valueTriggerDefinition:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -8540,6 +8802,7 @@ Patient:
                       - data-removed    
                       - data-accessed    
                       - data-access-ended    
+                type: object    
               valueUnsignedInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[0]|([1-9][0-9]*)$    
@@ -8581,10 +8844,12 @@ Patient:
                     type: string    
                 required:    
                   - code    
+                type: object    
               valueUuid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                 type: string    
+            type: object    
           type: array    
         id:    
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -8614,6 +8879,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBase64Binary:    
                 additionalProperties: false    
                 description: 'Extensions for valueBase64Binary'    
@@ -8626,6 +8892,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBoolean:    
                 additionalProperties: false    
                 description: 'Extensions for valueBoolean'    
@@ -8638,6 +8905,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCanonical:    
                 additionalProperties: false    
                 description: 'Extensions for valueCanonical'    
@@ -8650,6 +8918,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCode:    
                 additionalProperties: false    
                 description: 'Extensions for valueCode'    
@@ -8662,6 +8931,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDate:    
                 additionalProperties: false    
                 description: 'Extensions for valueDate'    
@@ -8674,6 +8944,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDateTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueDateTime'    
@@ -8686,6 +8957,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDecimal:    
                 additionalProperties: false    
                 description: 'Extensions for valueDecimal'    
@@ -8698,6 +8970,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueId:    
                 additionalProperties: false    
                 description: 'Extensions for valueId'    
@@ -8710,6 +8983,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInstant:    
                 additionalProperties: false    
                 description: 'Extensions for valueInstant'    
@@ -8722,6 +8996,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInteger:    
                 additionalProperties: false    
                 description: 'Extensions for valueInteger'    
@@ -8734,6 +9009,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueMarkdown:    
                 additionalProperties: false    
                 description: 'Extensions for valueMarkdown'    
@@ -8746,6 +9022,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueOid:    
                 additionalProperties: false    
                 description: 'Extensions for valueOid'    
@@ -8758,6 +9035,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valuePositiveInt:    
                 additionalProperties: false    
                 description: 'Extensions for valuePositiveInt'    
@@ -8770,6 +9048,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueString:    
                 additionalProperties: false    
                 description: 'Extensions for valueString'    
@@ -8782,6 +9061,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueTime'    
@@ -8794,6 +9074,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUnsignedInt:    
                 additionalProperties: false    
                 description: 'Extensions for valueUnsignedInt'    
@@ -8806,6 +9087,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUri:    
                 additionalProperties: false    
                 description: 'Extensions for valueUri'    
@@ -8818,6 +9100,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUrl:    
                 additionalProperties: false    
                 description: 'Extensions for valueUrl'    
@@ -8830,6 +9113,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUuid:    
                 additionalProperties: false    
                 description: 'Extensions for valueUuid'    
@@ -8842,6 +9126,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -8936,6 +9221,7 @@ Patient:
                       - temp    
                       - old    
                       - billing    
+                type: object    
               valueAge:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -8963,7 +9249,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -8982,6 +9268,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueAnnotation:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9016,6 +9303,7 @@ Patient:
                   time:    
                     description: 'Indicates when this particular annotation was made.'    
                     type: string    
+                type: object    
               valueAttachment:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9076,6 +9364,7 @@ Patient:
                   url:    
                     description: 'A location where the data can be accessed.'    
                     type: string    
+                type: object    
               valueBase64Binary:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^(\s*([0-9a-zA-Z\+/=]){4}\s*)+$    
@@ -9115,6 +9404,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               valueCodeableReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9133,6 +9423,7 @@ Patient:
                   reference:    
                     description: 'A reference to a resource the provides exact details about the information being referenced.'    
                     type: string    
+                type: object    
               valueCoding:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9175,6 +9466,7 @@ Patient:
                   version:    
                     description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                     type: string    
+                type: object    
               valueContactDetail:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9198,6 +9490,7 @@ Patient:
                     items:    
                       type: string    
                     type: array    
+                type: object    
               valueContactPoint:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9249,6 +9542,7 @@ Patient:
                   value:    
                     description: 'The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).'    
                     type: string    
+                type: object    
               valueContributor:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9282,6 +9576,7 @@ Patient:
                       - editor    
                       - reviewer    
                       - endorser    
+                type: object    
               valueCount:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9309,7 +9604,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -9328,6 +9623,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDataRequirement:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9388,6 +9684,7 @@ Patient:
                   type:    
                     description: 'The type of the required data, specified as the type name of a resource. For profiles, this value is set to the type of the base resource of the profile.'    
                     type: string    
+                type: object    
               valueDate:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$    
@@ -9427,7 +9724,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -9446,6 +9743,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDosage:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9524,6 +9822,7 @@ Patient:
                   timing:    
                     description: 'When medication should be administered.'    
                     type: string    
+                type: object    
               valueDuration:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9551,7 +9850,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -9570,6 +9869,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueExpression:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9617,6 +9917,7 @@ Patient:
                   reference:    
                     description: 'A URI that defines where the expression is found.'    
                     type: string    
+                type: object    
               valueHumanName:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9687,6 +9988,7 @@ Patient:
                       - anonymous    
                       - old    
                       - maiden    
+                type: object    
               valueId:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -9735,6 +10037,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               valueInstant:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$    
@@ -9771,6 +10074,7 @@ Patient:
                   value:    
                     description: 'Numerical value (with implicit precision).'    
                     type: string    
+                type: object    
               valueOid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:oid:[0-2](\.(0|[1-9][0-9]*))+$    
@@ -9826,6 +10130,7 @@ Patient:
                   use:    
                     description: 'Whether the parameter is input or output for the module.'    
                     type: string    
+                type: object    
               valuePeriod:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9850,6 +10155,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valuePositiveInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[1-9][0-9]*$    
@@ -9881,7 +10187,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -9900,6 +10206,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9918,6 +10225,7 @@ Patient:
                   low:    
                     description: 'The low limit. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valueRatio:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9936,6 +10244,7 @@ Patient:
                   numerator:    
                     description: 'The value of the numerator.'    
                     type: string    
+                type: object    
               valueRatioRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9957,6 +10266,7 @@ Patient:
                   lowNumerator:    
                     description: 'The value of the low limit numerator.'    
                     type: string    
+                type: object    
               valueReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -9992,6 +10302,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               valueRelatedArtifact:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -10048,6 +10359,7 @@ Patient:
                   url:    
                     description: 'A url for the artifact that can be followed to access the actual content.'    
                     type: string    
+                type: object    
               valueSampledData:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -10101,6 +10413,7 @@ Patient:
                     type: string    
                 required:    
                   - origin    
+                type: object    
               valueSignature:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -10151,6 +10464,7 @@ Patient:
                 required:    
                   - type    
                   - who    
+                type: object    
               valueString:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -10194,6 +10508,7 @@ Patient:
                   repeat:    
                     description: 'A set of rules that describe when the event is scheduled.'    
                     type: string    
+                type: object    
               valueTriggerDefinition:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -10254,6 +10569,7 @@ Patient:
                       - data-removed    
                       - data-accessed    
                       - data-access-ended    
+                type: object    
               valueUnsignedInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[0]|([1-9][0-9]*)$    
@@ -10295,10 +10611,12 @@ Patient:
                     type: string    
                 required:    
                   - code    
+                type: object    
               valueUuid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                 type: string    
+            type: object    
           type: array    
         id:    
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -10328,6 +10646,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBase64Binary:    
                 additionalProperties: false    
                 description: 'Extensions for valueBase64Binary'    
@@ -10340,6 +10659,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBoolean:    
                 additionalProperties: false    
                 description: 'Extensions for valueBoolean'    
@@ -10352,6 +10672,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCanonical:    
                 additionalProperties: false    
                 description: 'Extensions for valueCanonical'    
@@ -10364,6 +10685,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCode:    
                 additionalProperties: false    
                 description: 'Extensions for valueCode'    
@@ -10376,6 +10698,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDate:    
                 additionalProperties: false    
                 description: 'Extensions for valueDate'    
@@ -10388,6 +10711,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDateTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueDateTime'    
@@ -10400,6 +10724,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDecimal:    
                 additionalProperties: false    
                 description: 'Extensions for valueDecimal'    
@@ -10412,6 +10737,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueId:    
                 additionalProperties: false    
                 description: 'Extensions for valueId'    
@@ -10424,6 +10750,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInstant:    
                 additionalProperties: false    
                 description: 'Extensions for valueInstant'    
@@ -10436,6 +10763,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInteger:    
                 additionalProperties: false    
                 description: 'Extensions for valueInteger'    
@@ -10448,6 +10776,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueMarkdown:    
                 additionalProperties: false    
                 description: 'Extensions for valueMarkdown'    
@@ -10460,6 +10789,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueOid:    
                 additionalProperties: false    
                 description: 'Extensions for valueOid'    
@@ -10472,6 +10802,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valuePositiveInt:    
                 additionalProperties: false    
                 description: 'Extensions for valuePositiveInt'    
@@ -10484,6 +10815,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueString:    
                 additionalProperties: false    
                 description: 'Extensions for valueString'    
@@ -10496,6 +10828,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueTime'    
@@ -10508,6 +10841,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUnsignedInt:    
                 additionalProperties: false    
                 description: 'Extensions for valueUnsignedInt'    
@@ -10520,6 +10854,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUri:    
                 additionalProperties: false    
                 description: 'Extensions for valueUri'    
@@ -10532,6 +10867,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUrl:    
                 additionalProperties: false    
                 description: 'Extensions for valueUrl'    
@@ -10544,6 +10880,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUuid:    
                 additionalProperties: false    
                 description: 'Extensions for valueUuid'    
@@ -10556,6 +10893,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -10650,6 +10988,7 @@ Patient:
                       - temp    
                       - old    
                       - billing    
+                type: object    
               valueAge:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -10677,7 +11016,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -10696,6 +11035,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueAnnotation:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -10730,6 +11070,7 @@ Patient:
                   time:    
                     description: 'Indicates when this particular annotation was made.'    
                     type: string    
+                type: object    
               valueAttachment:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -10790,6 +11131,7 @@ Patient:
                   url:    
                     description: 'A location where the data can be accessed.'    
                     type: string    
+                type: object    
               valueBase64Binary:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^(\s*([0-9a-zA-Z\+/=]){4}\s*)+$    
@@ -10829,6 +11171,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               valueCodeableReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -10847,6 +11190,7 @@ Patient:
                   reference:    
                     description: 'A reference to a resource the provides exact details about the information being referenced.'    
                     type: string    
+                type: object    
               valueCoding:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -10889,6 +11233,7 @@ Patient:
                   version:    
                     description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                     type: string    
+                type: object    
               valueContactDetail:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -10912,6 +11257,7 @@ Patient:
                     items:    
                       type: string    
                     type: array    
+                type: object    
               valueContactPoint:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -10963,6 +11309,7 @@ Patient:
                   value:    
                     description: 'The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).'    
                     type: string    
+                type: object    
               valueContributor:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -10996,6 +11343,7 @@ Patient:
                       - editor    
                       - reviewer    
                       - endorser    
+                type: object    
               valueCount:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -11023,7 +11371,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -11042,6 +11390,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDataRequirement:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -11102,6 +11451,7 @@ Patient:
                   type:    
                     description: 'The type of the required data, specified as the type name of a resource. For profiles, this value is set to the type of the base resource of the profile.'    
                     type: string    
+                type: object    
               valueDate:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$    
@@ -11141,7 +11491,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -11160,6 +11510,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDosage:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -11238,6 +11589,7 @@ Patient:
                   timing:    
                     description: 'When medication should be administered.'    
                     type: string    
+                type: object    
               valueDuration:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -11265,7 +11617,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -11284,6 +11636,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueExpression:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -11331,6 +11684,7 @@ Patient:
                   reference:    
                     description: 'A URI that defines where the expression is found.'    
                     type: string    
+                type: object    
               valueHumanName:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -11401,6 +11755,7 @@ Patient:
                       - anonymous    
                       - old    
                       - maiden    
+                type: object    
               valueId:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -11449,6 +11804,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               valueInstant:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$    
@@ -11485,6 +11841,7 @@ Patient:
                   value:    
                     description: 'Numerical value (with implicit precision).'    
                     type: string    
+                type: object    
               valueOid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:oid:[0-2](\.(0|[1-9][0-9]*))+$    
@@ -11540,6 +11897,7 @@ Patient:
                   use:    
                     description: 'Whether the parameter is input or output for the module.'    
                     type: string    
+                type: object    
               valuePeriod:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -11564,6 +11922,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valuePositiveInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[1-9][0-9]*$    
@@ -11595,7 +11954,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -11614,6 +11973,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -11632,6 +11992,7 @@ Patient:
                   low:    
                     description: 'The low limit. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valueRatio:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -11650,6 +12011,7 @@ Patient:
                   numerator:    
                     description: 'The value of the numerator.'    
                     type: string    
+                type: object    
               valueRatioRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -11671,6 +12033,7 @@ Patient:
                   lowNumerator:    
                     description: 'The value of the low limit numerator.'    
                     type: string    
+                type: object    
               valueReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -11706,6 +12069,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               valueRelatedArtifact:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -11762,6 +12126,7 @@ Patient:
                   url:    
                     description: 'A url for the artifact that can be followed to access the actual content.'    
                     type: string    
+                type: object    
               valueSampledData:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -11815,6 +12180,7 @@ Patient:
                     type: string    
                 required:    
                   - origin    
+                type: object    
               valueSignature:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -11865,6 +12231,7 @@ Patient:
                 required:    
                   - type    
                   - who    
+                type: object    
               valueString:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -11908,6 +12275,7 @@ Patient:
                   repeat:    
                     description: 'A set of rules that describe when the event is scheduled.'    
                     type: string    
+                type: object    
               valueTriggerDefinition:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -11968,6 +12336,7 @@ Patient:
                       - data-removed    
                       - data-accessed    
                       - data-access-ended    
+                type: object    
               valueUnsignedInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[0]|([1-9][0-9]*)$    
@@ -12009,10 +12378,12 @@ Patient:
                     type: string    
                 required:    
                   - code    
+                type: object    
               valueUuid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                 type: string    
+            type: object    
           type: array    
         id:    
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -12042,6 +12413,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBase64Binary:    
                 additionalProperties: false    
                 description: 'Extensions for valueBase64Binary'    
@@ -12054,6 +12426,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBoolean:    
                 additionalProperties: false    
                 description: 'Extensions for valueBoolean'    
@@ -12066,6 +12439,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCanonical:    
                 additionalProperties: false    
                 description: 'Extensions for valueCanonical'    
@@ -12078,6 +12452,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCode:    
                 additionalProperties: false    
                 description: 'Extensions for valueCode'    
@@ -12090,6 +12465,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDate:    
                 additionalProperties: false    
                 description: 'Extensions for valueDate'    
@@ -12102,6 +12478,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDateTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueDateTime'    
@@ -12114,6 +12491,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDecimal:    
                 additionalProperties: false    
                 description: 'Extensions for valueDecimal'    
@@ -12126,6 +12504,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueId:    
                 additionalProperties: false    
                 description: 'Extensions for valueId'    
@@ -12138,6 +12517,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInstant:    
                 additionalProperties: false    
                 description: 'Extensions for valueInstant'    
@@ -12150,6 +12530,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInteger:    
                 additionalProperties: false    
                 description: 'Extensions for valueInteger'    
@@ -12162,6 +12543,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueMarkdown:    
                 additionalProperties: false    
                 description: 'Extensions for valueMarkdown'    
@@ -12174,6 +12556,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueOid:    
                 additionalProperties: false    
                 description: 'Extensions for valueOid'    
@@ -12186,6 +12569,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valuePositiveInt:    
                 additionalProperties: false    
                 description: 'Extensions for valuePositiveInt'    
@@ -12198,6 +12582,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueString:    
                 additionalProperties: false    
                 description: 'Extensions for valueString'    
@@ -12210,6 +12595,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueTime'    
@@ -12222,6 +12608,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUnsignedInt:    
                 additionalProperties: false    
                 description: 'Extensions for valueUnsignedInt'    
@@ -12234,6 +12621,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUri:    
                 additionalProperties: false    
                 description: 'Extensions for valueUri'    
@@ -12246,6 +12634,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUrl:    
                 additionalProperties: false    
                 description: 'Extensions for valueUrl'    
@@ -12258,6 +12647,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUuid:    
                 additionalProperties: false    
                 description: 'Extensions for valueUuid'    
@@ -12270,6 +12660,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -12364,6 +12755,7 @@ Patient:
                       - temp    
                       - old    
                       - billing    
+                type: object    
               valueAge:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -12391,7 +12783,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -12410,6 +12802,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueAnnotation:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -12444,6 +12837,7 @@ Patient:
                   time:    
                     description: 'Indicates when this particular annotation was made.'    
                     type: string    
+                type: object    
               valueAttachment:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -12504,6 +12898,7 @@ Patient:
                   url:    
                     description: 'A location where the data can be accessed.'    
                     type: string    
+                type: object    
               valueBase64Binary:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^(\s*([0-9a-zA-Z\+/=]){4}\s*)+$    
@@ -12543,6 +12938,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               valueCodeableReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -12561,6 +12957,7 @@ Patient:
                   reference:    
                     description: 'A reference to a resource the provides exact details about the information being referenced.'    
                     type: string    
+                type: object    
               valueCoding:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -12603,6 +13000,7 @@ Patient:
                   version:    
                     description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                     type: string    
+                type: object    
               valueContactDetail:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -12626,6 +13024,7 @@ Patient:
                     items:    
                       type: string    
                     type: array    
+                type: object    
               valueContactPoint:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -12677,6 +13076,7 @@ Patient:
                   value:    
                     description: 'The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).'    
                     type: string    
+                type: object    
               valueContributor:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -12710,6 +13110,7 @@ Patient:
                       - editor    
                       - reviewer    
                       - endorser    
+                type: object    
               valueCount:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -12737,7 +13138,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -12756,6 +13157,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDataRequirement:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -12816,6 +13218,7 @@ Patient:
                   type:    
                     description: 'The type of the required data, specified as the type name of a resource. For profiles, this value is set to the type of the base resource of the profile.'    
                     type: string    
+                type: object    
               valueDate:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$    
@@ -12855,7 +13258,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -12874,6 +13277,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDosage:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -12952,6 +13356,7 @@ Patient:
                   timing:    
                     description: 'When medication should be administered.'    
                     type: string    
+                type: object    
               valueDuration:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -12979,7 +13384,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -12998,6 +13403,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueExpression:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -13045,6 +13451,7 @@ Patient:
                   reference:    
                     description: 'A URI that defines where the expression is found.'    
                     type: string    
+                type: object    
               valueHumanName:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -13115,6 +13522,7 @@ Patient:
                       - anonymous    
                       - old    
                       - maiden    
+                type: object    
               valueId:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -13163,6 +13571,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               valueInstant:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$    
@@ -13199,6 +13608,7 @@ Patient:
                   value:    
                     description: 'Numerical value (with implicit precision).'    
                     type: string    
+                type: object    
               valueOid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:oid:[0-2](\.(0|[1-9][0-9]*))+$    
@@ -13254,6 +13664,7 @@ Patient:
                   use:    
                     description: 'Whether the parameter is input or output for the module.'    
                     type: string    
+                type: object    
               valuePeriod:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -13278,6 +13689,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valuePositiveInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[1-9][0-9]*$    
@@ -13309,7 +13721,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -13328,6 +13740,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -13346,6 +13759,7 @@ Patient:
                   low:    
                     description: 'The low limit. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valueRatio:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -13364,6 +13778,7 @@ Patient:
                   numerator:    
                     description: 'The value of the numerator.'    
                     type: string    
+                type: object    
               valueRatioRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -13385,6 +13800,7 @@ Patient:
                   lowNumerator:    
                     description: 'The value of the low limit numerator.'    
                     type: string    
+                type: object    
               valueReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -13420,6 +13836,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               valueRelatedArtifact:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -13476,6 +13893,7 @@ Patient:
                   url:    
                     description: 'A url for the artifact that can be followed to access the actual content.'    
                     type: string    
+                type: object    
               valueSampledData:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -13529,6 +13947,7 @@ Patient:
                     type: string    
                 required:    
                   - origin    
+                type: object    
               valueSignature:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -13579,6 +13998,7 @@ Patient:
                 required:    
                   - type    
                   - who    
+                type: object    
               valueString:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -13622,6 +14042,7 @@ Patient:
                   repeat:    
                     description: 'A set of rules that describe when the event is scheduled.'    
                     type: string    
+                type: object    
               valueTriggerDefinition:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -13682,6 +14103,7 @@ Patient:
                       - data-removed    
                       - data-accessed    
                       - data-access-ended    
+                type: object    
               valueUnsignedInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[0]|([1-9][0-9]*)$    
@@ -13723,10 +14145,12 @@ Patient:
                     type: string    
                 required:    
                   - code    
+                type: object    
               valueUuid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                 type: string    
+            type: object    
           type: array    
         id:    
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -13756,6 +14180,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBase64Binary:    
                 additionalProperties: false    
                 description: 'Extensions for valueBase64Binary'    
@@ -13768,6 +14193,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBoolean:    
                 additionalProperties: false    
                 description: 'Extensions for valueBoolean'    
@@ -13780,6 +14206,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCanonical:    
                 additionalProperties: false    
                 description: 'Extensions for valueCanonical'    
@@ -13792,6 +14219,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCode:    
                 additionalProperties: false    
                 description: 'Extensions for valueCode'    
@@ -13804,6 +14232,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDate:    
                 additionalProperties: false    
                 description: 'Extensions for valueDate'    
@@ -13816,6 +14245,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDateTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueDateTime'    
@@ -13828,6 +14258,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDecimal:    
                 additionalProperties: false    
                 description: 'Extensions for valueDecimal'    
@@ -13840,6 +14271,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueId:    
                 additionalProperties: false    
                 description: 'Extensions for valueId'    
@@ -13852,6 +14284,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInstant:    
                 additionalProperties: false    
                 description: 'Extensions for valueInstant'    
@@ -13864,6 +14297,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInteger:    
                 additionalProperties: false    
                 description: 'Extensions for valueInteger'    
@@ -13876,6 +14310,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueMarkdown:    
                 additionalProperties: false    
                 description: 'Extensions for valueMarkdown'    
@@ -13888,6 +14323,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueOid:    
                 additionalProperties: false    
                 description: 'Extensions for valueOid'    
@@ -13900,6 +14336,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valuePositiveInt:    
                 additionalProperties: false    
                 description: 'Extensions for valuePositiveInt'    
@@ -13912,6 +14349,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueString:    
                 additionalProperties: false    
                 description: 'Extensions for valueString'    
@@ -13924,6 +14362,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueTime'    
@@ -13936,6 +14375,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUnsignedInt:    
                 additionalProperties: false    
                 description: 'Extensions for valueUnsignedInt'    
@@ -13948,6 +14388,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUri:    
                 additionalProperties: false    
                 description: 'Extensions for valueUri'    
@@ -13960,6 +14401,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUrl:    
                 additionalProperties: false    
                 description: 'Extensions for valueUrl'    
@@ -13972,6 +14414,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUuid:    
                 additionalProperties: false    
                 description: 'Extensions for valueUuid'    
@@ -13984,6 +14427,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -14078,6 +14522,7 @@ Patient:
                       - temp    
                       - old    
                       - billing    
+                type: object    
               valueAge:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -14105,7 +14550,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -14124,6 +14569,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueAnnotation:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -14158,6 +14604,7 @@ Patient:
                   time:    
                     description: 'Indicates when this particular annotation was made.'    
                     type: string    
+                type: object    
               valueAttachment:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -14218,6 +14665,7 @@ Patient:
                   url:    
                     description: 'A location where the data can be accessed.'    
                     type: string    
+                type: object    
               valueBase64Binary:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^(\s*([0-9a-zA-Z\+/=]){4}\s*)+$    
@@ -14257,6 +14705,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               valueCodeableReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -14275,6 +14724,7 @@ Patient:
                   reference:    
                     description: 'A reference to a resource the provides exact details about the information being referenced.'    
                     type: string    
+                type: object    
               valueCoding:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -14317,6 +14767,7 @@ Patient:
                   version:    
                     description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                     type: string    
+                type: object    
               valueContactDetail:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -14340,6 +14791,7 @@ Patient:
                     items:    
                       type: string    
                     type: array    
+                type: object    
               valueContactPoint:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -14391,6 +14843,7 @@ Patient:
                   value:    
                     description: 'The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).'    
                     type: string    
+                type: object    
               valueContributor:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -14424,6 +14877,7 @@ Patient:
                       - editor    
                       - reviewer    
                       - endorser    
+                type: object    
               valueCount:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -14451,7 +14905,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -14470,6 +14924,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDataRequirement:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -14530,6 +14985,7 @@ Patient:
                   type:    
                     description: 'The type of the required data, specified as the type name of a resource. For profiles, this value is set to the type of the base resource of the profile.'    
                     type: string    
+                type: object    
               valueDate:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$    
@@ -14569,7 +15025,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -14588,6 +15044,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDosage:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -14666,6 +15123,7 @@ Patient:
                   timing:    
                     description: 'When medication should be administered.'    
                     type: string    
+                type: object    
               valueDuration:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -14693,7 +15151,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -14712,6 +15170,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueExpression:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -14759,6 +15218,7 @@ Patient:
                   reference:    
                     description: 'A URI that defines where the expression is found.'    
                     type: string    
+                type: object    
               valueHumanName:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -14829,6 +15289,7 @@ Patient:
                       - anonymous    
                       - old    
                       - maiden    
+                type: object    
               valueId:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -14877,6 +15338,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               valueInstant:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$    
@@ -14913,6 +15375,7 @@ Patient:
                   value:    
                     description: 'Numerical value (with implicit precision).'    
                     type: string    
+                type: object    
               valueOid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:oid:[0-2](\.(0|[1-9][0-9]*))+$    
@@ -14968,6 +15431,7 @@ Patient:
                   use:    
                     description: 'Whether the parameter is input or output for the module.'    
                     type: string    
+                type: object    
               valuePeriod:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -14992,6 +15456,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valuePositiveInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[1-9][0-9]*$    
@@ -15023,7 +15488,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -15042,6 +15507,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -15060,6 +15526,7 @@ Patient:
                   low:    
                     description: 'The low limit. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valueRatio:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -15078,6 +15545,7 @@ Patient:
                   numerator:    
                     description: 'The value of the numerator.'    
                     type: string    
+                type: object    
               valueRatioRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -15099,6 +15567,7 @@ Patient:
                   lowNumerator:    
                     description: 'The value of the low limit numerator.'    
                     type: string    
+                type: object    
               valueReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -15134,6 +15603,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               valueRelatedArtifact:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -15190,6 +15660,7 @@ Patient:
                   url:    
                     description: 'A url for the artifact that can be followed to access the actual content.'    
                     type: string    
+                type: object    
               valueSampledData:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -15243,6 +15714,7 @@ Patient:
                     type: string    
                 required:    
                   - origin    
+                type: object    
               valueSignature:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -15293,6 +15765,7 @@ Patient:
                 required:    
                   - type    
                   - who    
+                type: object    
               valueString:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -15336,6 +15809,7 @@ Patient:
                   repeat:    
                     description: 'A set of rules that describe when the event is scheduled.'    
                     type: string    
+                type: object    
               valueTriggerDefinition:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -15396,6 +15870,7 @@ Patient:
                       - data-removed    
                       - data-accessed    
                       - data-access-ended    
+                type: object    
               valueUnsignedInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[0]|([1-9][0-9]*)$    
@@ -15437,10 +15912,12 @@ Patient:
                     type: string    
                 required:    
                   - code    
+                type: object    
               valueUuid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                 type: string    
+            type: object    
           type: array    
         id:    
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -15450,7 +15927,7 @@ Patient:
       x-ngsi:    
         type: Property    
     active:    
-      description: "Whether this patient record is in active use. \nMany systems use this property to mark as non-current patients, such as those that have not been seen for a period of time based on an organization's business rules.\n\nIt is often used to filter patient lists to exclude inactive patients\n\nDeceased patients may also be marked as inactive for the same reasons, but may be active for some time after death."    
+      description: "Whether this patient record is in active use. \nMany systems use this property to mark as non-current patients, such as those that have not been seen for a period of time based on an organizations business rules.\n\nIt is often used to filter patient lists to exclude inactive patients\n\nDeceased patients may also be marked as inactive for the same reasons, but may be active for some time after death."    
       pattern: ^true|false$    
       type: boolean    
       x-ngsi:    
@@ -15473,6 +15950,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _country:    
             additionalProperties: false    
             description: 'Extensions for country'    
@@ -15486,6 +15964,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _district:    
             additionalProperties: false    
             description: 'Extensions for district'    
@@ -15499,6 +15978,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _line:    
             description: 'Extensions for line'    
             items:    
@@ -15512,6 +15992,7 @@ Patient:
                 id:    
                   description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                   type: string    
+              type: object    
             type: array    
           _postalCode:    
             additionalProperties: false    
@@ -15526,6 +16007,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _state:    
             additionalProperties: false    
             description: 'Extensions for state'    
@@ -15539,6 +16021,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _text:    
             additionalProperties: false    
             description: 'Extensions for text'    
@@ -15552,6 +16035,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _type:    
             additionalProperties: false    
             description: 'Extensions for type'    
@@ -15565,6 +16049,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _use:    
             additionalProperties: false    
             description: 'Extensions for use'    
@@ -15578,6 +16063,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           city:    
             description: 'The name of the city, town, suburb, village or other community or delivery center.'    
             pattern: '^[ \r\n\t\S]+$'    
@@ -15838,6 +16324,7 @@ Patient:
                   description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                   pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                   type: string    
+              type: object    
             type: array    
           id:    
             description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -15865,6 +16352,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _start:    
                 additionalProperties: false    
                 description: 'Extensions for start'    
@@ -15877,6 +16365,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               end:    
                 description: 'The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$    
@@ -15894,6 +16383,7 @@ Patient:
                 description: 'The start of the period. The boundary is inclusive.'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$    
                 type: string    
+            type: object    
           postalCode:    
             description: 'A postal code designating a region defined by the postal service.'    
             pattern: '^[ \r\n\t\S]+$'    
@@ -15920,6 +16410,7 @@ Patient:
               - temp    
               - old    
               - billing    
+        type: object    
       type: array    
       x-ngsi:    
         type: Property    
@@ -15958,6 +16449,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           extension:    
             description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
             items:    
@@ -16206,6 +16698,7 @@ Patient:
                   description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                   pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                   type: string    
+              type: object    
             type: array    
           id:    
             description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -16227,6 +16720,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               coding:    
                 description: 'A reference to a code defined by a terminology system.'    
                 items:    
@@ -16245,6 +16739,7 @@ Patient:
                 description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           modifierExtension:    
             description: |-    
               May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.    
@@ -16495,6 +16990,7 @@ Patient:
                   description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                   pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                   type: string    
+              type: object    
             type: array    
           preferred:    
             description: 'Indicates whether or not the patient prefers this language (over other languages he masters up a certain level).'    
@@ -16502,6 +16998,7 @@ Patient:
             type: boolean    
         required:    
           - language    
+        type: object    
       type: array    
       x-ngsi:    
         type: Property    
@@ -16523,6 +17020,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           address:    
             additionalProperties: false    
             description: 'Address for the contact person.'    
@@ -16539,6 +17037,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _country:    
                 additionalProperties: false    
                 description: 'Extensions for country'    
@@ -16551,6 +17050,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _district:    
                 additionalProperties: false    
                 description: 'Extensions for district'    
@@ -16563,6 +17063,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _line:    
                 description: 'Extensions for line'    
                 items:    
@@ -16580,6 +17081,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _state:    
                 additionalProperties: false    
                 description: 'Extensions for state'    
@@ -16592,6 +17094,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _text:    
                 additionalProperties: false    
                 description: 'Extensions for text'    
@@ -16604,6 +17107,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _type:    
                 additionalProperties: false    
                 description: 'Extensions for type'    
@@ -16616,6 +17120,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _use:    
                 additionalProperties: false    
                 description: 'Extensions for use'    
@@ -16628,6 +17133,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               city:    
                 description: 'The name of the city, town, suburb, village or other community or delivery center.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -16678,6 +17184,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               postalCode:    
                 description: 'A postal code designating a region defined by the postal service.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -16704,6 +17211,7 @@ Patient:
                   - temp    
                   - old    
                   - billing    
+            type: object    
           extension:    
             description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
             items:    
@@ -16952,6 +17460,7 @@ Patient:
                   description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                   pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                   type: string    
+              type: object    
             type: array    
           gender:    
             description: 'Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes.'    
@@ -17211,6 +17720,7 @@ Patient:
                   description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                   pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                   type: string    
+              type: object    
             type: array    
           name:    
             additionalProperties: false    
@@ -17228,6 +17738,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _given:    
                 description: 'Extensions for given'    
                 items:    
@@ -17255,6 +17766,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _use:    
                 additionalProperties: false    
                 description: 'Extensions for use'    
@@ -17267,6 +17779,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -17309,6 +17822,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               prefix:    
                 description: 'Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.'    
                 items:    
@@ -17333,6 +17847,7 @@ Patient:
                   - anonymous    
                   - old    
                   - maiden    
+            type: object    
           organization:    
             additionalProperties: false    
             description: 'Organization on behalf of which the contact is acting or for which the contact is working.'    
@@ -17349,6 +17864,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _reference:    
                 additionalProperties: false    
                 description: 'Extensions for reference'    
@@ -17361,6 +17877,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _type:    
                 additionalProperties: false    
                 description: 'Extensions for type'    
@@ -17373,6 +17890,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               display:    
                 description: 'Plain text narrative that identifies the resource in addition to the resource reference.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -17430,6 +17948,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               reference:    
                 description: "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources."    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -17440,6 +17959,7 @@ Patient:
                   The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                 pattern: ^\S*$    
                 type: string    
+            type: object    
           period:    
             additionalProperties: false    
             description: 'The period during which this contact person or organization is valid to be contacted relating to this patient.'    
@@ -17456,6 +17976,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _start:    
                 additionalProperties: false    
                 description: 'Extensions for start'    
@@ -17468,6 +17989,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               end:    
                 description: 'The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$    
@@ -17485,6 +18007,7 @@ Patient:
                 description: 'The start of the period. The boundary is inclusive.'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$    
                 type: string    
+            type: object    
           relationship:    
             description: 'The nature of the relationship between the patient and the contact person.'    
             items:    
@@ -17509,6 +18032,7 @@ Patient:
                 text:    
                   description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                   type: string    
+              type: object    
             type: array    
           telecom:    
             description: 'A contact detail for the person, e.g. a telephone number or an email address.'    
@@ -17562,7 +18086,9 @@ Patient:
                 value:    
                   description: 'The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).'    
                   type: string    
+              type: object    
             type: array    
+        type: object    
       type: array    
       x-ngsi:    
         type: Property    
@@ -17625,6 +18151,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueBase64Binary:    
             additionalProperties: false    
             description: 'Extensions for valueBase64Binary'    
@@ -17638,6 +18165,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueBoolean:    
             additionalProperties: false    
             description: 'Extensions for valueBoolean'    
@@ -17651,6 +18179,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueCanonical:    
             additionalProperties: false    
             description: 'Extensions for valueCanonical'    
@@ -17664,6 +18193,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueCode:    
             additionalProperties: false    
             description: 'Extensions for valueCode'    
@@ -17677,6 +18207,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueDate:    
             additionalProperties: false    
             description: 'Extensions for valueDate'    
@@ -17690,6 +18221,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueDateTime:    
             additionalProperties: false    
             description: 'Extensions for valueDateTime'    
@@ -17703,6 +18235,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueDecimal:    
             additionalProperties: false    
             description: 'Extensions for valueDecimal'    
@@ -17716,6 +18249,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueId:    
             additionalProperties: false    
             description: 'Extensions for valueId'    
@@ -17729,6 +18263,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueInstant:    
             additionalProperties: false    
             description: 'Extensions for valueInstant'    
@@ -17742,6 +18277,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueInteger:    
             additionalProperties: false    
             description: 'Extensions for valueInteger'    
@@ -17755,6 +18291,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueMarkdown:    
             additionalProperties: false    
             description: 'Extensions for valueMarkdown'    
@@ -17768,6 +18305,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueOid:    
             additionalProperties: false    
             description: 'Extensions for valueOid'    
@@ -17781,6 +18319,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valuePositiveInt:    
             additionalProperties: false    
             description: 'Extensions for valuePositiveInt'    
@@ -17794,6 +18333,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueString:    
             additionalProperties: false    
             description: 'Extensions for valueString'    
@@ -17807,6 +18347,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueTime:    
             additionalProperties: false    
             description: 'Extensions for valueTime'    
@@ -17820,6 +18361,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueUnsignedInt:    
             additionalProperties: false    
             description: 'Extensions for valueUnsignedInt'    
@@ -17833,6 +18375,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueUri:    
             additionalProperties: false    
             description: 'Extensions for valueUri'    
@@ -17846,6 +18389,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueUrl:    
             additionalProperties: false    
             description: 'Extensions for valueUrl'    
@@ -17859,6 +18403,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueUuid:    
             additionalProperties: false    
             description: 'Extensions for valueUuid'    
@@ -17872,6 +18417,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           extension:    
             description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
             items:    
@@ -18120,6 +18666,7 @@ Patient:
                   description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                   pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                   type: string    
+              type: object    
             type: array    
           id:    
             description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -18145,6 +18692,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _country:    
                 additionalProperties: false    
                 description: 'Extensions for country'    
@@ -18157,6 +18705,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _district:    
                 additionalProperties: false    
                 description: 'Extensions for district'    
@@ -18169,6 +18718,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _line:    
                 description: 'Extensions for line'    
                 items:    
@@ -18186,6 +18736,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _state:    
                 additionalProperties: false    
                 description: 'Extensions for state'    
@@ -18198,6 +18749,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _text:    
                 additionalProperties: false    
                 description: 'Extensions for text'    
@@ -18210,6 +18762,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _type:    
                 additionalProperties: false    
                 description: 'Extensions for type'    
@@ -18222,6 +18775,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _use:    
                 additionalProperties: false    
                 description: 'Extensions for use'    
@@ -18234,6 +18788,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               city:    
                 description: 'The name of the city, town, suburb, village or other community or delivery center.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -18284,6 +18839,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               postalCode:    
                 description: 'A postal code designating a region defined by the postal service.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -18310,6 +18866,7 @@ Patient:
                   - temp    
                   - old    
                   - billing    
+            type: object    
           valueAge:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -18326,6 +18883,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _comparator:    
                 additionalProperties: false    
                 description: 'Extensions for comparator'    
@@ -18338,6 +18896,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _system:    
                 additionalProperties: false    
                 description: 'Extensions for system'    
@@ -18350,6 +18909,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _unit:    
                 additionalProperties: false    
                 description: 'Extensions for unit'    
@@ -18362,6 +18922,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _value:    
                 additionalProperties: false    
                 description: 'Extensions for value'    
@@ -18374,6 +18935,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               code:    
                 description: 'A computer processable form of the unit in some unit representation system.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -18383,7 +18945,7 @@ Patient:
                 enum:    
                   - <    
                   - <=    
-                  - ">="    
+                  - '>='    
                   - >    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -18406,6 +18968,7 @@ Patient:
                 description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                 pattern: ^-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+-]?[0-9]+)?$    
                 type: number    
+            type: object    
           valueAnnotation:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -18422,6 +18985,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _text:    
                 additionalProperties: false    
                 description: 'Extensions for text'    
@@ -18434,6 +18998,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _time:    
                 additionalProperties: false    
                 description: 'Extensions for time'    
@@ -18446,6 +19011,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               authorReference:    
                 additionalProperties: false    
                 description: 'The individual responsible for making the annotation.'    
@@ -18481,6 +19047,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               authorString:    
                 description: 'The individual responsible for making the annotation.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -18502,6 +19069,7 @@ Patient:
                 description: 'Indicates when this particular annotation was made.'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$    
                 type: string    
+            type: object    
           valueAttachment:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -18518,6 +19086,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _creation:    
                 additionalProperties: false    
                 description: 'Extensions for creation'    
@@ -18530,6 +19099,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _data:    
                 additionalProperties: false    
                 description: 'Extensions for data'    
@@ -18542,6 +19112,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _hash:    
                 additionalProperties: false    
                 description: 'Extensions for hash'    
@@ -18554,6 +19125,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _language:    
                 additionalProperties: false    
                 description: 'Extensions for language'    
@@ -18566,6 +19138,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _size:    
                 additionalProperties: false    
                 description: 'Extensions for size'    
@@ -18578,6 +19151,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _title:    
                 additionalProperties: false    
                 description: 'Extensions for title'    
@@ -18590,6 +19164,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _url:    
                 additionalProperties: false    
                 description: 'Extensions for url'    
@@ -18602,6 +19177,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               contentType:    
                 description: 'Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -18641,6 +19217,7 @@ Patient:
                 description: 'A location where the data can be accessed.'    
                 pattern: ^\S*$    
                 type: string    
+            type: object    
           valueBase64Binary:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: ^(\s*([0-9a-zA-Z\+/=]){4}\s*)+$    
@@ -18673,6 +19250,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               coding:    
                 description: 'A reference to a code defined by a terminology system.'    
                 items:    
@@ -18691,6 +19269,7 @@ Patient:
                 description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           valueCodeableReference:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -18718,6 +19297,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -18762,6 +19342,8 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
+            type: object    
           valueCoding:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -18778,6 +19360,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _display:    
                 additionalProperties: false    
                 description: 'Extensions for display'    
@@ -18790,6 +19373,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _system:    
                 additionalProperties: false    
                 description: 'Extensions for system'    
@@ -18802,6 +19386,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _userSelected:    
                 additionalProperties: false    
                 description: 'Extensions for userSelected'    
@@ -18814,6 +19399,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _version:    
                 additionalProperties: false    
                 description: 'Extensions for version'    
@@ -18826,6 +19412,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               code:    
                 description: 'A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -18855,6 +19442,7 @@ Patient:
                 description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           valueContactDetail:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -18871,6 +19459,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -18889,6 +19478,7 @@ Patient:
                 items:    
                   type: string    
                 type: array    
+            type: object    
           valueContactPoint:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -18905,6 +19495,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _system:    
                 additionalProperties: false    
                 description: 'Extensions for system'    
@@ -18917,6 +19508,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _use:    
                 additionalProperties: false    
                 description: 'Extensions for use'    
@@ -18929,6 +19521,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _value:    
                 additionalProperties: false    
                 description: 'Extensions for value'    
@@ -18941,6 +19534,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -18974,6 +19568,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               rank:    
                 description: 'Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values.'    
                 pattern: ^[1-9][0-9]*$    
@@ -19000,6 +19595,7 @@ Patient:
                 description: 'The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           valueContributor:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -19016,6 +19612,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _type:    
                 additionalProperties: false    
                 description: 'Extensions for type'    
@@ -19028,6 +19625,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               contact:    
                 description: 'Contact details to assist a user in finding and communicating with the contributor.'    
                 items:    
@@ -19053,6 +19651,7 @@ Patient:
                   - editor    
                   - reviewer    
                   - endorser    
+            type: object    
           valueCount:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -19069,6 +19668,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _comparator:    
                 additionalProperties: false    
                 description: 'Extensions for comparator'    
@@ -19081,6 +19681,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _system:    
                 additionalProperties: false    
                 description: 'Extensions for system'    
@@ -19093,6 +19694,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _unit:    
                 additionalProperties: false    
                 description: 'Extensions for unit'    
@@ -19105,6 +19707,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _value:    
                 additionalProperties: false    
                 description: 'Extensions for value'    
@@ -19117,6 +19720,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               code:    
                 description: 'A computer processable form of the unit in some unit representation system.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -19126,7 +19730,7 @@ Patient:
                 enum:    
                   - <    
                   - <=    
-                  - ">="    
+                  - '>='    
                   - >    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -19149,6 +19753,7 @@ Patient:
                 description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                 pattern: ^-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+-]?[0-9]+)?$    
                 type: number    
+            type: object    
           valueDataRequirement:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -19165,6 +19770,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _mustSupport:    
                 description: 'Extensions for mustSupport'    
                 items:    
@@ -19182,6 +19788,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               codeFilter:    
                 description: 'Code filters specify additional constraints on the data, specifying the value set of interest for a particular element of the data. Each code filter defines an additional constraint on the data, i.e. code filters are AND''ed, not OR''ed.'    
                 items:    
@@ -19243,6 +19850,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               subjectReference:    
                 additionalProperties: false    
                 description: 'The intended subjects of the data requirement. If this element is not provided, a Patient subject is assumed.'    
@@ -19278,10 +19886,12 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               type:    
                 description: 'The type of the required data, specified as the type name of a resource. For profiles, this value is set to the type of the base resource of the profile.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
                 type: string    
+            type: object    
           valueDate:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$    
@@ -19310,6 +19920,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _comparator:    
                 additionalProperties: false    
                 description: 'Extensions for comparator'    
@@ -19322,6 +19933,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _system:    
                 additionalProperties: false    
                 description: 'Extensions for system'    
@@ -19334,6 +19946,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _unit:    
                 additionalProperties: false    
                 description: 'Extensions for unit'    
@@ -19346,6 +19959,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _value:    
                 additionalProperties: false    
                 description: 'Extensions for value'    
@@ -19358,6 +19972,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               code:    
                 description: 'A computer processable form of the unit in some unit representation system.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -19367,7 +19982,7 @@ Patient:
                 enum:    
                   - <    
                   - <=    
-                  - ">="    
+                  - '>='    
                   - >    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -19390,6 +20005,7 @@ Patient:
                 description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                 pattern: ^-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+-]?[0-9]+)?$    
                 type: number    
+            type: object    
           valueDosage:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -19406,6 +20022,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _patientInstruction:    
                 additionalProperties: false    
                 description: 'Extensions for patientInstruction'    
@@ -19418,6 +20035,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _sequence:    
                 additionalProperties: false    
                 description: 'Extensions for sequence'    
@@ -19430,6 +20048,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _text:    
                 additionalProperties: false    
                 description: 'Extensions for text'    
@@ -19442,6 +20061,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               additionalInstruction:    
                 description: 'Supplemental instructions to the patient on how to take the medication  (e.g. "with meals" or"take half to one hour before food") or warnings for the patient about the medication (e.g. "may cause drowsiness" or "avoid exposure of skin to direct sunlight or sunlamps").'    
                 items:    
@@ -19474,6 +20094,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               doseAndRate:    
                 description: 'The amount of medication administered.'    
                 items:    
@@ -19515,7 +20136,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -19534,6 +20155,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               maxDosePerLifetime:    
                 additionalProperties: false    
                 description: 'Upper limit on medication per lifetime of the patient.'    
@@ -19561,7 +20183,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -19580,6 +20202,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               maxDosePerPeriod:    
                 additionalProperties: false    
                 description: 'Upper limit on medication per unit of time.'    
@@ -19598,6 +20221,7 @@ Patient:
                   numerator:    
                     description: 'The value of the numerator.'    
                     type: string    
+                type: object    
               method:    
                 additionalProperties: false    
                 description: 'Technique for administering medication.'    
@@ -19621,6 +20245,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               modifierExtension:    
                 description: |-    
                   May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.    
@@ -19655,6 +20280,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               sequence:    
                 description: 'Indicates the order in which the dosage instructions should be applied or interpreted.'    
                 pattern: ^-?([0]|([1-9][0-9]*))$    
@@ -19682,6 +20308,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               text:    
                 description: 'Free text dosage instructions e.g. SIG.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -19721,6 +20348,8 @@ Patient:
                   repeat:    
                     description: 'A set of rules that describe when the event is scheduled.'    
                     type: string    
+                type: object    
+            type: object    
           valueDuration:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -19737,6 +20366,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _comparator:    
                 additionalProperties: false    
                 description: 'Extensions for comparator'    
@@ -19749,6 +20379,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _system:    
                 additionalProperties: false    
                 description: 'Extensions for system'    
@@ -19761,6 +20392,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _unit:    
                 additionalProperties: false    
                 description: 'Extensions for unit'    
@@ -19773,6 +20405,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _value:    
                 additionalProperties: false    
                 description: 'Extensions for value'    
@@ -19785,6 +20418,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               code:    
                 description: 'A computer processable form of the unit in some unit representation system.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -19794,7 +20428,7 @@ Patient:
                 enum:    
                   - <    
                   - <=    
-                  - ">="    
+                  - '>='    
                   - >    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -19817,6 +20451,7 @@ Patient:
                 description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                 pattern: ^-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+-]?[0-9]+)?$    
                 type: number    
+            type: object    
           valueExpression:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -19833,6 +20468,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _expression:    
                 additionalProperties: false    
                 description: 'Extensions for expression'    
@@ -19845,6 +20481,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _language:    
                 additionalProperties: false    
                 description: 'Extensions for language'    
@@ -19857,6 +20494,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _name:    
                 additionalProperties: false    
                 description: 'Extensions for name'    
@@ -19869,6 +20507,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _reference:    
                 additionalProperties: false    
                 description: 'Extensions for reference'    
@@ -19881,6 +20520,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               description:    
                 description: 'A brief, natural language description of the condition that effectively communicates the intended semantics.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -19914,6 +20554,7 @@ Patient:
                 description: 'A URI that defines where the expression is found.'    
                 pattern: ^\S*$    
                 type: string    
+            type: object    
           valueHumanName:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -19930,6 +20571,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _given:    
                 description: 'Extensions for given'    
                 items:    
@@ -19957,6 +20599,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _use:    
                 additionalProperties: false    
                 description: 'Extensions for use'    
@@ -19969,6 +20612,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -20011,6 +20655,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               prefix:    
                 description: 'Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.'    
                 items:    
@@ -20035,6 +20680,7 @@ Patient:
                   - anonymous    
                   - old    
                   - maiden    
+            type: object    
           valueId:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -20055,6 +20701,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _use:    
                 additionalProperties: false    
                 description: 'Extensions for use'    
@@ -20067,6 +20714,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _value:    
                 additionalProperties: false    
                 description: 'Extensions for value'    
@@ -20079,6 +20727,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               assigner:    
                 additionalProperties: false    
                 description: 'Organization that issued/manages the identifier.'    
@@ -20114,6 +20763,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -20147,6 +20797,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               system:    
                 description: 'Establishes the namespace for the value - that is, a URL that describes a set values that are unique.'    
                 pattern: ^\S*$    
@@ -20174,6 +20825,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               use:    
                 description: 'The purpose of this identifier.'    
                 enum:    
@@ -20186,6 +20838,7 @@ Patient:
                 description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           valueInstant:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$    
@@ -20214,6 +20867,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _value:    
                 additionalProperties: false    
                 description: 'Extensions for value'    
@@ -20226,6 +20880,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               currency:    
                 description: 'ISO 4217 Currency Code.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -20243,6 +20898,7 @@ Patient:
                 description: 'Numerical value (with implicit precision).'    
                 pattern: ^-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+-]?[0-9]+)?$    
                 type: number    
+            type: object    
           valueOid:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: ^urn:oid:[0-2](\.(0|[1-9][0-9]*))+$    
@@ -20263,6 +20919,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _max:    
                 additionalProperties: false    
                 description: 'Extensions for max'    
@@ -20275,6 +20932,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _min:    
                 additionalProperties: false    
                 description: 'Extensions for min'    
@@ -20287,6 +20945,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _name:    
                 additionalProperties: false    
                 description: 'Extensions for name'    
@@ -20299,6 +20958,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _type:    
                 additionalProperties: false    
                 description: 'Extensions for type'    
@@ -20311,6 +20971,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _use:    
                 additionalProperties: false    
                 description: 'Extensions for use'    
@@ -20323,6 +20984,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               documentation:    
                 description: 'A brief discussion of what the parameter is for and how it is used by the module.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -20360,6 +21022,7 @@ Patient:
                 description: 'Whether the parameter is input or output for the module.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
                 type: string    
+            type: object    
           valuePeriod:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -20376,6 +21039,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _start:    
                 additionalProperties: false    
                 description: 'Extensions for start'    
@@ -20388,6 +21052,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               end:    
                 description: 'The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$    
@@ -20405,6 +21070,7 @@ Patient:
                 description: 'The start of the period. The boundary is inclusive.'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$    
                 type: string    
+            type: object    
           valuePositiveInt:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: ^[1-9][0-9]*$    
@@ -20425,6 +21091,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _comparator:    
                 additionalProperties: false    
                 description: 'Extensions for comparator'    
@@ -20437,6 +21104,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _system:    
                 additionalProperties: false    
                 description: 'Extensions for system'    
@@ -20449,6 +21117,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _unit:    
                 additionalProperties: false    
                 description: 'Extensions for unit'    
@@ -20461,6 +21130,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _value:    
                 additionalProperties: false    
                 description: 'Extensions for value'    
@@ -20473,6 +21143,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               code:    
                 description: 'A computer processable form of the unit in some unit representation system.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -20482,7 +21153,7 @@ Patient:
                 enum:    
                   - <    
                   - <=    
-                  - ">="    
+                  - '>='    
                   - >    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -20505,6 +21176,7 @@ Patient:
                 description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                 pattern: ^-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+-]?[0-9]+)?$    
                 type: number    
+            type: object    
           valueRange:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -20541,7 +21213,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -20560,6 +21232,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               id:    
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -20591,7 +21264,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -20610,6 +21283,8 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
+            type: object    
           valueRatio:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -20641,7 +21316,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -20660,6 +21335,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -20696,7 +21372,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -20715,6 +21391,8 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
+            type: object    
           valueRatioRange:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -20746,7 +21424,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -20765,6 +21443,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -20797,7 +21476,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -20816,6 +21495,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               id:    
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -20847,7 +21527,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -20866,6 +21546,8 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
+            type: object    
           valueReference:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -20882,6 +21564,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _reference:    
                 additionalProperties: false    
                 description: 'Extensions for reference'    
@@ -20894,6 +21577,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _type:    
                 additionalProperties: false    
                 description: 'Extensions for type'    
@@ -20906,6 +21590,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               display:    
                 description: 'Plain text narrative that identifies the resource in addition to the resource reference.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -20963,6 +21648,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               reference:    
                 description: "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources."    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -20973,6 +21659,7 @@ Patient:
                   The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                 pattern: ^\S*$    
                 type: string    
+            type: object    
           valueRelatedArtifact:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -20989,6 +21676,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _display:    
                 additionalProperties: false    
                 description: 'Extensions for display'    
@@ -21001,6 +21689,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _label:    
                 additionalProperties: false    
                 description: 'Extensions for label'    
@@ -21013,6 +21702,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _type:    
                 additionalProperties: false    
                 description: 'Extensions for type'    
@@ -21025,6 +21715,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _url:    
                 additionalProperties: false    
                 description: 'Extensions for url'    
@@ -21037,6 +21728,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               citation:    
                 description: 'A bibliographic citation for the related artifact. This text SHOULD be formatted according to an accepted citation format.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -21105,6 +21797,7 @@ Patient:
                   url:    
                     description: 'A location where the data can be accessed.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -21137,6 +21830,7 @@ Patient:
                 description: 'A url for the artifact that can be followed to access the actual content.'    
                 pattern: ^\S*$    
                 type: string    
+            type: object    
           valueSampledData:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -21153,6 +21847,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _dimensions:    
                 additionalProperties: false    
                 description: 'Extensions for dimensions'    
@@ -21165,6 +21860,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _factor:    
                 additionalProperties: false    
                 description: 'Extensions for factor'    
@@ -21177,6 +21873,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _lowerLimit:    
                 additionalProperties: false    
                 description: 'Extensions for lowerLimit'    
@@ -21189,6 +21886,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _period:    
                 additionalProperties: false    
                 description: 'Extensions for period'    
@@ -21201,6 +21899,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _upperLimit:    
                 additionalProperties: false    
                 description: 'Extensions for upperLimit'    
@@ -21213,6 +21912,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               data:    
                 description: 'A series of data points which are decimal values separated by a single space (character u20). The special values "E" (error), "L" (below detection limit) and "U" (above detection limit) can also be used in place of a decimal value.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -21265,7 +21965,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -21284,6 +21984,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               period:    
                 description: 'The length of time between sampling times, measured in milliseconds.'    
                 pattern: ^-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+-]?[0-9]+)?$    
@@ -21294,6 +21995,7 @@ Patient:
                 type: number    
             required:    
               - origin    
+            type: object    
           valueSignature:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -21310,6 +22012,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _sigFormat:    
                 additionalProperties: false    
                 description: 'Extensions for sigFormat'    
@@ -21322,6 +22025,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _targetFormat:    
                 additionalProperties: false    
                 description: 'Extensions for targetFormat'    
@@ -21334,6 +22038,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _when:    
                 additionalProperties: false    
                 description: 'Extensions for when'    
@@ -21346,6 +22051,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               data:    
                 description: 'The base64 encoding of the Signature content. When signature is not recorded electronically this element would be empty.'    
                 type: string    
@@ -21393,6 +22099,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               sigFormat:    
                 description: 'A mime type that indicates the technical format of the signature. Important mime types are application/signature+xml for X ML DigSig, application/jose for JWS, and image/* for a graphical image of a signature, etc.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -21445,9 +22152,11 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
             required:    
               - type    
               - who    
+            type: object    
           valueString:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: '^[ \r\n\t\S]+$'    
@@ -21488,6 +22197,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               event:    
                 description: 'Identifies specific times when the event occurs.'    
                 items:    
@@ -21673,6 +22383,8 @@ Patient:
                         - PCD    
                         - PCV    
                     type: array    
+                type: object    
+            type: object    
           valueTriggerDefinition:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -21689,6 +22401,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _timingDate:    
                 additionalProperties: false    
                 description: 'Extensions for timingDate'    
@@ -21701,6 +22414,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _timingDateTime:    
                 additionalProperties: false    
                 description: 'Extensions for timingDateTime'    
@@ -21713,6 +22427,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _type:    
                 additionalProperties: false    
                 description: 'Extensions for type'    
@@ -21725,6 +22440,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               condition:    
                 additionalProperties: false    
                 description: 'A boolean-valued expression that is evaluated in the context of the container of the trigger definition and returns whether or not the trigger fires.'    
@@ -21772,6 +22488,7 @@ Patient:
                   reference:    
                     description: 'A URI that defines where the expression is found.'    
                     type: string    
+                type: object    
               data:    
                 description: 'The triggering data of the event (if this is a data trigger). If more than one data is requirement is specified, then all the data requirements must be true.'    
                 items:    
@@ -21833,6 +22550,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               timingTiming:    
                 additionalProperties: false    
                 description: 'The timing of the event (if this is a periodic trigger).'    
@@ -21868,6 +22586,7 @@ Patient:
                   repeat:    
                     description: 'A set of rules that describe when the event is scheduled.'    
                     type: string    
+                type: object    
               type:    
                 description: 'The type of triggering event.'    
                 enum:    
@@ -21879,6 +22598,7 @@ Patient:
                   - data-removed    
                   - data-accessed    
                   - data-access-ended    
+            type: object    
           valueUnsignedInt:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: ^[0]|([1-9][0-9]*)$    
@@ -21937,6 +22657,7 @@ Patient:
                   version:    
                     description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -21969,6 +22690,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               valueQuantity:    
                 additionalProperties: false    
                 description: 'A value that defines the context specified in this context of use. The interpretation of the value is defined by the code.'    
@@ -21996,7 +22718,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -22015,6 +22737,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueRange:    
                 additionalProperties: false    
                 description: 'A value that defines the context specified in this context of use. The interpretation of the value is defined by the code.'    
@@ -22033,6 +22756,7 @@ Patient:
                   low:    
                     description: 'The low limit. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valueReference:    
                 additionalProperties: false    
                 description: 'A value that defines the context specified in this context of use. The interpretation of the value is defined by the code.'    
@@ -22068,12 +22792,15 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
             required:    
               - code    
+            type: object    
           valueUuid:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
             type: string    
+        type: object    
       type: array    
       x-ngsi:    
         type: Property    
@@ -22084,7 +22811,7 @@ Patient:
       x-ngsi:    
         type: Property    
     generalPractitioner:    
-      description: 'Patient''s nominated care provider.'    
+      description: 'Patients nominated care provider.'    
       items:    
         additionalProperties: false    
         properties:    
@@ -22101,6 +22828,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _reference:    
             additionalProperties: false    
             description: 'Extensions for reference'    
@@ -22114,6 +22842,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _type:    
             additionalProperties: false    
             description: 'Extensions for type'    
@@ -22127,6 +22856,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           display:    
             description: 'Plain text narrative that identifies the resource in addition to the resource reference.'    
             pattern: '^[ \r\n\t\S]+$'    
@@ -22379,6 +23109,7 @@ Patient:
                   description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                   pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                   type: string    
+              type: object    
             type: array    
           id:    
             description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -22400,6 +23131,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _use:    
                 additionalProperties: false    
                 description: 'Extensions for use'    
@@ -22412,6 +23144,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _value:    
                 additionalProperties: false    
                 description: 'Extensions for value'    
@@ -22424,6 +23157,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               assigner:    
                 additionalProperties: false    
                 description: 'Organization that issued/manages the identifier.'    
@@ -22459,6 +23193,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -22492,6 +23227,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               system:    
                 description: 'Establishes the namespace for the value - that is, a URL that describes a set values that are unique.'    
                 pattern: ^\S*$    
@@ -22519,6 +23255,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               use:    
                 description: 'The purpose of this identifier.'    
                 enum:    
@@ -22531,6 +23268,7 @@ Patient:
                 description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           reference:    
             description: "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources."    
             pattern: '^[ \r\n\t\S]+$'    
@@ -22541,6 +23279,7 @@ Patient:
               The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
             pattern: ^\S*$    
             type: string    
+        type: object    
       type: array    
       x-ngsi:    
         type: Property    
@@ -22568,6 +23307,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _use:    
             additionalProperties: false    
             description: 'Extensions for use'    
@@ -22581,6 +23321,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _value:    
             additionalProperties: false    
             description: 'Extensions for value'    
@@ -22594,6 +23335,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           assigner:    
             additionalProperties: false    
             description: 'Organization that issued/manages the identifier.'    
@@ -22610,6 +23352,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _reference:    
                 additionalProperties: false    
                 description: 'Extensions for reference'    
@@ -22622,6 +23365,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _type:    
                 additionalProperties: false    
                 description: 'Extensions for type'    
@@ -22634,6 +23378,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               display:    
                 description: 'Plain text narrative that identifies the resource in addition to the resource reference.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -22691,6 +23436,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               reference:    
                 description: "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources."    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -22701,6 +23447,7 @@ Patient:
                   The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                 pattern: ^\S*$    
                 type: string    
+            type: object    
           extension:    
             description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
             items:    
@@ -22949,6 +23696,7 @@ Patient:
                   description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                   pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                   type: string    
+              type: object    
             type: array    
           id:    
             description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -22970,6 +23718,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _start:    
                 additionalProperties: false    
                 description: 'Extensions for start'    
@@ -22982,6 +23731,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               end:    
                 description: 'The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$    
@@ -22999,6 +23749,7 @@ Patient:
                 description: 'The start of the period. The boundary is inclusive.'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$    
                 type: string    
+            type: object    
           system:    
             description: 'Establishes the namespace for the value - that is, a URL that describes a set values that are unique.'    
             pattern: ^\S*$    
@@ -23019,6 +23770,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               coding:    
                 description: 'A reference to a code defined by a terminology system.'    
                 items:    
@@ -23037,6 +23789,7 @@ Patient:
                 description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           use:    
             description: 'The purpose of this identifier.'    
             enum:    
@@ -23049,6 +23802,7 @@ Patient:
             description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
             pattern: '^[ \r\n\t\S]+$'    
             type: string    
+        type: object    
       type: array    
       x-ngsi:    
         type: Property    
@@ -23082,6 +23836,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           extension:    
             description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
             items:    
@@ -23330,6 +24085,7 @@ Patient:
                   description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                   pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                   type: string    
+              type: object    
             type: array    
           id:    
             description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -23585,6 +24341,7 @@ Patient:
                   description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                   pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                   type: string    
+              type: object    
             type: array    
           other:    
             additionalProperties: false    
@@ -23602,6 +24359,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _reference:    
                 additionalProperties: false    
                 description: 'Extensions for reference'    
@@ -23614,6 +24372,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _type:    
                 additionalProperties: false    
                 description: 'Extensions for type'    
@@ -23626,6 +24385,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               display:    
                 description: 'Plain text narrative that identifies the resource in addition to the resource reference.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -23683,6 +24443,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               reference:    
                 description: "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources."    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -23693,12 +24454,14 @@ Patient:
                   The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                 pattern: ^\S*$    
                 type: string    
+            type: object    
           type:    
             description: 'The type of link between this patient resource and another patient resource.'    
             pattern: ^[^\s]+(\s[^\s]+)*$    
             type: string    
         required:    
           - other    
+        type: object    
       type: array    
       x-ngsi:    
         type: Property    
@@ -24111,11 +24874,13 @@ Patient:
                     description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                     pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                     type: string    
+                type: object    
               type: array    
             id:    
               description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
               pattern: '^[ \r\n\t\S]+$'    
               type: string    
+          type: object    
         _reference:    
           additionalProperties: false    
           description: 'Extensions for reference'    
@@ -24368,11 +25133,13 @@ Patient:
                     description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                     pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                     type: string    
+                type: object    
               type: array    
             id:    
               description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
               pattern: '^[ \r\n\t\S]+$'    
               type: string    
+          type: object    
         _type:    
           additionalProperties: false    
           description: 'Extensions for type'    
@@ -24625,11 +25392,13 @@ Patient:
                     description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                     pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                     type: string    
+                type: object    
               type: array    
             id:    
               description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
               pattern: '^[ \r\n\t\S]+$'    
               type: string    
+          type: object    
         display:    
           description: 'Plain text narrative that identifies the resource in addition to the resource reference.'    
           pattern: '^[ \r\n\t\S]+$'    
@@ -24651,6 +25420,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBase64Binary:    
                 additionalProperties: false    
                 description: 'Extensions for valueBase64Binary'    
@@ -24663,6 +25433,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBoolean:    
                 additionalProperties: false    
                 description: 'Extensions for valueBoolean'    
@@ -24675,6 +25446,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCanonical:    
                 additionalProperties: false    
                 description: 'Extensions for valueCanonical'    
@@ -24687,6 +25459,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCode:    
                 additionalProperties: false    
                 description: 'Extensions for valueCode'    
@@ -24699,6 +25472,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDate:    
                 additionalProperties: false    
                 description: 'Extensions for valueDate'    
@@ -24711,6 +25485,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDateTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueDateTime'    
@@ -24723,6 +25498,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDecimal:    
                 additionalProperties: false    
                 description: 'Extensions for valueDecimal'    
@@ -24735,6 +25511,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueId:    
                 additionalProperties: false    
                 description: 'Extensions for valueId'    
@@ -24747,6 +25524,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInstant:    
                 additionalProperties: false    
                 description: 'Extensions for valueInstant'    
@@ -24759,6 +25537,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInteger:    
                 additionalProperties: false    
                 description: 'Extensions for valueInteger'    
@@ -24771,6 +25550,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueMarkdown:    
                 additionalProperties: false    
                 description: 'Extensions for valueMarkdown'    
@@ -24783,6 +25563,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueOid:    
                 additionalProperties: false    
                 description: 'Extensions for valueOid'    
@@ -24795,6 +25576,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valuePositiveInt:    
                 additionalProperties: false    
                 description: 'Extensions for valuePositiveInt'    
@@ -24807,6 +25589,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueString:    
                 additionalProperties: false    
                 description: 'Extensions for valueString'    
@@ -24819,6 +25602,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueTime'    
@@ -24831,6 +25615,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUnsignedInt:    
                 additionalProperties: false    
                 description: 'Extensions for valueUnsignedInt'    
@@ -24843,6 +25628,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUri:    
                 additionalProperties: false    
                 description: 'Extensions for valueUri'    
@@ -24855,6 +25641,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUrl:    
                 additionalProperties: false    
                 description: 'Extensions for valueUrl'    
@@ -24867,6 +25654,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUuid:    
                 additionalProperties: false    
                 description: 'Extensions for valueUuid'    
@@ -24879,6 +25667,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -24973,6 +25762,7 @@ Patient:
                       - temp    
                       - old    
                       - billing    
+                type: object    
               valueAge:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25000,7 +25790,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -25019,6 +25809,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueAnnotation:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25053,6 +25844,7 @@ Patient:
                   time:    
                     description: 'Indicates when this particular annotation was made.'    
                     type: string    
+                type: object    
               valueAttachment:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25113,6 +25905,7 @@ Patient:
                   url:    
                     description: 'A location where the data can be accessed.'    
                     type: string    
+                type: object    
               valueBase64Binary:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^(\s*([0-9a-zA-Z\+/=]){4}\s*)+$    
@@ -25152,6 +25945,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               valueCodeableReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25170,6 +25964,7 @@ Patient:
                   reference:    
                     description: 'A reference to a resource the provides exact details about the information being referenced.'    
                     type: string    
+                type: object    
               valueCoding:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25212,6 +26007,7 @@ Patient:
                   version:    
                     description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                     type: string    
+                type: object    
               valueContactDetail:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25235,6 +26031,7 @@ Patient:
                     items:    
                       type: string    
                     type: array    
+                type: object    
               valueContactPoint:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25286,6 +26083,7 @@ Patient:
                   value:    
                     description: 'The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).'    
                     type: string    
+                type: object    
               valueContributor:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25319,6 +26117,7 @@ Patient:
                       - editor    
                       - reviewer    
                       - endorser    
+                type: object    
               valueCount:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25346,7 +26145,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -25365,6 +26164,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDataRequirement:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25425,6 +26225,7 @@ Patient:
                   type:    
                     description: 'The type of the required data, specified as the type name of a resource. For profiles, this value is set to the type of the base resource of the profile.'    
                     type: string    
+                type: object    
               valueDate:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$    
@@ -25464,7 +26265,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -25483,6 +26284,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDosage:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25561,6 +26363,7 @@ Patient:
                   timing:    
                     description: 'When medication should be administered.'    
                     type: string    
+                type: object    
               valueDuration:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25588,7 +26391,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -25607,6 +26410,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueExpression:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25654,6 +26458,7 @@ Patient:
                   reference:    
                     description: 'A URI that defines where the expression is found.'    
                     type: string    
+                type: object    
               valueHumanName:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25724,6 +26529,7 @@ Patient:
                       - anonymous    
                       - old    
                       - maiden    
+                type: object    
               valueId:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -25772,6 +26578,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               valueInstant:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$    
@@ -25808,6 +26615,7 @@ Patient:
                   value:    
                     description: 'Numerical value (with implicit precision).'    
                     type: string    
+                type: object    
               valueOid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:oid:[0-2](\.(0|[1-9][0-9]*))+$    
@@ -25863,6 +26671,7 @@ Patient:
                   use:    
                     description: 'Whether the parameter is input or output for the module.'    
                     type: string    
+                type: object    
               valuePeriod:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25887,6 +26696,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valuePositiveInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[1-9][0-9]*$    
@@ -25918,7 +26728,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -25937,6 +26747,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25955,6 +26766,7 @@ Patient:
                   low:    
                     description: 'The low limit. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valueRatio:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25973,6 +26785,7 @@ Patient:
                   numerator:    
                     description: 'The value of the numerator.'    
                     type: string    
+                type: object    
               valueRatioRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -25994,6 +26807,7 @@ Patient:
                   lowNumerator:    
                     description: 'The value of the low limit numerator.'    
                     type: string    
+                type: object    
               valueReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -26029,6 +26843,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               valueRelatedArtifact:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -26085,6 +26900,7 @@ Patient:
                   url:    
                     description: 'A url for the artifact that can be followed to access the actual content.'    
                     type: string    
+                type: object    
               valueSampledData:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -26138,6 +26954,7 @@ Patient:
                     type: string    
                 required:    
                   - origin    
+                type: object    
               valueSignature:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -26188,6 +27005,7 @@ Patient:
                 required:    
                   - type    
                   - who    
+                type: object    
               valueString:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -26231,6 +27049,7 @@ Patient:
                   repeat:    
                     description: 'A set of rules that describe when the event is scheduled.'    
                     type: string    
+                type: object    
               valueTriggerDefinition:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -26291,6 +27110,7 @@ Patient:
                       - data-removed    
                       - data-accessed    
                       - data-access-ended    
+                type: object    
               valueUnsignedInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[0]|([1-9][0-9]*)$    
@@ -26332,10 +27152,12 @@ Patient:
                     type: string    
                 required:    
                   - code    
+                type: object    
               valueUuid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                 type: string    
+            type: object    
           type: array    
         id:    
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -26357,6 +27179,7 @@ Patient:
                 id:    
                   description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                   type: string    
+              type: object    
             _use:    
               additionalProperties: false    
               description: 'Extensions for use'    
@@ -26369,6 +27192,7 @@ Patient:
                 id:    
                   description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                   type: string    
+              type: object    
             _value:    
               additionalProperties: false    
               description: 'Extensions for value'    
@@ -26381,6 +27205,7 @@ Patient:
                 id:    
                   description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                   type: string    
+              type: object    
             assigner:    
               additionalProperties: false    
               description: 'Organization that issued/manages the identifier.'    
@@ -26416,6 +27241,7 @@ Patient:
                     The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                     The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                   type: string    
+              type: object    
             extension:    
               description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
               items:    
@@ -26664,6 +27490,7 @@ Patient:
                     description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                     pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                     type: string    
+                type: object    
               type: array    
             id:    
               description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -26693,6 +27520,7 @@ Patient:
                 start:    
                   description: 'The start of the period. The boundary is inclusive.'    
                   type: string    
+              type: object    
             system:    
               description: 'Establishes the namespace for the value - that is, a URL that describes a set values that are unique.'    
               pattern: ^\S*$    
@@ -26720,6 +27548,7 @@ Patient:
                 text:    
                   description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                   type: string    
+              type: object    
             use:    
               description: 'The purpose of this identifier.'    
               enum:    
@@ -26732,6 +27561,7 @@ Patient:
               description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
               pattern: '^[ \r\n\t\S]+$'    
               type: string    
+          type: object    
         reference:    
           description: "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources."    
           pattern: '^[ \r\n\t\S]+$'    
@@ -26747,7 +27577,7 @@ Patient:
         type: Property    
     maritalStatus:    
       additionalProperties: false    
-      description: 'This field contains a patient''s most recent marital (civil) status.'    
+      description: 'This field contains a patients most recent marital (civil) status.'    
       properties:    
         _text:    
           additionalProperties: false    
@@ -27001,11 +27831,13 @@ Patient:
                     description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                     pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                     type: string    
+                type: object    
               type: array    
             id:    
               description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
               pattern: '^[ \r\n\t\S]+$'    
               type: string    
+          type: object    
         coding:    
           description: 'A reference to a code defined by a terminology system.'    
           items:    
@@ -27023,6 +27855,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _display:    
                 additionalProperties: false    
                 description: 'Extensions for display'    
@@ -27035,6 +27868,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _system:    
                 additionalProperties: false    
                 description: 'Extensions for system'    
@@ -27047,6 +27881,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _userSelected:    
                 additionalProperties: false    
                 description: 'Extensions for userSelected'    
@@ -27059,6 +27894,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _version:    
                 additionalProperties: false    
                 description: 'Extensions for version'    
@@ -27071,6 +27907,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               code:    
                 description: 'A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -27100,6 +27937,7 @@ Patient:
                 description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           type: array    
         extension:    
           description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -27118,6 +27956,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBase64Binary:    
                 additionalProperties: false    
                 description: 'Extensions for valueBase64Binary'    
@@ -27130,6 +27969,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBoolean:    
                 additionalProperties: false    
                 description: 'Extensions for valueBoolean'    
@@ -27142,6 +27982,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCanonical:    
                 additionalProperties: false    
                 description: 'Extensions for valueCanonical'    
@@ -27154,6 +27995,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCode:    
                 additionalProperties: false    
                 description: 'Extensions for valueCode'    
@@ -27166,6 +28008,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDate:    
                 additionalProperties: false    
                 description: 'Extensions for valueDate'    
@@ -27178,6 +28021,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDateTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueDateTime'    
@@ -27190,6 +28034,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDecimal:    
                 additionalProperties: false    
                 description: 'Extensions for valueDecimal'    
@@ -27202,6 +28047,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueId:    
                 additionalProperties: false    
                 description: 'Extensions for valueId'    
@@ -27214,6 +28060,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInstant:    
                 additionalProperties: false    
                 description: 'Extensions for valueInstant'    
@@ -27226,6 +28073,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInteger:    
                 additionalProperties: false    
                 description: 'Extensions for valueInteger'    
@@ -27238,6 +28086,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueMarkdown:    
                 additionalProperties: false    
                 description: 'Extensions for valueMarkdown'    
@@ -27250,6 +28099,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueOid:    
                 additionalProperties: false    
                 description: 'Extensions for valueOid'    
@@ -27262,6 +28112,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valuePositiveInt:    
                 additionalProperties: false    
                 description: 'Extensions for valuePositiveInt'    
@@ -27274,6 +28125,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueString:    
                 additionalProperties: false    
                 description: 'Extensions for valueString'    
@@ -27286,6 +28138,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueTime'    
@@ -27298,6 +28151,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUnsignedInt:    
                 additionalProperties: false    
                 description: 'Extensions for valueUnsignedInt'    
@@ -27310,6 +28164,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUri:    
                 additionalProperties: false    
                 description: 'Extensions for valueUri'    
@@ -27322,6 +28177,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUrl:    
                 additionalProperties: false    
                 description: 'Extensions for valueUrl'    
@@ -27334,6 +28190,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUuid:    
                 additionalProperties: false    
                 description: 'Extensions for valueUuid'    
@@ -27346,6 +28203,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -27440,6 +28298,7 @@ Patient:
                       - temp    
                       - old    
                       - billing    
+                type: object    
               valueAge:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -27467,7 +28326,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -27486,6 +28345,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueAnnotation:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -27520,6 +28380,7 @@ Patient:
                   time:    
                     description: 'Indicates when this particular annotation was made.'    
                     type: string    
+                type: object    
               valueAttachment:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -27580,6 +28441,7 @@ Patient:
                   url:    
                     description: 'A location where the data can be accessed.'    
                     type: string    
+                type: object    
               valueBase64Binary:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^(\s*([0-9a-zA-Z\+/=]){4}\s*)+$    
@@ -27619,6 +28481,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               valueCodeableReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -27637,6 +28500,7 @@ Patient:
                   reference:    
                     description: 'A reference to a resource the provides exact details about the information being referenced.'    
                     type: string    
+                type: object    
               valueCoding:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -27679,6 +28543,7 @@ Patient:
                   version:    
                     description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                     type: string    
+                type: object    
               valueContactDetail:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -27702,6 +28567,7 @@ Patient:
                     items:    
                       type: string    
                     type: array    
+                type: object    
               valueContactPoint:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -27753,6 +28619,7 @@ Patient:
                   value:    
                     description: 'The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).'    
                     type: string    
+                type: object    
               valueContributor:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -27786,6 +28653,7 @@ Patient:
                       - editor    
                       - reviewer    
                       - endorser    
+                type: object    
               valueCount:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -27813,7 +28681,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -27832,6 +28700,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDataRequirement:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -27892,6 +28761,7 @@ Patient:
                   type:    
                     description: 'The type of the required data, specified as the type name of a resource. For profiles, this value is set to the type of the base resource of the profile.'    
                     type: string    
+                type: object    
               valueDate:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$    
@@ -27931,7 +28801,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -27950,6 +28820,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDosage:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -28028,6 +28899,7 @@ Patient:
                   timing:    
                     description: 'When medication should be administered.'    
                     type: string    
+                type: object    
               valueDuration:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -28055,7 +28927,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -28074,6 +28946,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueExpression:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -28121,6 +28994,7 @@ Patient:
                   reference:    
                     description: 'A URI that defines where the expression is found.'    
                     type: string    
+                type: object    
               valueHumanName:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -28191,6 +29065,7 @@ Patient:
                       - anonymous    
                       - old    
                       - maiden    
+                type: object    
               valueId:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -28239,6 +29114,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               valueInstant:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$    
@@ -28275,6 +29151,7 @@ Patient:
                   value:    
                     description: 'Numerical value (with implicit precision).'    
                     type: string    
+                type: object    
               valueOid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:oid:[0-2](\.(0|[1-9][0-9]*))+$    
@@ -28330,6 +29207,7 @@ Patient:
                   use:    
                     description: 'Whether the parameter is input or output for the module.'    
                     type: string    
+                type: object    
               valuePeriod:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -28354,6 +29232,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valuePositiveInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[1-9][0-9]*$    
@@ -28385,7 +29264,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -28404,6 +29283,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -28422,6 +29302,7 @@ Patient:
                   low:    
                     description: 'The low limit. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valueRatio:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -28440,6 +29321,7 @@ Patient:
                   numerator:    
                     description: 'The value of the numerator.'    
                     type: string    
+                type: object    
               valueRatioRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -28461,6 +29343,7 @@ Patient:
                   lowNumerator:    
                     description: 'The value of the low limit numerator.'    
                     type: string    
+                type: object    
               valueReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -28496,6 +29379,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               valueRelatedArtifact:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -28552,6 +29436,7 @@ Patient:
                   url:    
                     description: 'A url for the artifact that can be followed to access the actual content.'    
                     type: string    
+                type: object    
               valueSampledData:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -28605,6 +29490,7 @@ Patient:
                     type: string    
                 required:    
                   - origin    
+                type: object    
               valueSignature:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -28655,6 +29541,7 @@ Patient:
                 required:    
                   - type    
                   - who    
+                type: object    
               valueString:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -28698,6 +29585,7 @@ Patient:
                   repeat:    
                     description: 'A set of rules that describe when the event is scheduled.'    
                     type: string    
+                type: object    
               valueTriggerDefinition:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -28758,6 +29646,7 @@ Patient:
                       - data-removed    
                       - data-accessed    
                       - data-access-ended    
+                type: object    
               valueUnsignedInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[0]|([1-9][0-9]*)$    
@@ -28799,10 +29688,12 @@ Patient:
                     type: string    
                 required:    
                   - code    
+                type: object    
               valueUuid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                 type: string    
+            type: object    
           type: array    
         id:    
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -29071,11 +29962,13 @@ Patient:
                     description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                     pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                     type: string    
+                type: object    
               type: array    
             id:    
               description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
               pattern: '^[ \r\n\t\S]+$'    
               type: string    
+          type: object    
         _source:    
           additionalProperties: false    
           description: 'Extensions for source'    
@@ -29328,11 +30221,13 @@ Patient:
                     description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                     pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                     type: string    
+                type: object    
               type: array    
             id:    
               description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
               pattern: '^[ \r\n\t\S]+$'    
               type: string    
+          type: object    
         _versionId:    
           additionalProperties: false    
           description: 'Extensions for versionId'    
@@ -29585,11 +30480,13 @@ Patient:
                     description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                     pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                     type: string    
+                type: object    
               type: array    
             id:    
               description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
               pattern: '^[ \r\n\t\S]+$'    
               type: string    
+          type: object    
         extension:    
           description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
           items:    
@@ -29607,6 +30504,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBase64Binary:    
                 additionalProperties: false    
                 description: 'Extensions for valueBase64Binary'    
@@ -29619,6 +30517,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBoolean:    
                 additionalProperties: false    
                 description: 'Extensions for valueBoolean'    
@@ -29631,6 +30530,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCanonical:    
                 additionalProperties: false    
                 description: 'Extensions for valueCanonical'    
@@ -29643,6 +30543,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCode:    
                 additionalProperties: false    
                 description: 'Extensions for valueCode'    
@@ -29655,6 +30556,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDate:    
                 additionalProperties: false    
                 description: 'Extensions for valueDate'    
@@ -29667,6 +30569,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDateTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueDateTime'    
@@ -29679,6 +30582,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDecimal:    
                 additionalProperties: false    
                 description: 'Extensions for valueDecimal'    
@@ -29691,6 +30595,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueId:    
                 additionalProperties: false    
                 description: 'Extensions for valueId'    
@@ -29703,6 +30608,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInstant:    
                 additionalProperties: false    
                 description: 'Extensions for valueInstant'    
@@ -29715,6 +30621,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInteger:    
                 additionalProperties: false    
                 description: 'Extensions for valueInteger'    
@@ -29727,6 +30634,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueMarkdown:    
                 additionalProperties: false    
                 description: 'Extensions for valueMarkdown'    
@@ -29739,6 +30647,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueOid:    
                 additionalProperties: false    
                 description: 'Extensions for valueOid'    
@@ -29751,6 +30660,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valuePositiveInt:    
                 additionalProperties: false    
                 description: 'Extensions for valuePositiveInt'    
@@ -29763,6 +30673,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueString:    
                 additionalProperties: false    
                 description: 'Extensions for valueString'    
@@ -29775,6 +30686,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueTime'    
@@ -29787,6 +30699,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUnsignedInt:    
                 additionalProperties: false    
                 description: 'Extensions for valueUnsignedInt'    
@@ -29799,6 +30712,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUri:    
                 additionalProperties: false    
                 description: 'Extensions for valueUri'    
@@ -29811,6 +30725,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUrl:    
                 additionalProperties: false    
                 description: 'Extensions for valueUrl'    
@@ -29823,6 +30738,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUuid:    
                 additionalProperties: false    
                 description: 'Extensions for valueUuid'    
@@ -29835,6 +30751,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -29929,6 +30846,7 @@ Patient:
                       - temp    
                       - old    
                       - billing    
+                type: object    
               valueAge:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -29956,7 +30874,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -29975,6 +30893,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueAnnotation:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30009,6 +30928,7 @@ Patient:
                   time:    
                     description: 'Indicates when this particular annotation was made.'    
                     type: string    
+                type: object    
               valueAttachment:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30069,6 +30989,7 @@ Patient:
                   url:    
                     description: 'A location where the data can be accessed.'    
                     type: string    
+                type: object    
               valueBase64Binary:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^(\s*([0-9a-zA-Z\+/=]){4}\s*)+$    
@@ -30108,6 +31029,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               valueCodeableReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30126,6 +31048,7 @@ Patient:
                   reference:    
                     description: 'A reference to a resource the provides exact details about the information being referenced.'    
                     type: string    
+                type: object    
               valueCoding:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30168,6 +31091,7 @@ Patient:
                   version:    
                     description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                     type: string    
+                type: object    
               valueContactDetail:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30191,6 +31115,7 @@ Patient:
                     items:    
                       type: string    
                     type: array    
+                type: object    
               valueContactPoint:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30242,6 +31167,7 @@ Patient:
                   value:    
                     description: 'The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).'    
                     type: string    
+                type: object    
               valueContributor:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30275,6 +31201,7 @@ Patient:
                       - editor    
                       - reviewer    
                       - endorser    
+                type: object    
               valueCount:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30302,7 +31229,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -30321,6 +31248,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDataRequirement:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30381,6 +31309,7 @@ Patient:
                   type:    
                     description: 'The type of the required data, specified as the type name of a resource. For profiles, this value is set to the type of the base resource of the profile.'    
                     type: string    
+                type: object    
               valueDate:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$    
@@ -30420,7 +31349,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -30439,6 +31368,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDosage:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30517,6 +31447,7 @@ Patient:
                   timing:    
                     description: 'When medication should be administered.'    
                     type: string    
+                type: object    
               valueDuration:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30544,7 +31475,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -30563,6 +31494,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueExpression:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30610,6 +31542,7 @@ Patient:
                   reference:    
                     description: 'A URI that defines where the expression is found.'    
                     type: string    
+                type: object    
               valueHumanName:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30680,6 +31613,7 @@ Patient:
                       - anonymous    
                       - old    
                       - maiden    
+                type: object    
               valueId:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -30728,6 +31662,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               valueInstant:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$    
@@ -30764,6 +31699,7 @@ Patient:
                   value:    
                     description: 'Numerical value (with implicit precision).'    
                     type: string    
+                type: object    
               valueOid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:oid:[0-2](\.(0|[1-9][0-9]*))+$    
@@ -30819,6 +31755,7 @@ Patient:
                   use:    
                     description: 'Whether the parameter is input or output for the module.'    
                     type: string    
+                type: object    
               valuePeriod:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30843,6 +31780,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valuePositiveInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[1-9][0-9]*$    
@@ -30874,7 +31812,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -30893,6 +31831,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30911,6 +31850,7 @@ Patient:
                   low:    
                     description: 'The low limit. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valueRatio:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30929,6 +31869,7 @@ Patient:
                   numerator:    
                     description: 'The value of the numerator.'    
                     type: string    
+                type: object    
               valueRatioRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30950,6 +31891,7 @@ Patient:
                   lowNumerator:    
                     description: 'The value of the low limit numerator.'    
                     type: string    
+                type: object    
               valueReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -30985,6 +31927,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               valueRelatedArtifact:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -31041,6 +31984,7 @@ Patient:
                   url:    
                     description: 'A url for the artifact that can be followed to access the actual content.'    
                     type: string    
+                type: object    
               valueSampledData:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -31094,6 +32038,7 @@ Patient:
                     type: string    
                 required:    
                   - origin    
+                type: object    
               valueSignature:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -31144,6 +32089,7 @@ Patient:
                 required:    
                   - type    
                   - who    
+                type: object    
               valueString:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -31187,6 +32133,7 @@ Patient:
                   repeat:    
                     description: 'A set of rules that describe when the event is scheduled.'    
                     type: string    
+                type: object    
               valueTriggerDefinition:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -31247,6 +32194,7 @@ Patient:
                       - data-removed    
                       - data-accessed    
                       - data-access-ended    
+                type: object    
               valueUnsignedInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[0]|([1-9][0-9]*)$    
@@ -31288,10 +32236,12 @@ Patient:
                     type: string    
                 required:    
                   - code    
+                type: object    
               valueUuid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                 type: string    
+            type: object    
           type: array    
         id:    
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -31324,6 +32274,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _display:    
                 additionalProperties: false    
                 description: 'Extensions for display'    
@@ -31336,6 +32287,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _system:    
                 additionalProperties: false    
                 description: 'Extensions for system'    
@@ -31348,6 +32300,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _userSelected:    
                 additionalProperties: false    
                 description: 'Extensions for userSelected'    
@@ -31360,6 +32313,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _version:    
                 additionalProperties: false    
                 description: 'Extensions for version'    
@@ -31372,6 +32326,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               code:    
                 description: 'A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -31401,6 +32356,7 @@ Patient:
                 description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           type: array    
         source:    
           description: 'A uri that identifies the source system of the resource. This provides a minimal amount of [[[Provenance]]] information that can be used to track or differentiate the source of information in the resource. The source may identify another FHIR server, document, message, database, etc.'    
@@ -31423,6 +32379,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _display:    
                 additionalProperties: false    
                 description: 'Extensions for display'    
@@ -31435,6 +32392,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _system:    
                 additionalProperties: false    
                 description: 'Extensions for system'    
@@ -31447,6 +32405,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _userSelected:    
                 additionalProperties: false    
                 description: 'Extensions for userSelected'    
@@ -31459,6 +32418,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _version:    
                 additionalProperties: false    
                 description: 'Extensions for version'    
@@ -31471,6 +32431,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               code:    
                 description: 'A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -31500,16 +32461,18 @@ Patient:
                 description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           type: array    
         versionId:    
           description: 'The version specific identifier, as it appears in the version portion of the URL. This value changes when the resource is created, updated, or deleted.'    
           pattern: ^[A-Za-z0-9\-\.]{1,64}$    
           type: string    
+      type: object    
       x-ngsi:    
         type: Property    
     modifierExtension:    
       description: |-    
-        May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.    
+        May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing elements descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.    
         Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).    
       items:    
         additionalProperties: false    
@@ -31527,6 +32490,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueBase64Binary:    
             additionalProperties: false    
             description: 'Extensions for valueBase64Binary'    
@@ -31540,6 +32504,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueBoolean:    
             additionalProperties: false    
             description: 'Extensions for valueBoolean'    
@@ -31553,6 +32518,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueCanonical:    
             additionalProperties: false    
             description: 'Extensions for valueCanonical'    
@@ -31566,6 +32532,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueCode:    
             additionalProperties: false    
             description: 'Extensions for valueCode'    
@@ -31579,6 +32546,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueDate:    
             additionalProperties: false    
             description: 'Extensions for valueDate'    
@@ -31592,6 +32560,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueDateTime:    
             additionalProperties: false    
             description: 'Extensions for valueDateTime'    
@@ -31605,6 +32574,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueDecimal:    
             additionalProperties: false    
             description: 'Extensions for valueDecimal'    
@@ -31618,6 +32588,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueId:    
             additionalProperties: false    
             description: 'Extensions for valueId'    
@@ -31631,6 +32602,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueInstant:    
             additionalProperties: false    
             description: 'Extensions for valueInstant'    
@@ -31644,6 +32616,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueInteger:    
             additionalProperties: false    
             description: 'Extensions for valueInteger'    
@@ -31657,6 +32630,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueMarkdown:    
             additionalProperties: false    
             description: 'Extensions for valueMarkdown'    
@@ -31670,6 +32644,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueOid:    
             additionalProperties: false    
             description: 'Extensions for valueOid'    
@@ -31683,6 +32658,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valuePositiveInt:    
             additionalProperties: false    
             description: 'Extensions for valuePositiveInt'    
@@ -31696,6 +32672,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueString:    
             additionalProperties: false    
             description: 'Extensions for valueString'    
@@ -31709,6 +32686,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueTime:    
             additionalProperties: false    
             description: 'Extensions for valueTime'    
@@ -31722,6 +32700,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueUnsignedInt:    
             additionalProperties: false    
             description: 'Extensions for valueUnsignedInt'    
@@ -31735,6 +32714,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueUri:    
             additionalProperties: false    
             description: 'Extensions for valueUri'    
@@ -31748,6 +32728,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueUrl:    
             additionalProperties: false    
             description: 'Extensions for valueUrl'    
@@ -31761,6 +32742,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _valueUuid:    
             additionalProperties: false    
             description: 'Extensions for valueUuid'    
@@ -31774,6 +32756,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           extension:    
             description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
             items:    
@@ -32022,6 +33005,7 @@ Patient:
                   description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                   pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                   type: string    
+              type: object    
             type: array    
           id:    
             description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -32047,6 +33031,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _country:    
                 additionalProperties: false    
                 description: 'Extensions for country'    
@@ -32059,6 +33044,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _district:    
                 additionalProperties: false    
                 description: 'Extensions for district'    
@@ -32071,6 +33057,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _line:    
                 description: 'Extensions for line'    
                 items:    
@@ -32088,6 +33075,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _state:    
                 additionalProperties: false    
                 description: 'Extensions for state'    
@@ -32100,6 +33088,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _text:    
                 additionalProperties: false    
                 description: 'Extensions for text'    
@@ -32112,6 +33101,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _type:    
                 additionalProperties: false    
                 description: 'Extensions for type'    
@@ -32124,6 +33114,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _use:    
                 additionalProperties: false    
                 description: 'Extensions for use'    
@@ -32136,6 +33127,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               city:    
                 description: 'The name of the city, town, suburb, village or other community or delivery center.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -32186,6 +33178,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               postalCode:    
                 description: 'A postal code designating a region defined by the postal service.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -32212,6 +33205,7 @@ Patient:
                   - temp    
                   - old    
                   - billing    
+            type: object    
           valueAge:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -32228,6 +33222,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _comparator:    
                 additionalProperties: false    
                 description: 'Extensions for comparator'    
@@ -32240,6 +33235,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _system:    
                 additionalProperties: false    
                 description: 'Extensions for system'    
@@ -32252,6 +33248,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _unit:    
                 additionalProperties: false    
                 description: 'Extensions for unit'    
@@ -32264,6 +33261,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _value:    
                 additionalProperties: false    
                 description: 'Extensions for value'    
@@ -32276,6 +33274,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               code:    
                 description: 'A computer processable form of the unit in some unit representation system.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -32285,7 +33284,7 @@ Patient:
                 enum:    
                   - <    
                   - <=    
-                  - ">="    
+                  - '>='    
                   - >    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -32308,6 +33307,7 @@ Patient:
                 description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                 pattern: ^-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+-]?[0-9]+)?$    
                 type: number    
+            type: object    
           valueAnnotation:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -32324,6 +33324,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _text:    
                 additionalProperties: false    
                 description: 'Extensions for text'    
@@ -32336,6 +33337,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _time:    
                 additionalProperties: false    
                 description: 'Extensions for time'    
@@ -32348,6 +33350,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               authorReference:    
                 additionalProperties: false    
                 description: 'The individual responsible for making the annotation.'    
@@ -32383,6 +33386,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               authorString:    
                 description: 'The individual responsible for making the annotation.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -32404,6 +33408,7 @@ Patient:
                 description: 'Indicates when this particular annotation was made.'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$    
                 type: string    
+            type: object    
           valueAttachment:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -32420,6 +33425,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _creation:    
                 additionalProperties: false    
                 description: 'Extensions for creation'    
@@ -32432,6 +33438,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _data:    
                 additionalProperties: false    
                 description: 'Extensions for data'    
@@ -32444,6 +33451,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _hash:    
                 additionalProperties: false    
                 description: 'Extensions for hash'    
@@ -32456,6 +33464,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _language:    
                 additionalProperties: false    
                 description: 'Extensions for language'    
@@ -32468,6 +33477,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _size:    
                 additionalProperties: false    
                 description: 'Extensions for size'    
@@ -32480,6 +33490,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _title:    
                 additionalProperties: false    
                 description: 'Extensions for title'    
@@ -32492,6 +33503,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _url:    
                 additionalProperties: false    
                 description: 'Extensions for url'    
@@ -32504,6 +33516,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               contentType:    
                 description: 'Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -32543,6 +33556,7 @@ Patient:
                 description: 'A location where the data can be accessed.'    
                 pattern: ^\S*$    
                 type: string    
+            type: object    
           valueBase64Binary:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: ^(\s*([0-9a-zA-Z\+/=]){4}\s*)+$    
@@ -32575,6 +33589,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               coding:    
                 description: 'A reference to a code defined by a terminology system.'    
                 items:    
@@ -32593,6 +33608,7 @@ Patient:
                 description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           valueCodeableReference:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -32620,6 +33636,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -32664,6 +33681,8 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
+            type: object    
           valueCoding:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -32680,6 +33699,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _display:    
                 additionalProperties: false    
                 description: 'Extensions for display'    
@@ -32692,6 +33712,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _system:    
                 additionalProperties: false    
                 description: 'Extensions for system'    
@@ -32704,6 +33725,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _userSelected:    
                 additionalProperties: false    
                 description: 'Extensions for userSelected'    
@@ -32716,6 +33738,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _version:    
                 additionalProperties: false    
                 description: 'Extensions for version'    
@@ -32728,6 +33751,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               code:    
                 description: 'A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -32757,6 +33781,7 @@ Patient:
                 description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           valueContactDetail:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -32773,6 +33798,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -32791,6 +33817,7 @@ Patient:
                 items:    
                   type: string    
                 type: array    
+            type: object    
           valueContactPoint:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -32807,6 +33834,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _system:    
                 additionalProperties: false    
                 description: 'Extensions for system'    
@@ -32819,6 +33847,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _use:    
                 additionalProperties: false    
                 description: 'Extensions for use'    
@@ -32831,6 +33860,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _value:    
                 additionalProperties: false    
                 description: 'Extensions for value'    
@@ -32843,6 +33873,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -32876,6 +33907,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               rank:    
                 description: 'Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values.'    
                 pattern: ^[1-9][0-9]*$    
@@ -32902,6 +33934,7 @@ Patient:
                 description: 'The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           valueContributor:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -32918,6 +33951,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _type:    
                 additionalProperties: false    
                 description: 'Extensions for type'    
@@ -32930,6 +33964,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               contact:    
                 description: 'Contact details to assist a user in finding and communicating with the contributor.'    
                 items:    
@@ -32955,6 +33990,7 @@ Patient:
                   - editor    
                   - reviewer    
                   - endorser    
+            type: object    
           valueCount:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -32971,6 +34007,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _comparator:    
                 additionalProperties: false    
                 description: 'Extensions for comparator'    
@@ -32983,6 +34020,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _system:    
                 additionalProperties: false    
                 description: 'Extensions for system'    
@@ -32995,6 +34033,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _unit:    
                 additionalProperties: false    
                 description: 'Extensions for unit'    
@@ -33007,6 +34046,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _value:    
                 additionalProperties: false    
                 description: 'Extensions for value'    
@@ -33019,6 +34059,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               code:    
                 description: 'A computer processable form of the unit in some unit representation system.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -33028,7 +34069,7 @@ Patient:
                 enum:    
                   - <    
                   - <=    
-                  - ">="    
+                  - '>='    
                   - >    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -33051,6 +34092,7 @@ Patient:
                 description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                 pattern: ^-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+-]?[0-9]+)?$    
                 type: number    
+            type: object    
           valueDataRequirement:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -33067,6 +34109,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _mustSupport:    
                 description: 'Extensions for mustSupport'    
                 items:    
@@ -33084,6 +34127,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               codeFilter:    
                 description: 'Code filters specify additional constraints on the data, specifying the value set of interest for a particular element of the data. Each code filter defines an additional constraint on the data, i.e. code filters are AND''ed, not OR''ed.'    
                 items:    
@@ -33145,6 +34189,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               subjectReference:    
                 additionalProperties: false    
                 description: 'The intended subjects of the data requirement. If this element is not provided, a Patient subject is assumed.'    
@@ -33180,10 +34225,12 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               type:    
                 description: 'The type of the required data, specified as the type name of a resource. For profiles, this value is set to the type of the base resource of the profile.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
                 type: string    
+            type: object    
           valueDate:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$    
@@ -33212,6 +34259,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _comparator:    
                 additionalProperties: false    
                 description: 'Extensions for comparator'    
@@ -33224,6 +34272,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _system:    
                 additionalProperties: false    
                 description: 'Extensions for system'    
@@ -33236,6 +34285,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _unit:    
                 additionalProperties: false    
                 description: 'Extensions for unit'    
@@ -33248,6 +34298,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _value:    
                 additionalProperties: false    
                 description: 'Extensions for value'    
@@ -33260,6 +34311,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               code:    
                 description: 'A computer processable form of the unit in some unit representation system.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -33269,7 +34321,7 @@ Patient:
                 enum:    
                   - <    
                   - <=    
-                  - ">="    
+                  - '>='    
                   - >    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -33292,6 +34344,7 @@ Patient:
                 description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                 pattern: ^-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+-]?[0-9]+)?$    
                 type: number    
+            type: object    
           valueDosage:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -33308,6 +34361,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _patientInstruction:    
                 additionalProperties: false    
                 description: 'Extensions for patientInstruction'    
@@ -33320,6 +34374,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _sequence:    
                 additionalProperties: false    
                 description: 'Extensions for sequence'    
@@ -33332,6 +34387,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _text:    
                 additionalProperties: false    
                 description: 'Extensions for text'    
@@ -33344,6 +34400,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               additionalInstruction:    
                 description: 'Supplemental instructions to the patient on how to take the medication  (e.g. "with meals" or"take half to one hour before food") or warnings for the patient about the medication (e.g. "may cause drowsiness" or "avoid exposure of skin to direct sunlight or sunlamps").'    
                 items:    
@@ -33376,6 +34433,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               doseAndRate:    
                 description: 'The amount of medication administered.'    
                 items:    
@@ -33417,7 +34475,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -33436,6 +34494,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               maxDosePerLifetime:    
                 additionalProperties: false    
                 description: 'Upper limit on medication per lifetime of the patient.'    
@@ -33463,7 +34522,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -33482,6 +34541,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               maxDosePerPeriod:    
                 additionalProperties: false    
                 description: 'Upper limit on medication per unit of time.'    
@@ -33500,6 +34560,7 @@ Patient:
                   numerator:    
                     description: 'The value of the numerator.'    
                     type: string    
+                type: object    
               method:    
                 additionalProperties: false    
                 description: 'Technique for administering medication.'    
@@ -33523,6 +34584,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               modifierExtension:    
                 description: |-    
                   May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.    
@@ -33557,6 +34619,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               sequence:    
                 description: 'Indicates the order in which the dosage instructions should be applied or interpreted.'    
                 pattern: ^-?([0]|([1-9][0-9]*))$    
@@ -33584,6 +34647,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               text:    
                 description: 'Free text dosage instructions e.g. SIG.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -33623,6 +34687,8 @@ Patient:
                   repeat:    
                     description: 'A set of rules that describe when the event is scheduled.'    
                     type: string    
+                type: object    
+            type: object    
           valueDuration:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -33639,6 +34705,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _comparator:    
                 additionalProperties: false    
                 description: 'Extensions for comparator'    
@@ -33651,6 +34718,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _system:    
                 additionalProperties: false    
                 description: 'Extensions for system'    
@@ -33663,6 +34731,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _unit:    
                 additionalProperties: false    
                 description: 'Extensions for unit'    
@@ -33675,6 +34744,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _value:    
                 additionalProperties: false    
                 description: 'Extensions for value'    
@@ -33687,6 +34757,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               code:    
                 description: 'A computer processable form of the unit in some unit representation system.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -33696,7 +34767,7 @@ Patient:
                 enum:    
                   - <    
                   - <=    
-                  - ">="    
+                  - '>='    
                   - >    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -33719,6 +34790,7 @@ Patient:
                 description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                 pattern: ^-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+-]?[0-9]+)?$    
                 type: number    
+            type: object    
           valueExpression:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -33813,7 +34885,6 @@ Patient:
                   - application/x-fhir-query    
                   - text/cql-identifier    
                   - text/cql-expression    
-                type: string    
               name:    
                 description: 'A short name assigned to the expression to allow for multiple reuse of the expression in the context where it is defined.'    
                 pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -33822,6 +34893,7 @@ Patient:
                 description: 'A URI that defines where the expression is found.'    
                 pattern: ^\S*$    
                 type: string    
+            type: object    
           valueHumanName:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -33838,6 +34910,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _given:    
                 description: 'Extensions for given'    
                 items:    
@@ -33865,6 +34938,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _use:    
                 additionalProperties: false    
                 description: 'Extensions for use'    
@@ -33877,6 +34951,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -33919,6 +34994,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               prefix:    
                 description: 'Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.'    
                 items:    
@@ -33943,6 +35019,7 @@ Patient:
                   - anonymous    
                   - old    
                   - maiden    
+            type: object    
           valueId:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -33963,6 +35040,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _use:    
                 additionalProperties: false    
                 description: 'Extensions for use'    
@@ -33975,6 +35053,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _value:    
                 additionalProperties: false    
                 description: 'Extensions for value'    
@@ -33987,6 +35066,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               assigner:    
                 additionalProperties: false    
                 description: 'Organization that issued/manages the identifier.'    
@@ -34022,6 +35102,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -34055,6 +35136,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               system:    
                 description: 'Establishes the namespace for the value - that is, a URL that describes a set values that are unique.'    
                 pattern: ^\S*$    
@@ -34082,6 +35164,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               use:    
                 description: 'The purpose of this identifier.'    
                 enum:    
@@ -34094,6 +35177,7 @@ Patient:
                 description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           valueInstant:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$    
@@ -34122,6 +35206,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _value:    
                 additionalProperties: false    
                 description: 'Extensions for value'    
@@ -34134,6 +35219,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               currency:    
                 description: 'ISO 4217 Currency Code.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -34151,6 +35237,7 @@ Patient:
                 description: 'Numerical value (with implicit precision).'    
                 pattern: ^-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+-]?[0-9]+)?$    
                 type: number    
+            type: object    
           valueOid:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: ^urn:oid:[0-2](\.(0|[1-9][0-9]*))+$    
@@ -34171,6 +35258,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _max:    
                 additionalProperties: false    
                 description: 'Extensions for max'    
@@ -34183,6 +35271,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _min:    
                 additionalProperties: false    
                 description: 'Extensions for min'    
@@ -34195,6 +35284,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _name:    
                 additionalProperties: false    
                 description: 'Extensions for name'    
@@ -34207,6 +35297,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _type:    
                 additionalProperties: false    
                 description: 'Extensions for type'    
@@ -34219,6 +35310,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _use:    
                 additionalProperties: false    
                 description: 'Extensions for use'    
@@ -34231,6 +35323,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               documentation:    
                 description: 'A brief discussion of what the parameter is for and how it is used by the module.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -34268,6 +35361,7 @@ Patient:
                 description: 'Whether the parameter is input or output for the module.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
                 type: string    
+            type: object    
           valuePeriod:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -34284,6 +35378,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _start:    
                 additionalProperties: false    
                 description: 'Extensions for start'    
@@ -34296,6 +35391,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               end:    
                 description: 'The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$    
@@ -34313,6 +35409,7 @@ Patient:
                 description: 'The start of the period. The boundary is inclusive.'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$    
                 type: string    
+            type: object    
           valuePositiveInt:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: ^[1-9][0-9]*$    
@@ -34333,6 +35430,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _comparator:    
                 additionalProperties: false    
                 description: 'Extensions for comparator'    
@@ -34345,6 +35443,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _system:    
                 additionalProperties: false    
                 description: 'Extensions for system'    
@@ -34357,6 +35456,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _unit:    
                 additionalProperties: false    
                 description: 'Extensions for unit'    
@@ -34369,6 +35469,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _value:    
                 additionalProperties: false    
                 description: 'Extensions for value'    
@@ -34381,6 +35482,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               code:    
                 description: 'A computer processable form of the unit in some unit representation system.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -34390,7 +35492,7 @@ Patient:
                 enum:    
                   - <    
                   - <=    
-                  - ">="    
+                  - '>='    
                   - >    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -34413,6 +35515,7 @@ Patient:
                 description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                 pattern: ^-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+-]?[0-9]+)?$    
                 type: number    
+            type: object    
           valueRange:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -34449,7 +35552,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -34468,6 +35571,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               id:    
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -34499,7 +35603,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -34518,6 +35622,8 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
+            type: object    
           valueRatio:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -34549,7 +35655,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -34568,6 +35674,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -34604,7 +35711,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -34623,6 +35730,8 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
+            type: object    
           valueRatioRange:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -34654,7 +35763,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -34673,6 +35782,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -34705,7 +35815,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -34724,6 +35834,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               id:    
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -34755,7 +35866,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -34774,6 +35885,8 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
+            type: object    
           valueReference:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -34790,6 +35903,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _reference:    
                 additionalProperties: false    
                 description: 'Extensions for reference'    
@@ -34802,6 +35916,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _type:    
                 additionalProperties: false    
                 description: 'Extensions for type'    
@@ -34814,6 +35929,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               display:    
                 description: 'Plain text narrative that identifies the resource in addition to the resource reference.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -34871,6 +35987,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               reference:    
                 description: "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources."    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -34881,6 +35998,7 @@ Patient:
                   The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                 pattern: ^\S*$    
                 type: string    
+            type: object    
           valueRelatedArtifact:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -34897,6 +36015,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _display:    
                 additionalProperties: false    
                 description: 'Extensions for display'    
@@ -34909,6 +36028,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _label:    
                 additionalProperties: false    
                 description: 'Extensions for label'    
@@ -34921,6 +36041,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _type:    
                 additionalProperties: false    
                 description: 'Extensions for type'    
@@ -34933,6 +36054,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _url:    
                 additionalProperties: false    
                 description: 'Extensions for url'    
@@ -34945,6 +36067,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               citation:    
                 description: 'A bibliographic citation for the related artifact. This text SHOULD be formatted according to an accepted citation format.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -35013,6 +36136,7 @@ Patient:
                   url:    
                     description: 'A location where the data can be accessed.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -35045,6 +36169,7 @@ Patient:
                 description: 'A url for the artifact that can be followed to access the actual content.'    
                 pattern: ^\S*$    
                 type: string    
+            type: object    
           valueSampledData:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -35061,6 +36186,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _dimensions:    
                 additionalProperties: false    
                 description: 'Extensions for dimensions'    
@@ -35073,6 +36199,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _factor:    
                 additionalProperties: false    
                 description: 'Extensions for factor'    
@@ -35085,6 +36212,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _lowerLimit:    
                 additionalProperties: false    
                 description: 'Extensions for lowerLimit'    
@@ -35097,6 +36225,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _period:    
                 additionalProperties: false    
                 description: 'Extensions for period'    
@@ -35109,6 +36238,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _upperLimit:    
                 additionalProperties: false    
                 description: 'Extensions for upperLimit'    
@@ -35121,6 +36251,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               data:    
                 description: 'A series of data points which are decimal values separated by a single space (character u20). The special values "E" (error), "L" (below detection limit) and "U" (above detection limit) can also be used in place of a decimal value.'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -35173,7 +36304,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -35192,6 +36323,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               period:    
                 description: 'The length of time between sampling times, measured in milliseconds.'    
                 pattern: ^-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+-]?[0-9]+)?$    
@@ -35202,6 +36334,7 @@ Patient:
                 type: number    
             required:    
               - origin    
+            type: object    
           valueSignature:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -35218,6 +36351,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _sigFormat:    
                 additionalProperties: false    
                 description: 'Extensions for sigFormat'    
@@ -35230,6 +36364,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _targetFormat:    
                 additionalProperties: false    
                 description: 'Extensions for targetFormat'    
@@ -35242,6 +36377,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _when:    
                 additionalProperties: false    
                 description: 'Extensions for when'    
@@ -35254,6 +36390,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               data:    
                 description: 'The base64 encoding of the Signature content. When signature is not recorded electronically this element would be empty.'    
                 type: string    
@@ -35301,6 +36438,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               sigFormat:    
                 description: 'A mime type that indicates the technical format of the signature. Important mime types are application/signature+xml for X ML DigSig, application/jose for JWS, and image/* for a graphical image of a signature, etc.'    
                 pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -35353,9 +36491,11 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
             required:    
               - type    
               - who    
+            type: object    
           valueString:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: '^[ \r\n\t\S]+$'    
@@ -35396,6 +36536,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               event:    
                 description: 'Identifies specific times when the event occurs.'    
                 items:    
@@ -35581,6 +36722,8 @@ Patient:
                         - PCD    
                         - PCV    
                     type: array    
+                type: object    
+            type: object    
           valueTriggerDefinition:    
             additionalProperties: false    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -35597,6 +36740,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _timingDate:    
                 additionalProperties: false    
                 description: 'Extensions for timingDate'    
@@ -35609,6 +36753,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _timingDateTime:    
                 additionalProperties: false    
                 description: 'Extensions for timingDateTime'    
@@ -35621,6 +36766,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _type:    
                 additionalProperties: false    
                 description: 'Extensions for type'    
@@ -35633,6 +36779,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               condition:    
                 additionalProperties: false    
                 description: 'A boolean-valued expression that is evaluated in the context of the container of the trigger definition and returns whether or not the trigger fires.'    
@@ -35680,6 +36827,7 @@ Patient:
                   reference:    
                     description: 'A URI that defines where the expression is found.'    
                     type: string    
+                type: object    
               data:    
                 description: 'The triggering data of the event (if this is a data trigger). If more than one data is requirement is specified, then all the data requirements must be true.'    
                 items:    
@@ -35741,6 +36889,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               timingTiming:    
                 additionalProperties: false    
                 description: 'The timing of the event (if this is a periodic trigger).'    
@@ -35776,6 +36925,7 @@ Patient:
                   repeat:    
                     description: 'A set of rules that describe when the event is scheduled.'    
                     type: string    
+                type: object    
               type:    
                 description: 'The type of triggering event.'    
                 enum:    
@@ -35787,6 +36937,7 @@ Patient:
                   - data-removed    
                   - data-accessed    
                   - data-access-ended    
+            type: object    
           valueUnsignedInt:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: ^[0]|([1-9][0-9]*)$    
@@ -35845,6 +36996,7 @@ Patient:
                   version:    
                     description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -35877,6 +37029,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               valueQuantity:    
                 additionalProperties: false    
                 description: 'A value that defines the context specified in this context of use. The interpretation of the value is defined by the code.'    
@@ -35904,7 +37057,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -35923,6 +37076,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueRange:    
                 additionalProperties: false    
                 description: 'A value that defines the context specified in this context of use. The interpretation of the value is defined by the code.'    
@@ -35941,6 +37095,7 @@ Patient:
                   low:    
                     description: 'The low limit. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valueReference:    
                 additionalProperties: false    
                 description: 'A value that defines the context specified in this context of use. The interpretation of the value is defined by the code.'    
@@ -35976,12 +37131,15 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
             required:    
               - code    
+            type: object    
           valueUuid:    
             description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
             pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
             type: string    
+        type: object    
       type: array    
       x-ngsi:    
         type: Property    
@@ -36015,6 +37173,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _given:    
             description: 'Extensions for given'    
             items:    
@@ -36028,6 +37187,7 @@ Patient:
                 id:    
                   description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                   type: string    
+              type: object    
             type: array    
           _prefix:    
             description: 'Extensions for prefix'    
@@ -36042,6 +37202,7 @@ Patient:
                 id:    
                   description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                   type: string    
+              type: object    
             type: array    
           _suffix:    
             description: 'Extensions for suffix'    
@@ -36056,6 +37217,7 @@ Patient:
                 id:    
                   description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                   type: string    
+              type: object    
             type: array    
           _text:    
             additionalProperties: false    
@@ -36070,6 +37232,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _use:    
             additionalProperties: false    
             description: 'Extensions for use'    
@@ -36083,6 +37246,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           extension:    
             description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
             items:    
@@ -36331,6 +37495,7 @@ Patient:
                   description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                   pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                   type: string    
+              type: object    
             type: array    
           family:    
             description: 'The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.'    
@@ -36362,6 +37527,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _start:    
                 additionalProperties: false    
                 description: 'Extensions for start'    
@@ -36374,6 +37540,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               end:    
                 description: 'The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$    
@@ -36391,6 +37558,7 @@ Patient:
                 description: 'The start of the period. The boundary is inclusive.'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$    
                 type: string    
+            type: object    
           prefix:    
             description: 'Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.'    
             items:    
@@ -36417,6 +37585,7 @@ Patient:
               - anonymous    
               - old    
               - maiden    
+        type: object    
       type: array    
       x-ngsi:    
         type: Property    
@@ -36454,6 +37623,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _creation:    
             additionalProperties: false    
             description: 'Extensions for creation'    
@@ -36467,6 +37637,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _data:    
             additionalProperties: false    
             description: 'Extensions for data'    
@@ -36480,6 +37651,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _hash:    
             additionalProperties: false    
             description: 'Extensions for hash'    
@@ -36493,6 +37665,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _language:    
             additionalProperties: false    
             description: 'Extensions for language'    
@@ -36506,6 +37679,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _size:    
             additionalProperties: false    
             description: 'Extensions for size'    
@@ -36519,6 +37693,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _title:    
             additionalProperties: false    
             description: 'Extensions for title'    
@@ -36532,6 +37707,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _url:    
             additionalProperties: false    
             description: 'Extensions for url'    
@@ -36545,6 +37721,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           contentType:    
             description: 'Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.'    
             pattern: ^[^\s]+(\s[^\s]+)*$    
@@ -36804,6 +37981,7 @@ Patient:
                   description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                   pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                   type: string    
+              type: object    
             type: array    
           hash:    
             description: 'The calculated hash of the data using SHA-1. Represented using base64.'    
@@ -36828,6 +38006,7 @@ Patient:
             description: 'A location where the data can be accessed.'    
             pattern: ^\S*$    
             type: string    
+        type: object    
       type: array    
       x-ngsi:    
         type: Property    
@@ -36871,6 +38050,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _system:    
             additionalProperties: false    
             description: 'Extensions for system'    
@@ -36884,6 +38064,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _use:    
             additionalProperties: false    
             description: 'Extensions for use'    
@@ -36897,6 +38078,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           _value:    
             additionalProperties: false    
             description: 'Extensions for value'    
@@ -36910,6 +38092,7 @@ Patient:
                 description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                 pattern: '^[ \r\n\t\S]+$'    
                 type: string    
+            type: object    
           extension:    
             description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
             items:    
@@ -37158,6 +38341,7 @@ Patient:
                   description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                   pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                   type: string    
+              type: object    
             type: array    
           id:    
             description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -37179,6 +38363,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _start:    
                 additionalProperties: false    
                 description: 'Extensions for start'    
@@ -37191,6 +38376,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               end:    
                 description: 'The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$    
@@ -37208,6 +38394,7 @@ Patient:
                 description: 'The start of the period. The boundary is inclusive.'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$    
                 type: string    
+            type: object    
           rank:    
             description: 'Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values.'    
             pattern: ^[1-9][0-9]*$    
@@ -37234,12 +38421,13 @@ Patient:
             description: 'The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).'    
             pattern: '^[ \r\n\t\S]+$'    
             type: string    
+        type: object    
       type: array    
       x-ngsi:    
         type: Property    
     text:    
       additionalProperties: false    
-      description: 'A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it "clinically safe" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.'    
+      description: 'A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it clinically safe for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.'    
       properties:    
         _status:    
           additionalProperties: false    
@@ -37493,11 +38681,13 @@ Patient:
                     description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                     pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                     type: string    
+                type: object    
               type: array    
             id:    
               description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
               pattern: '^[ \r\n\t\S]+$'    
               type: string    
+          type: object    
         div:    
           description: 'The actual narrative content, a stripped down version of XHTML.'    
         extension:    
@@ -37517,6 +38707,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBase64Binary:    
                 additionalProperties: false    
                 description: 'Extensions for valueBase64Binary'    
@@ -37529,6 +38720,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueBoolean:    
                 additionalProperties: false    
                 description: 'Extensions for valueBoolean'    
@@ -37541,6 +38733,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCanonical:    
                 additionalProperties: false    
                 description: 'Extensions for valueCanonical'    
@@ -37553,6 +38746,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueCode:    
                 additionalProperties: false    
                 description: 'Extensions for valueCode'    
@@ -37565,6 +38759,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDate:    
                 additionalProperties: false    
                 description: 'Extensions for valueDate'    
@@ -37577,6 +38772,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDateTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueDateTime'    
@@ -37589,6 +38785,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueDecimal:    
                 additionalProperties: false    
                 description: 'Extensions for valueDecimal'    
@@ -37601,6 +38798,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueId:    
                 additionalProperties: false    
                 description: 'Extensions for valueId'    
@@ -37613,6 +38811,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInstant:    
                 additionalProperties: false    
                 description: 'Extensions for valueInstant'    
@@ -37625,6 +38824,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueInteger:    
                 additionalProperties: false    
                 description: 'Extensions for valueInteger'    
@@ -37637,6 +38837,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueMarkdown:    
                 additionalProperties: false    
                 description: 'Extensions for valueMarkdown'    
@@ -37649,6 +38850,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueOid:    
                 additionalProperties: false    
                 description: 'Extensions for valueOid'    
@@ -37661,6 +38863,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valuePositiveInt:    
                 additionalProperties: false    
                 description: 'Extensions for valuePositiveInt'    
@@ -37673,6 +38876,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueString:    
                 additionalProperties: false    
                 description: 'Extensions for valueString'    
@@ -37685,6 +38889,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueTime:    
                 additionalProperties: false    
                 description: 'Extensions for valueTime'    
@@ -37697,6 +38902,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUnsignedInt:    
                 additionalProperties: false    
                 description: 'Extensions for valueUnsignedInt'    
@@ -37709,6 +38915,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUri:    
                 additionalProperties: false    
                 description: 'Extensions for valueUri'    
@@ -37721,6 +38928,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUrl:    
                 additionalProperties: false    
                 description: 'Extensions for valueUrl'    
@@ -37733,6 +38941,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               _valueUuid:    
                 additionalProperties: false    
                 description: 'Extensions for valueUuid'    
@@ -37745,6 +38954,7 @@ Patient:
                   id:    
                     description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
                     type: string    
+                type: object    
               extension:    
                 description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
                 items:    
@@ -37839,6 +39049,7 @@ Patient:
                       - temp    
                       - old    
                       - billing    
+                type: object    
               valueAge:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -37866,7 +39077,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -37885,6 +39096,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueAnnotation:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -37919,6 +39131,7 @@ Patient:
                   time:    
                     description: 'Indicates when this particular annotation was made.'    
                     type: string    
+                type: object    
               valueAttachment:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -37979,6 +39192,7 @@ Patient:
                   url:    
                     description: 'A location where the data can be accessed.'    
                     type: string    
+                type: object    
               valueBase64Binary:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^(\s*([0-9a-zA-Z\+/=]){4}\s*)+$    
@@ -38018,6 +39232,7 @@ Patient:
                   text:    
                     description: 'A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.'    
                     type: string    
+                type: object    
               valueCodeableReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -38036,6 +39251,7 @@ Patient:
                   reference:    
                     description: 'A reference to a resource the provides exact details about the information being referenced.'    
                     type: string    
+                type: object    
               valueCoding:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -38078,6 +39294,7 @@ Patient:
                   version:    
                     description: 'The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.'    
                     type: string    
+                type: object    
               valueContactDetail:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -38101,6 +39318,7 @@ Patient:
                     items:    
                       type: string    
                     type: array    
+                type: object    
               valueContactPoint:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -38152,6 +39370,7 @@ Patient:
                   value:    
                     description: 'The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).'    
                     type: string    
+                type: object    
               valueContributor:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -38185,6 +39404,7 @@ Patient:
                       - editor    
                       - reviewer    
                       - endorser    
+                type: object    
               valueCount:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -38212,7 +39432,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -38231,6 +39451,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDataRequirement:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -38291,6 +39512,7 @@ Patient:
                   type:    
                     description: 'The type of the required data, specified as the type name of a resource. For profiles, this value is set to the type of the base resource of the profile.'    
                     type: string    
+                type: object    
               valueDate:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$    
@@ -38330,7 +39552,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -38349,6 +39571,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueDosage:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -38427,6 +39650,7 @@ Patient:
                   timing:    
                     description: 'When medication should be administered.'    
                     type: string    
+                type: object    
               valueDuration:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -38454,7 +39678,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -38473,6 +39697,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueExpression:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -38520,6 +39745,7 @@ Patient:
                   reference:    
                     description: 'A URI that defines where the expression is found.'    
                     type: string    
+                type: object    
               valueHumanName:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -38590,6 +39816,7 @@ Patient:
                       - anonymous    
                       - old    
                       - maiden    
+                type: object    
               valueId:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[A-Za-z0-9\-\.]{1,64}$    
@@ -38638,6 +39865,7 @@ Patient:
                   value:    
                     description: 'The portion of the identifier typically relevant to the user and which is unique within the context of the system.'    
                     type: string    
+                type: object    
               valueInstant:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))$    
@@ -38674,6 +39902,7 @@ Patient:
                   value:    
                     description: 'Numerical value (with implicit precision).'    
                     type: string    
+                type: object    
               valueOid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:oid:[0-2](\.(0|[1-9][0-9]*))+$    
@@ -38729,6 +39958,7 @@ Patient:
                   use:    
                     description: 'Whether the parameter is input or output for the module.'    
                     type: string    
+                type: object    
               valuePeriod:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -38753,6 +39983,7 @@ Patient:
                   start:    
                     description: 'The start of the period. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valuePositiveInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[1-9][0-9]*$    
@@ -38784,7 +40015,7 @@ Patient:
                     enum:    
                       - <    
                       - <=    
-                      - ">="    
+                      - '>='    
                       - >    
                   extension:    
                     description: 'May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.'    
@@ -38803,6 +40034,7 @@ Patient:
                   value:    
                     description: 'The value of the measured amount. The value includes an implicit precision in the presentation of the value.'    
                     type: string    
+                type: object    
               valueRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -38821,6 +40053,7 @@ Patient:
                   low:    
                     description: 'The low limit. The boundary is inclusive.'    
                     type: string    
+                type: object    
               valueRatio:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -38839,6 +40072,7 @@ Patient:
                   numerator:    
                     description: 'The value of the numerator.'    
                     type: string    
+                type: object    
               valueRatioRange:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -38860,6 +40094,7 @@ Patient:
                   lowNumerator:    
                     description: 'The value of the low limit numerator.'    
                     type: string    
+                type: object    
               valueReference:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -38895,6 +40130,7 @@ Patient:
                       The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.    
                       The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. "Patient" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).    
                     type: string    
+                type: object    
               valueRelatedArtifact:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -38951,6 +40187,7 @@ Patient:
                   url:    
                     description: 'A url for the artifact that can be followed to access the actual content.'    
                     type: string    
+                type: object    
               valueSampledData:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -39004,6 +40241,7 @@ Patient:
                     type: string    
                 required:    
                   - origin    
+                type: object    
               valueSignature:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -39054,6 +40292,7 @@ Patient:
                 required:    
                   - type    
                   - who    
+                type: object    
               valueString:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: '^[ \r\n\t\S]+$'    
@@ -39097,6 +40336,7 @@ Patient:
                   repeat:    
                     description: 'A set of rules that describe when the event is scheduled.'    
                     type: string    
+                type: object    
               valueTriggerDefinition:    
                 additionalProperties: false    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
@@ -39157,6 +40397,7 @@ Patient:
                       - data-removed    
                       - data-accessed    
                       - data-access-ended    
+                type: object    
               valueUnsignedInt:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^[0]|([1-9][0-9]*)$    
@@ -39198,10 +40439,12 @@ Patient:
                     type: string    
                 required:    
                   - code    
+                type: object    
               valueUuid:    
                 description: 'Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).'    
                 pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$    
                 type: string    
+            type: object    
           type: array    
         id:    
           description: 'Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.'    
@@ -39230,7 +40473,7 @@ Patient:
     - id    
     - type    
   type: object    
-  x-derived-from: http://hl7.org/fhir/json-schema/4.3    
+  x-derived-from: http://hl7.org/fhir/R4B/    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Hl7/blob/master/Patient/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.HL7/Patient/schema.json    
@@ -39461,7 +40704,7 @@ Patient:
 }  
 ```  
 #### Patient NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für einen Patienten im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen Patienten im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-v2 kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "resourceType": {  
