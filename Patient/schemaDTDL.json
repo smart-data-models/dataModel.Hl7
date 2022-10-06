@@ -1,0 +1,614 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Patient;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data Models - HL7 / Patient data model based on HL7 equivalent adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Hl7/master/Patient/schema.json",
+    "description": "Demographics and other administrative information about an individual or animal receiving care or other health-related services.",
+    "displayName": "Patient",
+    "contents": [
+        {
+            "name": "active",
+            "writable": true,
+            "displayName": "active",
+            "@type": "Property",
+            "schema": "boolean",
+            "comment": "Whether this patient record is in active use. \nMany systems use this property to mark as non-current patients, such as those that have not been seen for a period of time based on an organizations business rules.\n\nIt is often used to filter patient lists to exclude inactive patients\n\nDeceased patients may also be marked as inactive for the same reasons, but may be active for some time after death."
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "birthDate",
+            "writable": true,
+            "displayName": "birthDate",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The date of birth for the individual."
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "deceasedBoolean",
+            "writable": true,
+            "displayName": "deceasedBoolean",
+            "@type": "Property",
+            "schema": "boolean",
+            "comment": "Indicates if the individual is deceased or not."
+        },
+        {
+            "name": "deceasedDateTime",
+            "writable": true,
+            "displayName": "deceasedDateTime",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Indicates if the individual is deceased or not."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "gender",
+            "writable": true,
+            "displayName": "gender",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes."
+        },
+        {
+            "name": "implicitRules",
+            "writable": true,
+            "displayName": "implicitRules",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc."
+        },
+        {
+            "name": "language",
+            "writable": true,
+            "displayName": "language",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The base language in which the resource is written."
+        },
+        {
+            "name": "multipleBirthBoolean",
+            "writable": true,
+            "displayName": "multipleBirthBoolean",
+            "@type": "Property",
+            "schema": "boolean",
+            "comment": "Indicates whether the patient is part of a multiple (boolean) or indicates the actual birth order (integer)."
+        },
+        {
+            "name": "multipleBirthInteger",
+            "writable": true,
+            "displayName": "multipleBirthInteger",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Indicates whether the patient is part of a multiple (boolean) or indicates the actual birth order (integer)."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "address",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "An address for the individual.",
+            "displayName": "address"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "communication",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "A language which may be used to communicate with the patient about his or her health.",
+            "displayName": "communication"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "contact",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "A contact party (e.g. guardian, partner, friend) for the patient.",
+            "displayName": "contact"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "contained",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
+            "displayName": "contained"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "extension",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "displayName": "extension"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "generalPractitioner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Patients nominated care provider.",
+            "displayName": "generalPractitioner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "identifier",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "An identifier for this patient.",
+            "displayName": "identifier"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "link",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Link to another patient resource that concerns the same actual patient.",
+            "displayName": "link"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "modifierExtension",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing elements descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of r",
+            "displayName": "modifierExtension"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "name",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "A name associated with the individual.",
+            "displayName": "name"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "photo",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Image of the patient.",
+            "displayName": "photo"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "telecom",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted.",
+            "displayName": "telecom"
+        },
+        {
+            "@type": "object",
+            "name": "_active",
+            "comment": "Extensions for active",
+            "displayName": "_active",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_birthDate",
+            "comment": "Extensions for birthDate",
+            "displayName": "_birthDate",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_deceasedBoolean",
+            "comment": "Extensions for deceasedBoolean",
+            "displayName": "_deceasedBoolean",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_deceasedDateTime",
+            "comment": "Extensions for deceasedDateTime",
+            "displayName": "_deceasedDateTime",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_gender",
+            "comment": "Extensions for gender",
+            "displayName": "_gender",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_implicitRules",
+            "comment": "Extensions for implicitRules",
+            "displayName": "_implicitRules",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_language",
+            "comment": "Extensions for language",
+            "displayName": "_language",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_multipleBirthBoolean",
+            "comment": "Extensions for multipleBirthBoolean",
+            "displayName": "_multipleBirthBoolean",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_multipleBirthInteger",
+            "comment": "Extensions for multipleBirthInteger",
+            "displayName": "_multipleBirthInteger",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "managingOrganization",
+            "comment": "Organization that is the custodian of the patient record.",
+            "displayName": "managingOrganization",
+            "fields": [
+                {
+                    "name": "_display",
+                    "schema": "object"
+                },
+                {
+                    "name": "_reference",
+                    "schema": "object"
+                },
+                {
+                    "name": "_type",
+                    "schema": "object"
+                },
+                {
+                    "name": "display",
+                    "schema": "string"
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "identifier",
+                    "schema": "object"
+                },
+                {
+                    "name": "reference",
+                    "schema": "string"
+                },
+                {
+                    "name": "type",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "maritalStatus",
+            "comment": "This field contains a patients most recent marital (civil) status.",
+            "displayName": "maritalStatus",
+            "fields": [
+                {
+                    "name": "_text",
+                    "schema": "object"
+                },
+                {
+                    "name": "coding",
+                    "schema": "array"
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "text",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "meta",
+            "comment": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.",
+            "displayName": "meta",
+            "fields": [
+                {
+                    "name": "_lastUpdated",
+                    "schema": "object"
+                },
+                {
+                    "name": "_source",
+                    "schema": "object"
+                },
+                {
+                    "name": "_versionId",
+                    "schema": "object"
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "lastUpdated",
+                    "schema": "string"
+                },
+                {
+                    "name": "profile",
+                    "schema": "array"
+                },
+                {
+                    "name": "security",
+                    "schema": "array"
+                },
+                {
+                    "name": "source",
+                    "schema": "string"
+                },
+                {
+                    "name": "tag",
+                    "schema": "array"
+                },
+                {
+                    "name": "versionId",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "text",
+            "comment": "A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it clinically safe for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
+            "displayName": "text",
+            "fields": [
+                {
+                    "name": "_status",
+                    "schema": "object"
+                },
+                {
+                    "name": "div",
+                    "schema": null
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "status",
+                    "schema": null
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "resourceType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Patient",
+                        "displayName": "Patient",
+                        "enumValue": 1
+                    }
+                ]
+            }
+        }
+    ]
+}
