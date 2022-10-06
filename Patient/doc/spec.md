@@ -38011,8 +38011,10 @@ Patient:
       x-ngsi:    
         type: Property    
     resourceType:    
-      const: Patient    
       description: 'This is a Patient resource'    
+      enum:    
+        - Patient    
+      type: string    
       x-ngsi:    
         type: Property    
     seeAlso:    
