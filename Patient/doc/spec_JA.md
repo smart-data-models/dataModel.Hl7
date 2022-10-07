@@ -4,15 +4,15 @@
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Hl7/blob/master/Patient/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 グローバルな記述。**ケアまたはその他の医療関連サービスを受ける個人または動物に関する人口統計学およびその他の管理情報**。  
-バージョン: 0.0.1  
+バージョン: 0.0.2  
 
 ## プロパティ一覧  
 
 - `_active`: アクティブ用エクステンション  - `_birthDate`: birthDateの拡張機能  - `_deceasedBoolean`: deceasedBoolean の拡張機能  - `_deceasedDateTime`: deceasedDateTimeの拡張機能  - `_gender`: ジェンダーに関する拡張機能  - `_implicitRules`: implicitRules の拡張機能  - `_language`: 言語に関する拡張機能  - `_multipleBirthBoolean`: multipleBirthBoolean の拡張機能  - `_multipleBirthInteger`: multipleBirthInteger の拡張機能  - `active`: この患者レコードが使用中であるかどうか。  
 多くのシステムでは、このプロパティを使用して、組織のビジネス・ルールに基づき、一定期間診察を受けていない患者などを非現用患者としてマークしています。  
 このプロパティは、患者リストをフィルタリングして、非アクティブな患者を除外するためによく使用されます。  
-死亡した患者も同じ理由で非アクティブとマークされることがありますが、死亡後しばらくの間はアクティブである可能性があります。  - `address`: 個人の住所。  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `birthDate`: 個人の生年月日。  - `communication`: 患者さんの健康に関するコミュニケーションに使用される可能性のある言語。  - `contact`: 患者さんの連絡先（保護者、パートナー、友人など）。  - `contained`: これらのリソースは、それを含むリソースとは別に独立した存在ではなく、独立して識別することも、独立したトランザクションのスコープを持つこともできない。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `deceasedBoolean`: 個人が死亡しているか否かを示す。  - `deceasedDateTime`: 個人が死亡しているか否かを示す。  - `description`: このアイテムの説明  - `extension`: リソースの基本的な定義に含まれない追加情報を表現するために使用することができる。拡張の使用を安全かつ管理しやすくするために，拡張の定義と使用に適用される厳密なガバナンスのセットが存在する。どのような実装者でも拡張機能を定義できるが，拡張機能の定義の一部として満たすべき一連の要件がある(SHALL)。  - `gender`: 管理上の性別-管理および記録保持の目的で、患者が持つとみなされる性別。  - `generalPractitioner`: 患者さんが指名した医療機関  - `id`: リソースの URL で使用される、リソースの論理 ID。一度割り当てられたら、この値は決して変更されません。  - `identifier`: この患者を識別するための識別子。  - `implicitRules`: リソースが構築されたときに従った一連の規則への参照であり、コンテンツを処理するときに理解しなければならないもの。多くの場合、これは他のプロファイルなどとともに特別な規則を定義する実装ガイドへの参照である。  - `language`: リソースが記述されているベース言語。  - `link`: 同じ実際の患者に関する他の患者リソースへのリンク。  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `managingOrganization`: 患者記録の保管者である組織。  - `maritalStatus`: このフィールドには、患者の直近の婚姻（民事）状態が含まれる。  - `meta`: リソースに関するメタデータ。これは、インフラストラクチャによって維持されるコンテンツです。コンテンツの変更は、必ずしもリソースのバージョン変更と関連するとは限りません。  - `modifierExtension`: リソースの基本的な定義に含まれない追加情報を表すために使用され、その情報を含む要素の理解および/または含む要素の子孫の理解を変更することができる。通常，修飾子要素は，否定又は修飾を提供する。拡張の使用を安全かつ管理しやすくするために，拡張の定義及び使用に適用される厳密な統制の集合が存在する。どのような実装者でも拡張を定義することができますが、拡張の定義の一部として満たされなければならない一連の要件があります(SHALL)。リソースを処理するアプリケーションは、修飾子の拡張をチェックすることが要求されます。  
-修飾子拡張は、Resource または DomainResource の要素の意味を変更してはならない (modifierExtension自体の意味を変更してはならないことを含む)。  - `multipleBirthBoolean`: 患者が複数に属しているかどうかを示す（boolean）、または実際の出生順を示す（integer）。  - `multipleBirthInteger`: 患者が複数に属しているかどうかを示す（boolean）、または実際の出生順を示す（integer）。  - `name`: 個人に関連する名前。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `photo`: 患者さんのイメージ。  - `resourceType`: これは患者さんの資料です  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `telecom`: 個人と連絡を取ることができる連絡先（電話番号やメールアドレスなど）。  - `text`: リソースの要約を含み、リソースの内容を人間に表現するために使用できる、人間が読めるナラティブ（Narrative）。ナラティブは構造化されたデータをすべてコード化する必要はないが、人間がナラティブを読むだけでも臨床的に安全であるように、十分な詳細を含むことが要求される。リソース定義は、臨床的安全性を確保するために、どのような内容をナラティブで表現すべきかを定義することができる。  - `type`: NGSIエンティティタイプ。それはPatientでなければならない    
+死亡した患者も同じ理由で非アクティブとマークされることがありますが、死亡後しばらくの間はアクティブである可能性があります。  - `address`: 個人の住所。  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `birthDate`: 個人の生年月日。  - `communication`: 患者さんの健康に関するコミュニケーションに使用される可能性のある言語。  - `contact`: 患者さんの連絡先（保護者、パートナー、友人など）。  - `contained`: これらのリソースは、それを含むリソースとは別に独立した存在ではなく、独立して識別することも、独立したトランザクションのスコープを持つこともできない。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `deceasedBoolean`: 個人が死亡しているか否かを示す。  - `deceasedDateTime`: 個人が死亡しているか否かを示す。  - `description`: このアイテムの説明  - `extension`: リソースの基本的な定義に含まれない追加情報を表現するために使用することができる。拡張の使用を安全かつ管理しやすくするために，拡張の定義と使用に適用される厳密なガバナンスのセットが存在する。どのような実装者でも拡張機能を定義できるが，拡張機能の定義の一部として満たすべき一連の要件がある(SHALL)。  - `gender`: 管理上の性別-管理および記録保持の目的で、患者が持つとみなされる性別。  - `generalPractitioner`: 患者さんが指名した医療機関  - `id`: エンティティの一意な識別子  - `identifier`: この患者を識別するための識別子。  - `implicitRules`: リソースが構築されたときに従った一連の規則への参照であり、コンテンツを処理するときに理解しなければならないもの。多くの場合、これは他のプロファイルなどとともに特別な規則を定義する実装ガイドへの参照である。  - `language`: リソースが記述されているベース言語。  - `link`: 同じ実際の患者に関する他の患者リソースへのリンク。  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `managingOrganization`: 患者記録の保管者である組織。  - `maritalStatus`: このフィールドには、患者の直近の婚姻（民事）状態が含まれる。  - `meta`: リソースに関するメタデータ。これは、インフラストラクチャによって維持されるコンテンツです。コンテンツの変更は、必ずしもリソースのバージョン変更と関連するとは限りません。  - `modifierExtension`: リソースの基本的な定義に含まれない追加情報を表すために使用され、その情報を含む要素の理解および/または含む要素の子孫の理解を変更することができる。通常，修飾子要素は，否定又は修飾を提供する。拡張の使用を安全かつ管理しやすくするために，拡張の定義及び使用に適用される厳密な統制の集合が存在する。どのような実装者でも拡張を定義することができますが、拡張の定義の一部として満たされなければならない一連の要件があります(SHALL)。リソースを処理するアプリケーションは、修飾子の拡張をチェックすることが要求されます。  
+修飾子拡張は、Resource または DomainResource の要素の意味を変更してはならない (modifierExtension自体の意味を変更してはならないことを含む)。  - `multipleBirthBoolean`: 患者が複数に属しているかどうかを示す（boolean）、または実際の出生順を示す（integer）。  - `multipleBirthInteger`: 患者が複数に属しているかどうかを示す（boolean）、または実際の出生順を示す（integer）。  - `name`: 個人に関連する名前。  - `photo`: 患者さんのイメージ。  - `resourceType`: これは患者さんの資料です  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `telecom`: 個人と連絡を取ることができる連絡先（電話番号やメールアドレスなど）。  - `text`: リソースの要約を含み、リソースの内容を人間に表現するために使用できる、人間が読めるナラティブ（Narrative）。ナラティブは構造化されたデータをすべてコード化する必要はないが、人間がナラティブを読むだけでも臨床的に安全であるように、十分な詳細を含むことが要求される。リソース定義は、臨床的安全性を確保するために、どのような内容をナラティブで表現すべきかを定義することができる。  - `type`: NGSIエンティティタイプ。それはPatientでなければならない    
 必要なプロパティ  
 - `id`  - `type`    
 HL7 標準のオリジナルバージョン 4.3 からマッピングされたデータモデル http://hl7.org/fhir/patient.html  
@@ -23284,9 +23284,16 @@ Patient:
       x-ngsi:    
         type: Property    
     id:    
-      description: 'The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.'    
-      pattern: '^[ \r\n\t\S]+$'    
-      type: string    
+      anyOf:    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          format: uri    
+          type: string    
+      description: 'Unique identifier of the entity'    
       x-ngsi:    
         type: Property    
     identifier:    
@@ -37589,22 +37596,6 @@ Patient:
       type: array    
       x-ngsi:    
         type: Property    
-    owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
-      items:    
-        anyOf:    
-          - description: 'Property. Identifier format of any NGSI entity'    
-            maxLength: 256    
-            minLength: 1    
-            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-            type: string    
-          - description: 'Property. Identifier format of any NGSI entity'    
-            format: uri    
-            type: string    
-        description: 'Property. Unique identifier of the entity'    
-      type: array    
-      x-ngsi:    
-        type: Property    
     photo:    
       description: 'Image of the patient.'    
       items:    
@@ -40480,7 +40471,7 @@ Patient:
   x-license-url: https://github.com/smart-data-models/dataModel.Hl7/blob/master/Patient/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.HL7/Patient/schema.json    
   x-model-tags: HL7    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## ペイロードの例  
