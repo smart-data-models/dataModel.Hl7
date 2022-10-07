@@ -36125,69 +36125,6 @@ Account:
 ```  
 #### Account NGSI-LD key-values Example    
 Here is an example of a Account in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
-```json  
-{  
-  "resourceType": "Account",  
-  "id": "example",  
-  "type": "Account",  
-  "text": {  
-    "status": "generated",  
-    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003eHACC Funded Billing for Peter James Chalmers\u003c/div\u003e"  
-  },  
-  "identifier": [  
-    {  
-      "system": "urn:oid:0.1.2.3.4.5.6.7",  
-      "value": "654321"  
-    }  
-  ],  
-  "status": "active",  
-  "hl7type": {  
-    "coding": [  
-      {  
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",  
-        "code": "PBILLACCT",  
-        "display": "patient billing account"  
-      }  
-    ],  
-    "text": "patient"  
-  },  
-  "name": "HACC Funded Billing for Peter James Chalmers",  
-  "subject": [  
-    {  
-      "reference": "Patient/example",  
-      "display": "Peter James Chalmers"  
-    }  
-  ],  
-  "servicePeriod": {  
-    "start": "2016-01-01",  
-    "end": "2016-06-30"  
-  },  
-  "coverage": [  
-    {  
-      "coverage": {  
-        "reference": "Coverage/7546D"  
-      },  
-      "priority": 1  
-    }  
-  ],  
-  "owner": {  
-    "reference": "Organization/hl7"  
-  },  
-  "description": "Hospital charges",  
-  "meta": {  
-    "tag": [  
-      {  
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",  
-        "code": "HTEST",  
-        "display": "test health data"  
-      }  
-    ]  
-  },  
-  "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.Hl7/master/context.jsonld"  
-  ]  
-}  
-```  
 #### Account NGSI-LD normalized Example    
 Here is an example of a Account in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 ```json  
