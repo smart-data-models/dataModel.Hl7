@@ -1,0 +1,8 @@
+notesHeader:
+  Data model mapped from the original version 4.3 of HL7 standard. The original attribute -type- has been rename to -hl7type- because of the conflict with the mandatory type in NGSI. Besides other minor adaptations has been performed. See https://github.com/smart-data-models/dataModel.Hl7/blob/master/README.md at the subject root
+  
+notesMiddle:
+  
+notesFooter:
+  
+notesReadme:

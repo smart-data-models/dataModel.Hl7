@@ -1,0 +1,92 @@
+{
+    "type": "Account",
+    "resourceType": {
+        "type": "Text",
+        "value": "Account"
+    },
+    "id": "example",
+    "text": {
+        "type": "StructuredValue",
+        "value": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">HACC Funded Billing for Peter James Chalmers</div>"
+        }
+    },
+    "identifier": {
+        "type": "array",
+        "value": [
+            {
+                "system": "urn:oid:0.1.2.3.4.5.6.7",
+                "value": "654321"
+            }
+        ]
+    },
+    "status": {
+        "type": "Text",
+        "value": "active"
+    },
+    "hl7type": {
+        "type": "StructuredValue",
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                "code": "PBILLACCT",
+                "display": "patient billing account"
+            }
+        ],
+        "text": "patient"
+    },
+    "name": {
+        "type": "Text",
+        "value": "HACC Funded Billing for Peter James Chalmers"
+    },
+    "subject": {
+        "type": "array",
+        "value": [
+            {
+                "reference": "Patient/example",
+                "display": "Peter James Chalmers"
+            }
+        ]
+    },
+    "servicePeriod": {
+        "type": "StructuredValue",
+        "value": {
+            "start": "2016-01-01",
+            "end": "2016-06-30"
+        }
+    },
+    "coverage": {
+        "type": "array",
+        "value": [
+            {
+                "coverage": {
+                    "reference": "Coverage/7546D"
+                },
+                "priority": 1
+            }
+        ]
+    },
+    "owner": {
+        "type": "StructuredValue",
+        "value": {
+            "reference": "Organization/hl7"
+        }
+    },
+    "description": {
+        "type": "Text",
+        "value": "Hospital charges"
+    },
+    "meta": {
+        "type": "StructuredValue",
+        "value": {
+            "tag": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+                    "code": "HTEST",
+                    "display": "test health data"
+                }
+            ]
+        }
+    }
+}
