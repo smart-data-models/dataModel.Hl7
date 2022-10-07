@@ -23308,9 +23308,16 @@ Patient:
       x-ngsi:
         type: Property
     id:
-      description: 'The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.'
-      pattern: '^[ \r\n\t\S]+$'
-      type: string
+      anyOf:
+        - description: 'Property. Identifier format of any NGSI entity'
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+        - description: 'Property. Identifier format of any NGSI entity'
+          format: uri
+          type: string
+      description: 'Unique identifier of the entity'
       x-ngsi:
         type: Property
     identifier:
@@ -37642,22 +37649,6 @@ Patient:
       type: array
       x-ngsi:
         type: Property
-    owner:
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
-      items:
-        anyOf:
-          - description: 'Property. Identifier format of any NGSI entity'
-            maxLength: 256
-            minLength: 1
-            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
-            type: string
-          - description: 'Property. Identifier format of any NGSI entity'
-            format: uri
-            type: string
-        description: 'Property. Unique identifier of the entity'
-      type: array
-      x-ngsi:
-        type: Property
     photo:
       description: 'Image of the patient.'
       items:
@@ -40536,4 +40527,4 @@ Patient:
   x-license-url: https://github.com/smart-data-models/dataModel.Hl7/blob/master/Patient/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.HL7/Patient/schema.json
   x-model-tags: HL7
-  x-version: 0.0.1
+  x-version: 0.0.2
