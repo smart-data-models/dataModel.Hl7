@@ -265,5 +265,8 @@
         "use": "work"
       }
     ]
-  }
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Hl7/master/context.jsonld"
+  ]
 }
