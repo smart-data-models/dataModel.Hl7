@@ -241,16 +241,6 @@
         },
         {
             "@type": "Telemetry",
-            "name": "owner",
-            "schema": {
-                "@type": "Array",
-                "elementSchema": "string"
-            },
-            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
-            "displayName": "owner"
-        },
-        {
-            "@type": "Telemetry",
             "name": "photo",
             "schema": {
                 "@type": "Array",
