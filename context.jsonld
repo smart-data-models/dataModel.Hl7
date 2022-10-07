@@ -40,7 +40,6 @@
         "multipleBirthInteger": "https://smartdatamodels.org/dataModel.Hl7/multipleBirthInteger",
         "name": "https://smartdatamodels.org/name",
         "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
-        "owner": "https://smartdatamodels.org/owner",
         "photo": "https://smartdatamodels.org/dataModel.Hl7/photo",
         "resourceType": "https://smartdatamodels.org/dataModel.Hl7/resourceType",
         "seeAlso": "https://smartdatamodels.org/seeAlso",
