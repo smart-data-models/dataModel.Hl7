@@ -4,6 +4,8 @@ Data models mapped from the HL7 official version. Available at http://hl7.org/fh
 ### List of data models
 
 The following entity types are available:
+- [Account](https://github.com/smart-data-models/dataModel.Hl7/blob/master/Account/README.md). A financial tool for tracking value accrued for a particular purpose.  In the healthcare field, used to track charges for a patient, cost centers, etc.
+
 - [Patient](https://github.com/smart-data-models/dataModel.Hl7/blob/master/Patient/README.md). Demographics and other administrative information about an individual or animal receiving care or other health-related services.
 
 
