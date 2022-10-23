@@ -1,20 +1,33 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entidad: Cuenta  
-===============  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Hl7/blob/master/Account/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Herramienta financiera para el seguimiento del valor acumulado para un fin determinado.  En el ámbito sanitario, se utiliza para hacer un seguimiento de los cargos de un paciente, centros de coste, etc.**.  
 versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `_description`: Extensiones para la descripción  - `_implicitRules`: Extensiones para implicitRules  - `_language`: Extensiones para el lenguaje  - `_name`: Extensiones del nombre  - `_status`: Prórrogas para el estatus  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `contained`: Estos recursos no tienen una existencia independiente aparte del recurso que los contiene - no pueden ser identificados independientemente, y tampoco pueden tener su propio ámbito de transacción independiente.  - `coverage`: La(s) parte(s) que es(n) responsable(s) de cubrir el pago de esta cuenta, y en qué orden deben aplicarse a la misma.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Proporciona información adicional sobre el seguimiento de la cuenta y su uso.  - `extension`: Puede utilizarse para representar información adicional que no forma parte de la definición básica del recurso. Para que el uso de las extensiones sea seguro y manejable, se aplica un estricto conjunto de gobernanza a la definición y uso de las extensiones. Aunque cualquier implementador puede definir una extensión, existe un conjunto de requisitos que SE DEBEN cumplir como parte de la definición de la extensión.  - `guarantor`: Las partes responsables de equilibrar la cuenta si otras opciones de pago se quedan cortas.  - `hl7type`: Clasifica la cuenta con fines de información y búsqueda.  - `id`: Identificador único de la entidad  - `identifier`: Identificador único utilizado para referenciar la cuenta.  Puede o no estar destinado al uso humano (por ejemplo, el número de la tarjeta de crédito).  - `implicitRules`: Una referencia a un conjunto de reglas que se siguieron cuando se construyó el recurso y que deben entenderse al procesar el contenido. A menudo, se trata de una referencia a una guía de implementación que define las reglas especiales junto con otros perfiles, etc.  - `language`: La lengua base en la que está escrito el recurso.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `meta`: Los metadatos sobre el recurso. Se trata de un contenido mantenido por la infraestructura. Los cambios en el contenido pueden no estar siempre asociados a los cambios de versión del recurso.  - `modifierExtension`: Puede utilizarse para representar información adicional que no forma parte de la definición básica del recurso y que modifica la comprensión del elemento que lo contiene y/o la comprensión de los elementos descendientes. Por lo general, los elementos modificadores proporcionan una negación o calificación. Para que el uso de las extensiones sea seguro y manejable, se aplica un estricto conjunto de gobernanza a la definición y uso de las extensiones. Aunque cualquier implementador puede definir una extensión, existe un conjunto de requisitos que DEBEN cumplirse como parte de la definición de la extensión. Las aplicaciones que procesan un recurso están obligadas a comprobar la existencia de extensiones modificadoras.  
-Las extensiones modificadoras NO DEBERÁN cambiar el significado de ningún elemento de Resource o DomainResource (incluido el significado de la propia modifierExtension).  - `name`: Nombre utilizado para la cuenta cuando se muestra a los humanos en los informes, etc.  - `owner`: Indica el área de servicio, el hospital, el departamento, etc. con responsabilidad en la gestión de la Cuenta.  - `partOf`: Referencia a una cuenta principal.  - `resourceType`: Este es un recurso de la Cuenta  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `servicePeriod`: El rango de fechas de los servicios asociados a esta cuenta.  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `status`: Indica si la cuenta se utiliza/utiliza actualmente o no.  - `subject`: Identifica la entidad que incurre en los gastos. Aunque los destinatarios inmediatos de los servicios o bienes pueden ser entidades relacionadas con el sujeto, los gastos fueron finalmente realizados por el sujeto de la Cuenta.  - `text`: Una narración legible para el ser humano que contiene un resumen del recurso y puede utilizarse para representar el contenido del recurso ante un ser humano. No es necesario que la narrativa codifique todos los datos estructurados, pero se requiere que contenga suficientes detalles para que sea clínicamente seguro que un humano sólo lea la narrativa. Las definiciones de los recursos pueden definir qué contenido debe representarse en la narración para garantizar la seguridad clínica.    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `_description[object]`: Extensiones para la descripción  - `_implicitRules[object]`: Extensiones para implicitRules  - `_language[object]`: Extensiones para el lenguaje  - `_name[object]`: Extensiones del nombre  - `_status[object]`: Prórrogas para el estatus  - `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `contained[array]`: Estos recursos no tienen una existencia independiente aparte del recurso que los contiene - no pueden ser identificados independientemente, y tampoco pueden tener su propio ámbito de transacción independiente.  - `coverage[array]`: La(s) parte(s) que es(n) responsable(s) de cubrir el pago de esta cuenta, y en qué orden deben aplicarse a la misma.  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Proporciona información adicional sobre el seguimiento de la cuenta y su uso.  - `extension[array]`: Puede utilizarse para representar información adicional que no forma parte de la definición básica del recurso. Para que el uso de las extensiones sea seguro y manejable, se aplica un estricto conjunto de gobernanza a la definición y uso de las extensiones. Aunque cualquier implementador puede definir una extensión, hay un conjunto de requisitos que SE DEBEN cumplir como parte de la definición de la extensión.  - `guarantor[array]`: Las partes responsables de equilibrar la cuenta si otras opciones de pago se quedan cortas.  - `hl7type[object]`: Clasifica la cuenta con fines de información y búsqueda.  - `id[*]`: Identificador único de la entidad  - `identifier[array]`: Identificador único utilizado para referenciar la cuenta.  Puede o no estar destinado al uso humano (por ejemplo, el número de la tarjeta de crédito).  - `implicitRules[string]`: Una referencia a un conjunto de reglas que se siguieron cuando se construyó el recurso y que deben entenderse al procesar el contenido. A menudo, se trata de una referencia a una guía de implementación que define las reglas especiales junto con otros perfiles, etc.  - `language[string]`: La lengua base en la que está escrito el recurso.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `meta[object]`: Los metadatos sobre el recurso. Se trata de un contenido mantenido por la infraestructura. Los cambios en el contenido pueden no estar siempre asociados a los cambios de versión del recurso.  - `modifierExtension[array]`: Puede utilizarse para representar información adicional que no forma parte de la definición básica del recurso y que modifica la comprensión del elemento que lo contiene y/o la comprensión de los elementos descendientes. Por lo general, los elementos modificadores proporcionan una negación o calificación. Para que el uso de las extensiones sea seguro y manejable, se aplica un estricto conjunto de gobernanza a la definición y uso de las extensiones. Aunque cualquier implementador puede definir una extensión, existe un conjunto de requisitos que DEBEN cumplirse como parte de la definición de la extensión. Las aplicaciones que procesan un recurso están obligadas a comprobar la existencia de extensiones modificadoras.  
+Las extensiones modificadoras NO DEBERÁN cambiar el significado de ningún elemento de Resource o DomainResource (incluido el significado de la propia modifierExtension).  - `name[string]`: Nombre utilizado para la cuenta cuando se muestra a los humanos en los informes, etc.  - `owner[object]`: Indica el área de servicio, el hospital, el departamento, etc. con responsabilidad en la gestión de la Cuenta.  - `partOf[object]`: Referencia a una cuenta principal.  - `resourceType[string]`: Este es un recurso de la Cuenta  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `servicePeriod[object]`: El rango de fechas de los servicios asociados a esta cuenta.  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `status[string]`: Indica si la cuenta se utiliza/utiliza actualmente o no.  - `subject[array]`: Identifica la entidad que incurre en los gastos. Aunque los destinatarios inmediatos de los servicios o bienes pueden ser entidades relacionadas con el sujeto, los gastos fueron finalmente realizados por el sujeto de la Cuenta.  - `text[object]`: Una narración legible para el ser humano que contiene un resumen del recurso y puede utilizarse para representar el contenido del recurso ante un ser humano. No es necesario que la narrativa codifique todos los datos estructurados, pero se requiere que contenga suficientes detalles para que sea clínicamente seguro que un humano sólo lea la narrativa. Las definiciones de los recursos pueden definir qué contenido debe representarse en la narración para garantizar la seguridad clínica.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modelo de datos mapeado desde la versión original 4.3 del estándar HL7. El atributo original -type- ha sido renombrado a -hl7type- debido al conflicto con el tipo obligatorio en NGSI. Además se han realizado otras adaptaciones menores. Véase https://github.com/smart-data-models/dataModel.Hl7/blob/master/README.md en la raíz del tema  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Account:    
@@ -35964,9 +35977,14 @@ Account:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### Cuenta NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de una Cuenta en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "resourceType": "Account",  
@@ -36027,8 +36045,10 @@ Account:
   }  
 }  
 ```  
+</details>  
 #### Cuenta NGSI-v2 normalizada Ejemplo  
 He aquí un ejemplo de una Cuenta en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "type": "Account",  
@@ -36123,8 +36143,10 @@ Account:
     }  
 }  
 ```  
+</details>  
 #### Cuenta NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de una Cuenta en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "resourceType": "Account",  
@@ -36188,8 +36210,10 @@ Account:
   ]  
 }  
 ```  
+</details>  
 #### Cuenta NGSI-LD normalizada Ejemplo  
 He aquí un ejemplo de una Cuenta en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "resourceType": {  
@@ -36287,4 +36311,12 @@ Account:
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
