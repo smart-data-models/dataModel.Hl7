@@ -1,23 +1,36 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entidad: Paciente  
-=================  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Hl7/blob/master/Patient/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Demografía y otra información administrativa sobre un individuo o animal que recibe atención u otros servicios relacionados con la salud.**  
 versión: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `_active`: Extensiones para activos  - `_birthDate`: Extensiones para birthDate  - `_deceasedBoolean`: Extensiones para deceasedBoolean  - `_deceasedDateTime`: Extensiones para deceasedDateTime  - `_gender`: Extensiones para el género  - `_implicitRules`: Extensiones para implicitRules  - `_language`: Extensiones para el lenguaje  - `_multipleBirthBoolean`: Extensiones para multipleBirthBoolean  - `_multipleBirthInteger`: Extensiones para multipleBirthInteger  - `active`: Si este registro de paciente está en uso activo.  
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `_active[object]`: Extensiones para activos  - `_birthDate[object]`: Extensiones para birthDate  - `_deceasedBoolean[object]`: Extensiones para deceasedBoolean  - `_deceasedDateTime[object]`: Extensiones para deceasedDateTime  - `_gender[object]`: Extensiones para el género  - `_implicitRules[object]`: Extensiones para implicitRules  - `_language[object]`: Extensiones para el lenguaje  - `_multipleBirthBoolean[object]`: Extensiones para multipleBirthBoolean  - `_multipleBirthInteger[object]`: Extensiones para multipleBirthInteger  - `active[boolean]`: Si este registro de paciente está en uso activo.  
 Muchos sistemas utilizan esta propiedad para marcar como no actuales a los pacientes, como aquellos que no han sido vistos durante un período de tiempo basado en las reglas de negocio de una organización.  
 A menudo se utiliza para filtrar las listas de pacientes para excluir a los pacientes inactivos  
-Los pacientes fallecidos también pueden ser marcados como inactivos por las mismas razones, pero pueden estar activos durante algún tiempo después de la muerte.  - `address`: Una dirección para el individuo.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `birthDate`: La fecha de nacimiento del individuo.  - `communication`: Un lenguaje que puede utilizarse para comunicarse con el paciente sobre su salud.  - `contact`: Una persona de contacto (por ejemplo, tutor, pareja, amigo) para el paciente.  - `contained`: Estos recursos no tienen una existencia independiente aparte del recurso que los contiene - no pueden ser identificados independientemente, y tampoco pueden tener su propio ámbito de transacción independiente.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `deceasedBoolean`: Indica si el individuo ha fallecido o no.  - `deceasedDateTime`: Indica si el individuo ha fallecido o no.  - `description`: Una descripción de este artículo  - `extension`: Puede utilizarse para representar información adicional que no forma parte de la definición básica del recurso. Para que el uso de las extensiones sea seguro y manejable, se aplica un estricto conjunto de gobernanza a la definición y uso de las extensiones. Aunque cualquier implementador puede definir una extensión, existe un conjunto de requisitos que SE DEBEN cumplir como parte de la definición de la extensión.  - `gender`: Género administrativo: el género que se considera que tiene el paciente a efectos de administración y registro.  - `generalPractitioner`: Los pacientes nombraron al proveedor de cuidados.  - `id`: Identificador único de la entidad  - `identifier`: Un identificador para este paciente.  - `implicitRules`: Una referencia a un conjunto de reglas que se siguieron cuando se construyó el recurso y que deben entenderse al procesar el contenido. A menudo, se trata de una referencia a una guía de implementación que define las reglas especiales junto con otros perfiles, etc.  - `language`: La lengua base en la que está escrito el recurso.  - `link`: Enlace a otro recurso del paciente que se refiere al mismo paciente real.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `managingOrganization`: Organización que custodia el historial del paciente.  - `maritalStatus`: Este campo contiene el estado civil más reciente del paciente.  - `meta`: Los metadatos sobre el recurso. Se trata de un contenido mantenido por la infraestructura. Los cambios en el contenido pueden no estar siempre asociados a los cambios de versión del recurso.  - `modifierExtension`: Puede utilizarse para representar información adicional que no forma parte de la definición básica del recurso y que modifica la comprensión del elemento que lo contiene y/o la comprensión de los elementos descendientes. Por lo general, los elementos modificadores proporcionan una negación o calificación. Para que el uso de las extensiones sea seguro y manejable, se aplica un estricto conjunto de gobernanza a la definición y uso de las extensiones. Aunque cualquier implementador puede definir una extensión, existe un conjunto de requisitos que DEBEN cumplirse como parte de la definición de la extensión. Las aplicaciones que procesan un recurso están obligadas a comprobar la existencia de extensiones modificadoras.  
-Las extensiones modificadoras NO DEBERÁN cambiar el significado de ningún elemento de Resource o DomainResource (incluido el significado de la propia modifierExtension).  - `multipleBirthBoolean`: Indica si el paciente forma parte de un múltiple (booleano) o indica el orden real de nacimiento (entero).  - `multipleBirthInteger`: Indica si el paciente forma parte de un múltiple (booleano) o indica el orden real de nacimiento (entero).  - `name`: Un nombre asociado a la persona.  - `photo`: Imagen del paciente.  - `resourceType`: Este es un recurso para pacientes  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `telecom`: Un dato de contacto (por ejemplo, un número de teléfono o una dirección de correo electrónico) con el que se pueda contactar con la persona.  - `text`: Una narración legible para el ser humano que contiene un resumen del recurso y puede utilizarse para representar el contenido del recurso ante un ser humano. No es necesario que la narrativa codifique todos los datos estructurados, pero se requiere que contenga suficientes detalles para que sea clínicamente seguro que un humano sólo lea la narrativa. Las definiciones de los recursos pueden definir qué contenido debe representarse en la narración para garantizar la seguridad clínica.  - `type`: Tipo de entidad NGSI. Tiene que ser Paciente    
+Los pacientes fallecidos también pueden ser marcados como inactivos por las mismas razones, pero pueden estar activos durante algún tiempo después de la muerte.  - `address[array]`: Una dirección para el individuo.  - `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `birthDate[string]`: La fecha de nacimiento del individuo.  - `communication[array]`: Un lenguaje que puede utilizarse para comunicarse con el paciente sobre su salud.  - `contact[array]`: Una persona de contacto (por ejemplo, tutor, pareja, amigo) para el paciente.  - `contained[array]`: Estos recursos no tienen una existencia independiente aparte del recurso que los contiene - no pueden ser identificados independientemente, y tampoco pueden tener su propio ámbito de transacción independiente.  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `deceasedBoolean[boolean]`: Indica si el individuo ha fallecido o no.  - `deceasedDateTime[string]`: Indica si el individuo ha fallecido o no.  - `description[string]`: Una descripción de este artículo  - `extension[array]`: Puede utilizarse para representar información adicional que no forma parte de la definición básica del recurso. Para que el uso de las extensiones sea seguro y manejable, se aplica un estricto conjunto de gobernanza a la definición y uso de las extensiones. Aunque cualquier implementador puede definir una extensión, hay un conjunto de requisitos que SE DEBEN cumplir como parte de la definición de la extensión.  - `gender[string]`: Género administrativo: el género que se considera que tiene el paciente a efectos de administración y registro.  - `generalPractitioner[array]`: Los pacientes nombraron al proveedor de cuidados.  - `id[*]`: Identificador único de la entidad  - `identifier[array]`: Un identificador para este paciente.  - `implicitRules[string]`: Una referencia a un conjunto de reglas que se siguieron cuando se construyó el recurso y que deben entenderse al procesar el contenido. A menudo, se trata de una referencia a una guía de implementación que define las reglas especiales junto con otros perfiles, etc.  - `language[string]`: La lengua base en la que está escrito el recurso.  - `link[array]`: Enlace a otro recurso del paciente que se refiere al mismo paciente real.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `managingOrganization[object]`: Organización que custodia el historial del paciente.  - `maritalStatus[object]`: Este campo contiene el estado civil más reciente del paciente.  - `meta[object]`: Los metadatos sobre el recurso. Se trata de un contenido mantenido por la infraestructura. Los cambios en el contenido pueden no estar siempre asociados a los cambios de versión del recurso.  - `modifierExtension[array]`: Puede utilizarse para representar información adicional que no forma parte de la definición básica del recurso y que modifica la comprensión del elemento que lo contiene y/o la comprensión de los elementos descendientes. Por lo general, los elementos modificadores proporcionan una negación o calificación. Para que el uso de las extensiones sea seguro y manejable, se aplica un estricto conjunto de gobernanza a la definición y uso de las extensiones. Aunque cualquier implementador puede definir una extensión, existe un conjunto de requisitos que DEBEN cumplirse como parte de la definición de la extensión. Las aplicaciones que procesan un recurso están obligadas a comprobar la existencia de extensiones modificadoras.  
+Las extensiones modificadoras NO DEBERÁN cambiar el significado de ningún elemento de Resource o DomainResource (incluido el significado de la propia modifierExtension).  - `multipleBirthBoolean[boolean]`: Indica si el paciente forma parte de un múltiple (booleano) o indica el orden real de nacimiento (entero).  - `multipleBirthInteger[number]`: Indica si el paciente forma parte de un múltiple (booleano) o indica el orden real de nacimiento (entero).  - `name[array]`: Un nombre asociado a la persona.  - `photo[array]`: Imagen del paciente.  - `resourceType[string]`: Este es un recurso para pacientes  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `telecom[array]`: Un dato de contacto (por ejemplo, un número de teléfono o una dirección de correo electrónico) con el que se pueda contactar con la persona.  - `text[object]`: Una narración legible para el ser humano que contiene un resumen del recurso y puede utilizarse para representar el contenido del recurso ante un ser humano. No es necesario que la narrativa codifique todos los datos estructurados, pero se requiere que contenga suficientes detalles para que sea clínicamente seguro que un humano sólo lea la narrativa. Las definiciones de los recursos pueden definir qué contenido debe representarse en la narración para garantizar la seguridad clínica.  - `type[string]`: Tipo de entidad NGSI. Tiene que ser Paciente  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modelos de datos mapeados de la versión original 4.3 del estándar HL7 http://hl7.org/fhir/patient.html  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Patient:    
@@ -40474,9 +40487,14 @@ Patient:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### Ejemplo de valores clave de NGSI-v2 para pacientes  
 Aquí hay un ejemplo de un Paciente en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "resourceType": "Patient",  
@@ -40696,8 +40714,10 @@ Patient:
   ]  
 }  
 ```  
+</details>  
 #### Paciente NGSI-v2 normalizado Ejemplo  
 He aquí un ejemplo de un Paciente en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "resourceType": {  
@@ -40969,8 +40989,10 @@ Patient:
   }  
 }  
 ```  
+</details>  
 #### Ejemplo de valores clave NGSI-LD del paciente  
 Aquí hay un ejemplo de un Paciente en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "resourceType": "Patient",  
@@ -41193,8 +41215,10 @@ Patient:
   ]  
 }  
 ```  
+</details>  
 #### Paciente NGSI-LD normalizado Ejemplo  
 He aquí un ejemplo de un Paciente en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "resourceType": {  
@@ -41463,7 +41487,18 @@ Patient:
         "use": "work"  
       }  
     ]  
-  }  
+  },  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Hl7/master/context.jsonld"  
+  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
