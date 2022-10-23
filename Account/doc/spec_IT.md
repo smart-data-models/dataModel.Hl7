@@ -1,20 +1,33 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entità: Conto  
-=============  
+=============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Hl7/blob/master/Account/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descrizione globale: **Uno strumento finanziario per tracciare il valore maturato per uno scopo particolare.  In ambito sanitario, viene utilizzato per tracciare gli addebiti di un paziente, i centri di costo, ecc.  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `_description`: Estensioni per la descrizione  - `_implicitRules`: Estensioni per implicitRules  - `_language`: Estensioni per la lingua  - `_name`: Estensioni per il nome  - `_status`: Estensioni di stato  - `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `contained`: Queste risorse non hanno un'esistenza indipendente dalla risorsa che le contiene: non possono essere identificate indipendentemente e non possono avere un proprio ambito di transazione indipendente.  - `coverage`: Il/i soggetto/i responsabile/i di coprire il pagamento di questo conto e l'ordine in cui devono essere applicati al conto.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description`: Fornisce ulteriori informazioni su ciò che il conto tiene sotto controllo e su come viene utilizzato.  - `extension`: Può essere utilizzato per rappresentare informazioni aggiuntive che non fanno parte della definizione di base della risorsa. Per rendere l'uso delle estensioni sicuro e gestibile, esiste un rigoroso insieme di regole applicate alla definizione e all'uso delle estensioni. Sebbene qualsiasi implementatore possa definire un'estensione, esiste un insieme di requisiti che DEVONO essere soddisfatti come parte della definizione dell'estensione.  - `guarantor`: Le parti responsabili del bilanciamento del conto se le altre opzioni di pagamento sono insufficienti.  - `hl7type`: Categorizza il conto a fini di reportistica e ricerca.  - `id`: Identificatore univoco dell'entità  - `identifier`: Identificatore univoco utilizzato per fare riferimento al conto.  Può essere o meno destinato all'uso umano (ad esempio, il numero della carta di credito).  - `implicitRules`: Un riferimento a un insieme di regole che sono state seguite quando la risorsa è stata costruita e che devono essere comprese durante l'elaborazione del contenuto. Spesso si tratta di un riferimento a una guida all'implementazione che definisce le regole speciali insieme ad altri profili, ecc.  - `language`: La lingua di base in cui è scritta la risorsa.  - `location`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `meta`: I metadati sulla risorsa. Si tratta di contenuti mantenuti dall'infrastruttura. Le modifiche al contenuto potrebbero non essere sempre associate a modifiche di versione della risorsa.  - `modifierExtension`: Può essere usato per rappresentare informazioni aggiuntive che non fanno parte della definizione di base della risorsa e che modificano la comprensione dell'elemento che lo contiene e/o la comprensione dei discendenti dell'elemento contenente. Di solito gli elementi modificatori forniscono una negazione o una qualificazione. Per rendere l'uso delle estensioni sicuro e gestibile, esiste un rigoroso insieme di regole applicate alla definizione e all'uso delle estensioni. Sebbene qualsiasi implementatore possa definire un'estensione, esiste un insieme di requisiti che DEVONO essere soddisfatti come parte della definizione dell'estensione. Le applicazioni che elaborano una risorsa sono tenute a verificare la presenza di estensioni modificatrici.  
-Le estensioni del modificatore NON devono modificare il significato di alcun elemento di Resource o DomainResource (compreso il significato di modifierExtension).  - `name`: Nome utilizzato per il conto quando lo si visualizza nei rapporti, ecc.  - `owner`: Indica l'area di servizio, l'ospedale, il reparto, ecc. responsabile della gestione del conto.  - `partOf`: Riferimento a un conto padre.  - `resourceType`: Questa è una risorsa del Conto  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `servicePeriod`: L'intervallo di date dei servizi associati a questo conto.  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `status`: Indica se il conto è attualmente utilizzato/utilizzabile o meno.  - `subject`: Identifica l'entità che ha sostenuto le spese. Sebbene i destinatari immediati dei servizi o dei beni possano essere entità collegate al soggetto, le spese sono state sostenute in ultima analisi dal soggetto del conto.  - `text`: Una narrazione leggibile dall'uomo che contiene un riassunto della risorsa e può essere utilizzata per rappresentare il contenuto della risorsa a un essere umano. Non è necessario che la narrazione codifichi tutti i dati strutturati, ma è necessario che contenga dettagli sufficienti a rendere clinicamente sicura la semplice lettura della narrazione da parte di un essere umano. Le definizioni delle risorse possono definire quali contenuti devono essere rappresentati nella narrazione per garantire la sicurezza clinica.    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `_description[object]`: Estensioni per la descrizione  - `_implicitRules[object]`: Estensioni per implicitRules  - `_language[object]`: Estensioni per la lingua  - `_name[object]`: Estensioni per il nome  - `_status[object]`: Estensioni di stato  - `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `contained[array]`: Queste risorse non hanno un'esistenza indipendente dalla risorsa che le contiene: non possono essere identificate indipendentemente e non possono avere un proprio ambito di transazione indipendente.  - `coverage[array]`: Il/i soggetto/i responsabile/i di coprire il pagamento di questo conto e l'ordine in cui devono essere applicati al conto.  - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Fornisce ulteriori informazioni su ciò che il conto tiene sotto controllo e su come viene utilizzato.  - `extension[array]`: Può essere utilizzato per rappresentare informazioni aggiuntive che non fanno parte della definizione di base della risorsa. Per rendere l'uso delle estensioni sicuro e gestibile, esiste un rigoroso insieme di regole applicate alla definizione e all'uso delle estensioni. Sebbene qualsiasi implementatore possa definire un'estensione, esiste un insieme di requisiti che DEVONO essere soddisfatti come parte della definizione dell'estensione.  - `guarantor[array]`: Le parti responsabili del bilanciamento del conto se le altre opzioni di pagamento sono insufficienti.  - `hl7type[object]`: Categorizza il conto a fini di reportistica e ricerca.  - `id[*]`: Identificatore univoco dell'entità  - `identifier[array]`: Identificatore univoco utilizzato per fare riferimento al conto.  Può essere o meno destinato all'uso umano (ad esempio, il numero della carta di credito).  - `implicitRules[string]`: Un riferimento a un insieme di regole che sono state seguite quando la risorsa è stata costruita e che devono essere comprese durante l'elaborazione del contenuto. Spesso si tratta di un riferimento a una guida all'implementazione che definisce le regole speciali insieme ad altri profili, ecc.  - `language[string]`: La lingua di base in cui è scritta la risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `meta[object]`: I metadati sulla risorsa. Si tratta di contenuti mantenuti dall'infrastruttura. Le modifiche al contenuto potrebbero non essere sempre associate a modifiche di versione della risorsa.  - `modifierExtension[array]`: Può essere usato per rappresentare informazioni aggiuntive che non fanno parte della definizione di base della risorsa e che modificano la comprensione dell'elemento che lo contiene e/o la comprensione dei discendenti dell'elemento contenente. Di solito gli elementi modificatori forniscono una negazione o una qualificazione. Per rendere l'uso delle estensioni sicuro e gestibile, esiste un rigoroso insieme di regole applicate alla definizione e all'uso delle estensioni. Sebbene qualsiasi implementatore possa definire un'estensione, esiste un insieme di requisiti che DEVONO essere soddisfatti come parte della definizione dell'estensione. Le applicazioni che elaborano una risorsa sono tenute a verificare la presenza di estensioni modificatrici.  
+Le estensioni del modificatore NON devono modificare il significato di alcun elemento di Resource o DomainResource (compreso il significato di modifierExtension).  - `name[string]`: Nome utilizzato per il conto quando lo si visualizza nei rapporti, ecc.  - `owner[object]`: Indica l'area di servizio, l'ospedale, il reparto, ecc. responsabile della gestione del conto.  - `partOf[object]`: Riferimento a un conto padre.  - `resourceType[string]`: Questa è una risorsa del Conto  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `servicePeriod[object]`: L'intervallo di date dei servizi associati a questo conto.  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `status[string]`: Indica se il conto è attualmente utilizzato/utilizzabile o meno.  - `subject[array]`: Identifica l'entità che ha sostenuto le spese. Sebbene i destinatari immediati dei servizi o dei beni possano essere entità collegate al soggetto, le spese sono state sostenute in ultima analisi dal soggetto del conto.  - `text[object]`: Una narrazione leggibile dall'uomo che contiene un riassunto della risorsa e può essere utilizzata per rappresentare il contenuto della risorsa a un essere umano. Non è necessario che la narrazione codifichi tutti i dati strutturati, ma è necessario che contenga dettagli sufficienti a rendere clinicamente sicura la semplice lettura della narrazione da parte di un essere umano. Le definizioni delle risorse possono definire quali contenuti devono essere rappresentati nella narrazione per garantire la sicurezza clinica.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modello di dati mappato dalla versione originale 4.3 dello standard HL7. L'attributo originale -type- è stato rinominato in -hl7type- a causa del conflitto con il tipo obbligatorio in NGSI. Inoltre sono stati eseguiti altri adattamenti minori. Vedere https://github.com/smart-data-models/dataModel.Hl7/blob/master/README.md alla radice dell'argomento  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Account:    
@@ -35964,9 +35977,14 @@ Account:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Esempi di payload  
 #### Account NGSI-v2 valori-chiave Esempio  
 Ecco un esempio di un conto in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "resourceType": "Account",  
@@ -36027,8 +36045,10 @@ Account:
   }  
 }  
 ```  
+</details>  
 #### Conto NGSI-v2 normalizzato Esempio  
 Ecco un esempio di un Conto in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "type": "Account",  
@@ -36123,8 +36143,10 @@ Account:
     }  
 }  
 ```  
+</details>  
 #### Valori chiave NGSI-LD del conto Esempio  
 Ecco un esempio di un conto in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "resourceType": "Account",  
@@ -36188,8 +36210,10 @@ Account:
   ]  
 }  
 ```  
+</details>  
 #### Conto NGSI-LD normalizzato Esempio  
 Ecco un esempio di un conto in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "resourceType": {  
@@ -36287,4 +36311,12 @@ Account:
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
