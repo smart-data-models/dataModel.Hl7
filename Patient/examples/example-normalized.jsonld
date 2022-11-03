@@ -1,34 +1,34 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティ患者  
-========<!-- /10-Header -->  
+实体。病人  
+=====<!-- /10-Header -->  
 <!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.Hl7/blob/master/Patient/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[开放许可](https://github.com/smart-data-models//dataModel.Hl7/blob/master/Patient/LICENSE.md)  
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述。**ケアまたはその他の医療関連サービスを受ける個人または動物に関する人口統計学およびその他の管理情報**。  
-バージョン: 0.0.2  
+全球描述。**关于接受护理或其他健康相关服务的个人或动物的统计数据和其他行政信息。  
+版本：0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+##属性列表  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `_active[object]`: アクティブ用エクステンション  - `_birthDate[object]`: birthDateの拡張機能  - `_deceasedBoolean[object]`: deceasedBoolean の拡張機能  - `_deceasedDateTime[object]`: deceasedDateTimeの拡張機能  - `_gender[object]`: ジェンダーに関する拡張機能  - `_implicitRules[object]`: implicitRules の拡張機能  - `_language[object]`: 言語に関する拡張機能  - `_multipleBirthBoolean[object]`: multipleBirthBoolean の拡張機能  - `_multipleBirthInteger[object]`: multipleBirthInteger の拡張機能  - `active[boolean]`: この患者レコードが使用中であるかどうか。  
-多くのシステムでは、このプロパティを使用して、組織のビジネス・ルールに基づき、一定期間診察を受けていない患者などを非現用患者としてマークしています。  
-このプロパティは、患者リストをフィルタリングして、非アクティブな患者を除外するためによく使用されます。  
-死亡した患者も同じ理由で非アクティブとマークされることがありますが、死亡後しばらくの間はアクティブである可能性があります。  - `address[array]`: 個人の住所。  - `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `birthDate[string]`: 個人の生年月日。  - `communication[array]`: 患者さんの健康に関するコミュニケーションに使用される可能性のある言語。  - `contact[array]`: 患者さんの連絡先（保護者、パートナー、友人など）。  - `contained[array]`: これらのリソースは、それを含むリソースとは別に独立した存在ではなく、独立して識別することも、独立したトランザクションのスコープを持つこともできない。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `deceasedBoolean[boolean]`: 個人が死亡しているか否かを示す。  - `deceasedDateTime[string]`: 個人が死亡しているか否かを示す。  - `description[string]`: このアイテムの説明  - `extension[array]`: リソースの基本的な定義に含まれない追加情報を表現するために使用することができる。拡張の使用を安全かつ管理しやすくするために，拡張の定義と使用に適用される厳密なガバナンスのセットが存在する。どのような実装者でも拡張機能を定義できるが，拡張機能の定義の一部として満たすべき一連の要件がある(SHALL)。  - `gender[string]`: 管理上の性別-管理および記録保持の目的で、患者が持つとみなされる性別。  - `generalPractitioner[array]`: 患者さんが指名した医療機関  - `id[*]`: エンティティの一意な識別子  - `identifier[array]`: この患者を識別するための識別子。  - `implicitRules[string]`: リソースが構築されたときに従った一連の規則への参照であり、コンテンツを処理するときに理解しなければならないもの。多くの場合、これは他のプロファイルなどとともに特別な規則を定義する実装ガイドへの参照である。  - `language[string]`: リソースが記述されているベース言語。  - `link[array]`: 同じ実際の患者に関する他の患者リソースへのリンク。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `managingOrganization[object]`: 患者記録の保管者である組織。  - `maritalStatus[object]`: このフィールドには、患者の直近の婚姻（民事）状態が含まれる。  - `meta[object]`: リソースに関するメタデータ。これは、インフラストラクチャによって維持されるコンテンツです。コンテンツの変更は、必ずしもリソースのバージョン変更と関連するとは限りません。  - `modifierExtension[array]`: リソースの基本的な定義に含まれない追加情報を表すために使用され、その情報を含む要素の理解および/または含む要素の子孫の理解を修正することができる。通常，修飾子要素は，否定又は修飾を提供する。拡張の使用を安全かつ管理しやすくするために，拡張の定義及び使用に適用される厳密な統制の集合が存在する。どのような実装者でも拡張を定義することができますが、拡張の定義の一部として満たされなければならない一連の要件があります(SHALL)。リソースを処理するアプリケーションは、修飾子の拡張をチェックすることが要求されます。  
-修飾子拡張は、Resource または DomainResource の要素の意味を変更してはならない (modifierExtension自体の意味を変更してはならないことを含む)。  - `multipleBirthBoolean[boolean]`: 患者が複数に属しているかどうかを示す（boolean）、または実際の出生順を示す（integer）。  - `multipleBirthInteger[number]`: 患者が複数に属しているかどうかを示す（boolean）、または実際の出生順を示す（integer）。  - `name[array]`: 個人に関連する名前。  - `photo[array]`: 患者さんのイメージ。  - `resourceType[string]`: これは患者さんの資料です  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `telecom[array]`: 個人と連絡を取ることができる連絡先（電話番号やメールアドレスなど）。  - `text[object]`: リソースの要約を含み、リソースの内容を人間に表現するために使用できる、人間が読めるナラティブ（Narrative）。ナラティブは構造化されたデータをすべてコード化する必要はないが、人間がナラティブを読むだけでも臨床的に安全であるように、十分な詳細を含むことが要求される。リソース定義は、臨床的安全性を確保するために、どのような内容をナラティブで表現すべきかを定義することができる。  - `type[string]`: NGSIエンティティタイプ。それはPatientでなければならない  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `_active[object]`: 活动的扩展  - `_birthDate[object]`: 出生日期的扩展  - `_deceasedBoolean[object]`: 对deceasedBoolean的扩展  - `_deceasedDateTime[object]`: 延长deceasedDateTime的期限  - `_gender[object]`: 性别的延伸  - `_implicitRules[object]`: 隐式规则的扩展  - `_language[object]`: 语言的扩展  - `_multipleBirthBoolean[object]`: 多次出生布尔的扩展  - `_multipleBirthInteger[object]`: 多重生日的扩展  - `active[boolean]`: 这个病人记录是否在使用中。  
+许多系统使用这个属性来标记为非当前的病人，例如那些根据组织的业务规则在一段时间内没有被看到的病人。  
+它经常被用来过滤病人名单，以排除不活跃的病人  
+已死亡的病人也可能因为同样的原因被标记为不活动，但在死亡后的一段时间内可能是活动的。  - `address[array]`: 个人的一个地址。  - `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `birthDate[string]`: 个人的出生日期。  - `communication[array]`: 一种可用于与病人沟通其健康状况的语言。  - `contact[array]`: 病人的联系方（如监护人、伴侣、朋友）。  - `contained[array]`: 这些资源在包含它们的资源之外没有独立的存在--它们不能被独立识别，也不能有自己独立的交易范围。  - `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `deceasedBoolean[boolean]`: 表示该人是否已经死亡。  - `deceasedDateTime[string]`: 表示该人是否已经死亡。  - `description[string]`: 对这个项目的描述  - `extension[array]`: 可用于表示不属于资源的基本定义的额外信息。为了使扩展的使用安全和可管理，对扩展的定义和使用有一套严格的管理。尽管任何实施者都可以定义扩展，但作为扩展定义的一部分，有一组要求必须得到满足。  - `gender[string]`: 管理性别--为管理和保存记录的目的，病人被认为具有的性别。  - `generalPractitioner[array]`: 患者提名的护理提供者。  - `id[*]`: 实体的唯一标识符  - `identifier[array]`: 这个病人的一个标识符。  - `implicitRules[string]`: 对构建资源时遵循的一系列规则的引用，在处理内容时必须理解这些规则。通常，这是对一个实施指南的引用，该指南与其他配置文件等一起定义了特殊的规则。  - `language[string]`: 编写该资源的基础语言。  - `link[array]`: 链接到另一个涉及同一实际病人的病人资源。  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `managingOrganization[object]`: 作为病人记录的保管人的组织。  - `maritalStatus[object]`: 该字段包含患者最近的婚姻（民事）状况。  - `meta[object]`: 关于资源的元数据。这是由基础设施维护的内容。对内容的改变可能并不总是与资源的版本改变相关。  - `modifierExtension[array]`: 可以用来表示不属于资源基本定义的额外信息，这些信息修改了对包含它的元素的理解和/或对包含元素的后代的理解。通常修饰语元素提供否定或限定。为了使扩展的使用安全和可管理，对扩展的定义和使用有一套严格的管理。尽管任何实现者都可以定义扩展，但作为扩展定义的一部分，有一套必须满足的要求。处理资源的应用程序被要求检查修改器扩展。  
+修改器扩展不应改变资源或 DomainResource 上任何元素的含义（包括不能改变 modifierExtension 本身的含义）。  - `multipleBirthBoolean[boolean]`: 表示病人是否属于多胞胎（布尔型）或表示实际的出生顺序（整数）。  - `multipleBirthInteger[number]`: 表示病人是否属于多胞胎（布尔型）或表示实际的出生顺序（整数）。  - `name[array]`: 一个与个人有关的名字。  - `photo[array]`: 病人的形象。  - `resourceType[string]`: 这是一个病人资源  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `telecom[array]`: 可与该人联系的详细联系方式（如电话号码或电子邮件地址）。  - `text[object]`: 一个人类可读的叙述，包含资源的摘要，可用于向人类表述资源的内容。叙述不需要对所有的结构化数据进行编码，但需要包含足够的细节，使人在临床上可以安全地阅读叙述。资源定义可以定义哪些内容应在叙述中表示，以确保临床安全。  - `type[string]`: NGSI实体类型。它必须是病人  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-HL7 標準のオリジナルバージョン 4.3 からマッピングされたデータモデル http://hl7.org/fhir/patient.html  
+从HL7标准的原始4.3版本映射出的数据模型 http://hl7.org/fhir/patient.html  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+## 数据模型的属性描述  
+按字母顺序排列（点击查看详情）。  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -40491,9 +40491,9 @@ Patient:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## ペイロードの例  
-#### 患者NGSI-v2キー値例  
-ここでは、PatientをJSON-LD形式でkey-valuesにした例を示す。これは、`options=keyValues`を使用したときにNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+## ＃＃＃＃有效载荷的例子  
+#### 病人NGSI-v2关键值示例  
+下面是一个以JSON-LD格式作为关键值的病人的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -40715,8 +40715,8 @@ Patient:
 }  
 ```  
 </details>  
-#### 患者 NGSI-v2 正規化例  
-以下は、PatientをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 病人 NGSI-v2 归一化示例  
+下面是一个以JSON-LD格式规范化的病人的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -40990,8 +40990,8 @@ Patient:
 }  
 ```  
 </details>  
-#### 患者 NGSI-LD キー値例  
-ここでは、PatientをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返されます。  
+#### 病人NGSI-LD的关键值示例  
+这里是一个以JSON-LD格式作为key-values的病人的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -41216,8 +41216,8 @@ Patient:
 }  
 ```  
 </details>  
-#### 患者 NGSI-LD 正規化例  
-以下は、PatientをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 病人NGSI-LD正常化的例子  
+下面是一个以JSON-LD格式规范化的病人的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -41497,7 +41497,7 @@ Patient:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
