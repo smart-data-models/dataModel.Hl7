@@ -1,31 +1,31 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entität: Konto  
-==============<!-- /10-Header -->  
+Entità: Conto  
+=============<!-- /10-Header -->  
 <!-- 15-License -->  
-[Offene Lizenz](https://github.com/smart-data-models//dataModel.Hl7/blob/master/Account/LICENSE.md)  
-[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[Licenza aperta](https://github.com/smart-data-models//dataModel.Hl7/blob/master/Account/LICENSE.md)  
+[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Globale Beschreibung: **Ein Finanzinstrument zur Verfolgung von Werten, die für einen bestimmten Zweck angefallen sind.  Im Gesundheitswesen wird es verwendet, um Gebühren für einen Patienten, Kostenstellen usw. zu verfolgen**.  
-Version: 0.0.1  
+Descrizione globale: **Uno strumento finanziario per tracciare il valore maturato per uno scopo particolare.  In ambito sanitario, viene utilizzato per tracciare gli addebiti di un paziente, i centri di costo, ecc.  
+versione: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## Liste der Eigenschaften  
+## Elenco delle proprietà  
 
-<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
-- `_description[object]`: Erweiterungen für die Beschreibung  - `_implicitRules[object]`: Erweiterungen für implicitRules  - `_language[object]`: Erweiterungen für Sprache  - `_name[object]`: Erweiterungen für Namen  - `_status[object]`: Erweiterungen für den Status  - `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `contained[array]`: Diese Ressourcen haben keine eigenständige Existenz neben der Ressource, die sie enthält - sie können weder unabhängig identifiziert werden, noch können sie einen eigenen unabhängigen Transaktionsbereich haben.  - `coverage[array]`: Die Partei(en), die für die Deckung dieses Kontos verantwortlich ist/sind, und in welcher Reihenfolge sie dem Konto gutgeschrieben werden sollen.  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Enthält zusätzliche Informationen darüber, was das Konto verfolgt und wie es verwendet wird.  - `extension[array]`: Kann verwendet werden, um zusätzliche Informationen darzustellen, die nicht Teil der Basisdefinition der Ressource sind. Um die Verwendung von Erweiterungen sicher und handhabbar zu machen, gelten strenge Regeln für die Definition und Verwendung von Erweiterungen. Obwohl jeder Implementierer eine Erweiterung definieren kann, gibt es eine Reihe von Anforderungen, die als Teil der Definition der Erweiterung erfüllt werden MÜSSEN.  - `guarantor[array]`: Die Parteien, die für den Ausgleich des Kontos verantwortlich sind, wenn andere Zahlungsmöglichkeiten nicht ausreichen.  - `hl7type[object]`: Kategorisiert das Konto für Berichts- und Suchzwecke.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `identifier[array]`: Eindeutige Kennung, die zur Referenzierung des Kontos verwendet wird.  Kann, muss aber nicht für den menschlichen Gebrauch bestimmt sein (z. B. Kreditkartennummer).  - `implicitRules[string]`: Ein Verweis auf eine Reihe von Regeln, die bei der Erstellung der Ressource befolgt wurden und die bei der Verarbeitung des Inhalts beachtet werden müssen. Häufig handelt es sich dabei um einen Verweis auf einen Implementierungsleitfaden, in dem die speziellen Regeln zusammen mit anderen Profilen usw. definiert sind.  - `language[string]`: Die Basissprache, in der die Ressource geschrieben ist.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `meta[object]`: Die Metadaten über die Ressource. Dies ist ein Inhalt, der von der Infrastruktur gepflegt wird. Änderungen am Inhalt sind nicht immer mit Versionsänderungen an der Ressource verbunden.  - `modifierExtension[array]`: Kann verwendet werden, um zusätzliche Informationen darzustellen, die nicht Teil der Basisdefinition der Ressource sind und die das Verständnis des Elements, das sie enthält, und/oder das Verständnis der Nachkommen der enthaltenen Elemente verändern. In der Regel bieten Modifier-Elemente eine Negation oder Qualifikation. Um die Verwendung von Erweiterungen sicher und handhabbar zu machen, gelten strenge Regeln für die Definition und Verwendung von Erweiterungen. Obwohl jeder Implementierer eine Erweiterung definieren darf, gibt es eine Reihe von Anforderungen, die als Teil der Definition der Erweiterung erfüllt werden MÜSSEN. Anwendungen, die eine Ressource verarbeiten, müssen auf Modifier-Erweiterungen prüfen.  
-Modifier-Erweiterungen MÜSSEN die Bedeutung der Elemente von Resource oder DomainResource NICHT ändern (auch nicht die Bedeutung von modifierExtension selbst).  - `name[string]`: Name, der für das Konto verwendet wird, wenn es in Berichten usw. für Menschen angezeigt wird.  - `owner[object]`: Gibt den Dienstleistungsbereich, das Krankenhaus, die Abteilung usw. an, der/die für die Verwaltung des Kontos zuständig ist.  - `partOf[object]`: Verweis auf ein übergeordnetes Konto.  - `resourceType[string]`: Dies ist eine Kontoressource  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `servicePeriod[object]`: Der Datumsbereich der mit diesem Konto verbundenen Dienstleistungen.  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `status[string]`: Zeigt an, ob das Konto derzeit genutzt/verwendbar ist oder nicht.  - `subject[array]`: Identifiziert die Einrichtung, die die Ausgaben tätigt. Auch wenn die unmittelbaren Empfänger der Dienstleistungen oder Waren mit dem Kontoinhaber verbundene Unternehmen sein können, wurden die Ausgaben letztendlich von dem Kontoinhaber getätigt.  - `text[object]`: Ein für den Menschen lesbarer Text, der eine Zusammenfassung der Ressource enthält und verwendet werden kann, um den Inhalt der Ressource für einen Menschen darzustellen. Der Text muss nicht alle strukturierten Daten kodieren, aber er muss so detailliert sein, dass es für einen Menschen klinisch sicher ist, den Text nur zu lesen. In den Ressourcendefinitionen kann festgelegt werden, welche Inhalte im Narrativ dargestellt werden sollten, um die klinische Sicherheit zu gewährleisten.  <!-- /30-PropertiesList -->  
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `_description[object]`: Estensioni per la descrizione  - `_implicitRules[object]`: Estensioni per implicitRules  - `_language[object]`: Estensioni per la lingua  - `_name[object]`: Estensioni per il nome  - `_status[object]`: Estensioni di stato  - `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `contained[array]`: Queste risorse non hanno un'esistenza indipendente dalla risorsa che le contiene: non possono essere identificate indipendentemente e non possono avere un proprio ambito di transazione indipendente.  - `coverage[array]`: Il/i soggetto/i responsabile/i di coprire il pagamento di questo conto e l'ordine in cui devono essere applicati al conto.  - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Fornisce ulteriori informazioni su ciò che il conto tiene sotto controllo e su come viene utilizzato.  - `extension[array]`: Può essere utilizzato per rappresentare informazioni aggiuntive che non fanno parte della definizione di base della risorsa. Per rendere l'uso delle estensioni sicuro e gestibile, esiste un rigoroso insieme di regole applicate alla definizione e all'uso delle estensioni. Sebbene qualsiasi implementatore possa definire un'estensione, esiste un insieme di requisiti che DEVONO essere soddisfatti come parte della definizione dell'estensione.  - `guarantor[array]`: Le parti responsabili del bilanciamento del conto se le altre opzioni di pagamento sono insufficienti.  - `hl7type[object]`: Categorizza il conto a fini di reportistica e ricerca.  - `id[*]`: Identificatore univoco dell'entità  - `identifier[array]`: Identificatore univoco utilizzato per fare riferimento al conto.  Può essere o meno destinato all'uso umano (ad esempio, il numero della carta di credito).  - `implicitRules[string]`: Un riferimento a un insieme di regole che sono state seguite quando la risorsa è stata costruita e che devono essere comprese durante l'elaborazione del contenuto. Spesso si tratta di un riferimento a una guida all'implementazione che definisce le regole speciali insieme ad altri profili, ecc.  - `language[string]`: La lingua di base in cui è scritta la risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `meta[object]`: I metadati sulla risorsa. Si tratta di contenuti mantenuti dall'infrastruttura. Le modifiche al contenuto potrebbero non essere sempre associate a modifiche di versione della risorsa.  - `modifierExtension[array]`: Può essere usato per rappresentare informazioni aggiuntive che non fanno parte della definizione di base della risorsa e che modificano la comprensione dell'elemento che lo contiene e/o la comprensione dei discendenti dell'elemento contenente. Di solito gli elementi modificatori forniscono una negazione o una qualificazione. Per rendere l'uso delle estensioni sicuro e gestibile, esiste un rigoroso insieme di regole applicate alla definizione e all'uso delle estensioni. Sebbene qualsiasi implementatore possa definire un'estensione, esiste un insieme di requisiti che DEVONO essere soddisfatti come parte della definizione dell'estensione. Le applicazioni che elaborano una risorsa sono tenute a verificare la presenza di estensioni modificatrici.  
+Le estensioni del modificatore NON devono modificare il significato di alcun elemento di Resource o DomainResource (compreso il significato di modifierExtension).  - `name[string]`: Nome utilizzato per il conto quando lo si visualizza nei rapporti, ecc.  - `owner[object]`: Indica l'area di servizio, l'ospedale, il reparto, ecc. responsabile della gestione del conto.  - `partOf[object]`: Riferimento a un conto padre.  - `resourceType[string]`: Questa è una risorsa del Conto  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `servicePeriod[object]`: L'intervallo di date dei servizi associati a questo conto.  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `status[string]`: Indica se il conto è attualmente utilizzato/utilizzabile o meno.  - `subject[array]`: Identifica l'entità che ha sostenuto le spese. Sebbene i destinatari immediati dei servizi o dei beni possano essere entità collegate al soggetto, le spese sono state sostenute in ultima analisi dal soggetto del conto.  - `text[object]`: Una narrazione leggibile dall'uomo che contiene un riassunto della risorsa e può essere utilizzata per rappresentare il contenuto della risorsa a un essere umano. Non è necessario che la narrazione codifichi tutti i dati strutturati, ma è necessario che contenga dettagli sufficienti a rendere clinicamente sicura la semplice lettura della narrazione da parte di un essere umano. Le definizioni delle risorse possono definire quali contenuti devono essere rappresentati nella narrazione per garantire la sicurezza clinica.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-Erforderliche Eigenschaften  
+Proprietà richieste  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Das Datenmodell wurde von der ursprünglichen Version 4.3 des HL7-Standards übernommen. Das ursprüngliche Attribut -type- wurde in -hl7type- umbenannt, da es einen Konflikt mit dem obligatorischen Typ in NGSI gab. Außerdem wurden weitere kleinere Anpassungen vorgenommen. Siehe https://github.com/smart-data-models/dataModel.Hl7/blob/master/README.md unter dem Thema root  
+Modello di dati mappato dalla versione originale 4.3 dello standard HL7. L'attributo originale -type- è stato rinominato in -hl7type- a causa del conflitto con il tipo obbligatorio in NGSI. Inoltre sono stati eseguiti altri adattamenti minori. Vedere https://github.com/smart-data-models/dataModel.Hl7/blob/master/README.md alla radice dell'argomento  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Datenmodell Beschreibung der Eigenschaften  
-Alphabetisch sortiert (für Details anklicken)  
+## Modello di dati descrizione delle proprietà  
+Ordinati in ordine alfabetico (clicca per i dettagli)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -35981,9 +35981,9 @@ Account:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## Beispiel-Nutzlasten  
-#### Konto NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen Account im JSON-LD-Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+## Esempi di payload  
+#### Account NGSI-v2 valori-chiave Esempio  
+Ecco un esempio di un conto in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -36046,8 +36046,8 @@ Account:
 }  
 ```  
 </details>  
-#### Konto NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für ein Konto im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-v2 kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### Conto NGSI-v2 normalizzato Esempio  
+Ecco un esempio di un Conto in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -36144,8 +36144,8 @@ Account:
 }  
 ```  
 </details>  
-#### Konto NGSI-LD-Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen Account im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+#### Valori chiave NGSI-LD del conto Esempio  
+Ecco un esempio di un conto in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -36211,8 +36211,8 @@ Account:
 }  
 ```  
 </details>  
-#### Konto NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für ein Konto im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### Conto NGSI-LD normalizzato Esempio  
+Ecco un esempio di un conto in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -36315,7 +36315,7 @@ Account:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
