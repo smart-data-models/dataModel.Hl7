@@ -1,0 +1,8 @@
+notesHeader:
+  Some attributes have been modified in order to validate the examples. Specifically coding has transformed from an array of string to an array of objects with subattributes system, code and display. Likewise the attribute strength -> numerator -> value and strength -> denominator -> value have been transformed from string to number according to the written definition. Finally the attribute type, equivalent to the resourceType has been added to meet the required of NGSI standard.
+notesMiddle:
+
+notesFooter:
+
+notesReadme:
+  Some minor transformation has been carried out in order to be capable to validate the examples. Potentially there are errors in the original json schema.
