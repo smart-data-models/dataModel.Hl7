@@ -1,34 +1,34 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entity: Patient  
-===============<!-- /10-Header -->  
+实体。病人  
+=====<!-- /10-Header -->  
 <!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.Hl7/blob/master/Patient/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[开放许可](https://github.com/smart-data-models//dataModel.Hl7/blob/master/Patient/LICENSE.md)  
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Global description: **Demographics and other administrative information about an individual or animal receiving care or other health-related services.**  
-version: 0.0.2  
+全球描述。**关于接受护理或其他健康相关服务的个人或动物的统计数据和其他行政信息。  
+版本：0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## List of properties  
+##属性列表  
 
-<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `_active[object]`: Extensions for active  - `_birthDate[object]`: Extensions for birthDate  - `_deceasedBoolean[object]`: Extensions for deceasedBoolean  - `_deceasedDateTime[object]`: Extensions for deceasedDateTime  - `_gender[object]`: Extensions for gender  - `_implicitRules[object]`: Extensions for implicitRules  - `_language[object]`: Extensions for language  - `_multipleBirthBoolean[object]`: Extensions for multipleBirthBoolean  - `_multipleBirthInteger[object]`: Extensions for multipleBirthInteger  - `active[boolean]`: Whether this patient record is in active use.   
-Many systems use this property to mark as non-current patients, such as those that have not been seen for a period of time based on an organizations business rules.  
-It is often used to filter patient lists to exclude inactive patients  
-Deceased patients may also be marked as inactive for the same reasons, but may be active for some time after death.  - `address[array]`: An address for the individual.  - `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `birthDate[string]`: The date of birth for the individual.  - `communication[array]`: A language which may be used to communicate with the patient about his or her health.  - `contact[array]`: A contact party (e.g. guardian, partner, friend) for the patient.  - `contained[array]`: These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `deceasedBoolean[boolean]`: Indicates if the individual is deceased or not.  - `deceasedDateTime[string]`: Indicates if the individual is deceased or not.  - `description[string]`: A description of this item  - `extension[array]`: May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.  - `gender[string]`: Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes.  - `generalPractitioner[array]`: Patients nominated care provider.  - `id[*]`: Unique identifier of the entity  - `identifier[array]`: An identifier for this patient.  - `implicitRules[string]`: A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.  - `language[string]`: The base language in which the resource is written.  - `link[array]`: Link to another patient resource that concerns the same actual patient.  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `managingOrganization[object]`: Organization that is the custodian of the patient record.  - `maritalStatus[object]`: This field contains a patients most recent marital (civil) status.  - `meta[object]`: The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.  - `modifierExtension[array]`: May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing elements descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.  
-Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).  - `multipleBirthBoolean[boolean]`: Indicates whether the patient is part of a multiple (boolean) or indicates the actual birth order (integer).  - `multipleBirthInteger[number]`: Indicates whether the patient is part of a multiple (boolean) or indicates the actual birth order (integer).  - `name[array]`: A name associated with the individual.  - `photo[array]`: Image of the patient.  - `resourceType[string]`: This is a Patient resource  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `telecom[array]`: A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted.  - `text[object]`: A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it clinically safe for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.  - `type[string]`: NGSI entity type. It has to be Patient  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `_active[object]`: 活动的扩展  - `_birthDate[object]`: 出生日期的扩展  - `_deceasedBoolean[object]`: 对deceasedBoolean的扩展  - `_deceasedDateTime[object]`: 延长deceasedDateTime的期限  - `_gender[object]`: 性别的延伸  - `_implicitRules[object]`: 隐式规则的扩展  - `_language[object]`: 语言的扩展  - `_multipleBirthBoolean[object]`: 多次出生布尔的扩展  - `_multipleBirthInteger[object]`: 多重生日的扩展  - `active[boolean]`: 这个病人记录是否在使用中。  
+许多系统使用这个属性来标记为非当前的病人，例如那些根据组织的业务规则在一段时间内没有被看到的病人。  
+它经常被用来过滤病人名单，以排除不活跃的病人  
+已死亡的病人也可能因为同样的原因被标记为不活动，但在死亡后的一段时间内可能是活动的。  - `address[array]`: 个人的一个地址。  - `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `birthDate[string]`: 个人的出生日期。  - `communication[array]`: 一种可用于与病人沟通其健康状况的语言。  - `contact[array]`: 病人的联系方（如监护人、伴侣、朋友）。  - `contained[array]`: 这些资源在包含它们的资源之外没有独立的存在--它们不能被独立识别，也不能有自己独立的交易范围。  - `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `deceasedBoolean[boolean]`: 表示该人是否已经死亡。  - `deceasedDateTime[string]`: 表示该人是否已经死亡。  - `description[string]`: 对这个项目的描述  - `extension[array]`: 可用于表示不属于资源的基本定义的额外信息。为了使扩展的使用安全和可管理，对扩展的定义和使用有一套严格的管理。尽管任何实施者都可以定义扩展，但作为扩展定义的一部分，有一组要求必须得到满足。  - `gender[string]`: 管理性别--为管理和保存记录的目的，病人被认为具有的性别。  - `generalPractitioner[array]`: 患者提名的护理提供者。  - `id[*]`: 实体的唯一标识符  - `identifier[array]`: 这个病人的一个标识符。  - `implicitRules[string]`: 对构建资源时遵循的一系列规则的引用，在处理内容时必须理解这些规则。通常，这是对一个实施指南的引用，该指南与其他配置文件等一起定义了特殊的规则。  - `language[string]`: 编写该资源的基础语言。  - `link[array]`: 链接到另一个涉及同一实际病人的病人资源。  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `managingOrganization[object]`: 作为病人记录的保管人的组织。  - `maritalStatus[object]`: 该字段包含患者最近的婚姻（民事）状况。  - `meta[object]`: 关于资源的元数据。这是由基础设施维护的内容。对内容的改变可能并不总是与资源的版本改变相关。  - `modifierExtension[array]`: 可以用来表示不属于资源基本定义的额外信息，这些信息修改了对包含它的元素的理解和/或对包含元素的后代的理解。通常修饰语元素提供否定或限定。为了使扩展的使用安全和可管理，对扩展的定义和使用有一套严格的管理。尽管任何实现者都可以定义扩展，但作为扩展定义的一部分，有一套必须满足的要求。处理资源的应用程序被要求检查修改器扩展。  
+修改器扩展不应改变资源或 DomainResource 上任何元素的含义（包括不能改变 modifierExtension 本身的含义）。  - `multipleBirthBoolean[boolean]`: 表示病人是否属于多胞胎（布尔型）或表示实际的出生顺序（整数）。  - `multipleBirthInteger[number]`: 表示病人是否属于多胞胎（布尔型）或表示实际的出生顺序（整数）。  - `name[array]`: 一个与个人有关的名字。  - `photo[array]`: 病人的形象。  - `resourceType[string]`: 这是一个病人资源  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `telecom[array]`: 可与该人联系的详细联系方式（如电话号码或电子邮件地址）。  - `text[object]`: 一个人类可读的叙述，包含资源的摘要，可用于向人类表述资源的内容。叙述不需要对所有的结构化数据进行编码，但需要包含足够的细节，使人在临床上可以安全地阅读叙述。资源定义可以定义哪些内容应在叙述中表示，以确保临床安全。  - `type[string]`: NGSI实体类型。它必须是病人  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-Required properties  
+所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Data models mapped from the original version 4.3 of HL7 standard http://hl7.org/fhir/patient.html  
+从HL7标准的原始4.3版本映射出的数据模型 http://hl7.org/fhir/patient.html  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Data Model description of properties  
-Sorted alphabetically (click for details)  
+## 数据模型的属性描述  
+按字母顺序排列（点击查看详情）。  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -40491,9 +40491,9 @@ Patient:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## Example payloads    
-#### Patient NGSI-v2 key-values Example    
-Here is an example of a Patient in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+## ＃＃＃＃有效载荷的例子  
+#### 病人NGSI-v2关键值示例  
+下面是一个以JSON-LD格式作为关键值的病人的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -40715,8 +40715,8 @@ Patient:
 }  
 ```  
 </details>  
-#### Patient NGSI-v2 normalized Example    
-Here is an example of a Patient in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+#### 病人 NGSI-v2 归一化示例  
+下面是一个以JSON-LD格式规范化的病人的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -40990,8 +40990,8 @@ Patient:
 }  
 ```  
 </details>  
-#### Patient NGSI-LD key-values Example    
-Here is an example of a Patient in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+#### 病人NGSI-LD的关键值示例  
+这里是一个以JSON-LD格式作为key-values的病人的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -41216,8 +41216,8 @@ Patient:
 }  
 ```  
 </details>  
-#### Patient NGSI-LD normalized Example    
-Here is an example of a Patient in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+#### 病人NGSI-LD正常化的例子  
+下面是一个以JSON-LD格式规范化的病人的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -41497,7 +41497,7 @@ Patient:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  

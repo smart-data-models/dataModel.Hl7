@@ -1,20 +1,33 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 事業者名アカウント  
-=========  
+=========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Hl7/blob/master/Account/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 グローバルな記述です。**特定の目的のために発生した価値を追跡するための金融ツール。  医療分野では、患者やコストセンターなどの料金を追跡するために使用される**。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `_description`: 説明のための拡張機能  - `_implicitRules`: implicitRules の拡張機能  - `_language`: 言語に関する拡張機能  - `_name`: 名前の拡張機能  - `_status`: ステータスの拡張  - `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `contained`: これらのリソースは、それを含むリソースとは別に独立した存在ではなく、独立して識別することも、独立したトランザクションのスコープを持つこともできない。  - `coverage`: この口座の支払いを負担する当事者と、その順番。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: アカウントが追跡するものとその使用方法に関する追加情報を提供します。  - `extension`: リソースの基本的な定義に含まれない追加情報を表現するために使用することができる。拡張の使用を安全かつ管理しやすくするために，拡張の定義と使用に適用される厳密なガバナンスのセットが存在する。どのような実装者でも拡張機能を定義できるが，拡張機能の定義の一部として満たさなければならない一連の要件がある(SHALL)。  - `guarantor`: 他の支払い方法が不足した場合、アカウントのバランスをとる責任を負う当事者。  - `hl7type`: 報告および検索のためにアカウントを分類する。  - `id`: エンティティの一意な識別子  - `identifier`: アカウントを参照するために使用される一意の識別子。  クレジットカード番号のように、人間が使用することを意図している場合もあれば、そうでない場合もあります。  - `implicitRules`: リソースが構築されたときに従った一連の規則への参照であり、コンテンツを処理するときに理解しなければならないもの。多くの場合、これは他のプロファイルなどとともに特別な規則を定義する実装ガイドへの参照である。  - `language`: リソースが記述されているベース言語。  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `meta`: リソースに関するメタデータ。これは、インフラストラクチャによって維持されるコンテンツです。コンテンツの変更は、必ずしもリソースのバージョン変更と関連するとは限りません。  - `modifierExtension`: リソースの基本的な定義に含まれない追加情報を表すために使用され、その情報を含む要素の理解および/または含む要素の子孫の理解を変更することができる。通常，修飾子要素は，否定又は修飾を提供する。拡張の使用を安全かつ管理しやすくするために，拡張の定義及び使用に適用される厳密な統制の集合が存在する。どのような実装者でも拡張を定義することができますが、拡張の定義の一部として満たされなければならない一連の要件があります(SHALL)。リソースを処理するアプリケーションは、修飾子の拡張をチェックすることが要求されます。  
-修飾子拡張は、Resource または DomainResource の要素の意味を変更してはならない (modifierExtension自体の意味を変更してはならないことを含む)。  - `name`: レポートなどで人間に表示する際に、アカウントに使用する名前。  - `owner`: アカウントを管理する責任を有するサービスエリア、病院、部署などを示す。  - `partOf`: 親アカウントへの参照。  - `resourceType`: これは、Accountのリソースです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `servicePeriod`: このアカウントに関連するサービスの日付範囲。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `status`: 現在使用／利用されているアカウントか否かを示す。  - `subject`: 経費を負担した主体を特定する。サービスや商品の直接の受取人が対象者の関連団体である場合もあるが、その費用は最終的に本アカウントの対象者が負担したものである。  - `text`: リソースの要約を含み、リソースの内容を人間に表現するために使用できる、人間が読めるナラティブ（Narrative）。ナラティブは構造化されたデータをすべてコード化する必要はないが、人間がナラティブを読むだけでも臨床的に安全であるように、十分な詳細を含むことが要求される。リソース定義は、臨床的安全性を確保するために、どのような内容をナラティブで表現すべきかを定義することができる。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `_description[object]`: 説明のための拡張機能  - `_implicitRules[object]`: implicitRules の拡張機能  - `_language[object]`: 言語に関する拡張機能  - `_name[object]`: 名前の拡張機能  - `_status[object]`: ステータスの拡張  - `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `contained[array]`: これらのリソースは、それを含むリソースとは別に独立した存在ではなく、独立して識別することも、独立したトランザクションのスコープを持つこともできない。  - `coverage[array]`: この口座の支払いを負担する当事者と、その順番。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: アカウントが追跡するものとその使用方法に関する追加情報を提供します。  - `extension[array]`: リソースの基本的な定義に含まれない追加情報を表現するために使用することができる。拡張の使用を安全かつ管理しやすくするために，拡張の定義と使用に適用される厳密なガバナンスのセットが存在する。どのような実装者でも拡張機能を定義できるが，拡張機能の定義の一部として満たすべき一連の要件がある(SHALL)。  - `guarantor[array]`: 他の支払い方法が不足した場合、アカウントのバランスをとる責任を負う当事者。  - `hl7type[object]`: 報告および検索のためにアカウントを分類する。  - `id[*]`: エンティティの一意な識別子  - `identifier[array]`: アカウントを参照するために使用される一意の識別子。  クレジットカード番号のように、人間が使用することを意図している場合もあれば、そうでない場合もあります。  - `implicitRules[string]`: リソースが構築されたときに従った一連の規則への参照であり、コンテンツを処理するときに理解しなければならないもの。多くの場合、これは他のプロファイルなどとともに特別な規則を定義する実装ガイドへの参照である。  - `language[string]`: リソースが記述されているベース言語。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `meta[object]`: リソースに関するメタデータ。これは、インフラストラクチャによって維持されるコンテンツです。コンテンツの変更は、必ずしもリソースのバージョン変更と関連するとは限りません。  - `modifierExtension[array]`: リソースの基本的な定義に含まれない追加情報を表すために使用され、その情報を含む要素の理解および/または含む要素の子孫の理解を変更することができる。通常，修飾子要素は，否定又は修飾を提供する。拡張の使用を安全かつ管理しやすくするために，拡張の定義及び使用に適用される厳密な統制の集合が存在する。どのような実装者でも拡張を定義することができますが、拡張の定義の一部として満たされなければならない一連の要件があります(SHALL)。リソースを処理するアプリケーションは、修飾子の拡張をチェックすることが要求されます。  
+修飾子拡張は、Resource または DomainResource の要素の意味を変更してはならない (modifierExtension自体の意味を変更してはならないことを含む)。  - `name[string]`: レポートなどで人間に表示する際に、アカウントに使用する名前。  - `owner[object]`: アカウントを管理する責任を有するサービスエリア、病院、部門などを示す。  - `partOf[object]`: 親アカウントへの参照。  - `resourceType[string]`: これは、Accountのリソースです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `servicePeriod[object]`: このアカウントに関連するサービスの日付範囲。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `status[string]`: 現在使用／利用されているアカウントか否かを示す。  - `subject[array]`: 経費を負担した主体を特定する。サービスや商品の直接の受取人が対象者の関連団体である場合もあるが、その費用は最終的に本アカウントの対象者が負担したものである。  - `text[object]`: リソースの要約を含み、リソースの内容を人間に表現するために使用できる、人間が読めるナラティブ（Narrative）。ナラティブは構造化されたデータをすべてコード化する必要はないが、人間がナラティブを読むだけでも臨床的に安全であるように、十分な詳細を含むことが要求される。リソース定義は、臨床的安全性を確保するために、どのような内容をナラティブで表現すべきかを定義することができる。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 HL7 標準のオリジナルバージョン 4.3 からマッピングされたデータモデルです。オリジナルの属性 -type- は、NGSI の必須型と矛盾するため、-hl7type- にリネームされました。また、その他の細かい修正も行われています。https://github.com/smart-data-models/dataModel.Hl7/blob/master/README.md を参照してください。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Account:    
@@ -17612,7 +17625,7 @@ Account:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'Geoproperty. Geojson reference to the item. Point'    
+        - description: 'GeoProperty. Geojson reference to the item. Point'    
           properties:    
             bbox:    
               items:    
@@ -17633,7 +17646,7 @@ Account:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+        - description: 'GeoProperty. Geojson reference to the item. LineString'    
           properties:    
             bbox:    
               items:    
@@ -17657,7 +17670,7 @@ Account:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
           properties:    
             bbox:    
               items:    
@@ -17683,7 +17696,7 @@ Account:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
           properties:    
             bbox:    
               items:    
@@ -17706,7 +17719,7 @@ Account:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -17732,7 +17745,7 @@ Account:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -17761,7 +17774,7 @@ Account:
           title: 'GeoJSON MultiPolygon'    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     meta:    
       additionalProperties: false    
       description: 'The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.'    
@@ -35964,9 +35977,14 @@ Account:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### アカウント NGSI-v2 key-value 例  
 ここでは、AccountをJSON-LD形式でkey-valuesとした場合の例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "resourceType": "Account",  
@@ -36027,8 +36045,10 @@ Account:
   }  
 }  
 ```  
+</details>  
 #### アカウント NGSI-v2 正規化例  
 以下は、正規化されたJSON-LD形式のAccountの例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "type": "Account",  
@@ -36123,8 +36143,10 @@ Account:
     }  
 }  
 ```  
+</details>  
 #### アカウント NGSI-LD キー値例  
 ここでは、AccountをJSON-LD形式でkey-valuesにした例を示す。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "resourceType": "Account",  
@@ -36188,8 +36210,10 @@ Account:
   ]  
 }  
 ```  
+</details>  
 #### アカウント NGSI-LD正規化例  
 AccountをJSON-LD形式で正規化した例です。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "resourceType": {  
@@ -36287,4 +36311,12 @@ Account:
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

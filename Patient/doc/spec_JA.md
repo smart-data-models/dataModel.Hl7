@@ -1,23 +1,36 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティ患者  
-========  
+========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Hl7/blob/master/Patient/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 グローバルな記述。**ケアまたはその他の医療関連サービスを受ける個人または動物に関する人口統計学およびその他の管理情報**。  
 バージョン: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `_active`: アクティブ用エクステンション  - `_birthDate`: birthDateの拡張機能  - `_deceasedBoolean`: deceasedBoolean の拡張機能  - `_deceasedDateTime`: deceasedDateTimeの拡張機能  - `_gender`: ジェンダーに関する拡張機能  - `_implicitRules`: implicitRules の拡張機能  - `_language`: 言語に関する拡張機能  - `_multipleBirthBoolean`: multipleBirthBoolean の拡張機能  - `_multipleBirthInteger`: multipleBirthInteger の拡張機能  - `active`: この患者レコードが使用中であるかどうか。  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `_active[object]`: アクティブ用エクステンション  - `_birthDate[object]`: birthDateの拡張機能  - `_deceasedBoolean[object]`: deceasedBoolean の拡張機能  - `_deceasedDateTime[object]`: deceasedDateTimeの拡張機能  - `_gender[object]`: ジェンダーに関する拡張機能  - `_implicitRules[object]`: implicitRules の拡張機能  - `_language[object]`: 言語に関する拡張機能  - `_multipleBirthBoolean[object]`: multipleBirthBoolean の拡張機能  - `_multipleBirthInteger[object]`: multipleBirthInteger の拡張機能  - `active[boolean]`: この患者レコードが使用中であるかどうか。  
 多くのシステムでは、このプロパティを使用して、組織のビジネス・ルールに基づき、一定期間診察を受けていない患者などを非現用患者としてマークしています。  
 このプロパティは、患者リストをフィルタリングして、非アクティブな患者を除外するためによく使用されます。  
-死亡した患者も同じ理由で非アクティブとマークされることがありますが、死亡後しばらくの間はアクティブである可能性があります。  - `address`: 個人の住所。  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `birthDate`: 個人の生年月日。  - `communication`: 患者さんの健康に関するコミュニケーションに使用される可能性のある言語。  - `contact`: 患者さんの連絡先（保護者、パートナー、友人など）。  - `contained`: これらのリソースは、それを含むリソースとは別に独立した存在ではなく、独立して識別することも、独立したトランザクションのスコープを持つこともできない。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `deceasedBoolean`: 個人が死亡しているか否かを示す。  - `deceasedDateTime`: 個人が死亡しているか否かを示す。  - `description`: このアイテムの説明  - `extension`: リソースの基本的な定義に含まれない追加情報を表現するために使用することができる。拡張の使用を安全かつ管理しやすくするために，拡張の定義と使用に適用される厳密なガバナンスのセットが存在する。どのような実装者でも拡張機能を定義できるが，拡張機能の定義の一部として満たすべき一連の要件がある(SHALL)。  - `gender`: 管理上の性別-管理および記録保持の目的で、患者が持つとみなされる性別。  - `generalPractitioner`: 患者さんが指名した医療機関  - `id`: エンティティの一意な識別子  - `identifier`: この患者を識別するための識別子。  - `implicitRules`: リソースが構築されたときに従った一連の規則への参照であり、コンテンツを処理するときに理解しなければならないもの。多くの場合、これは他のプロファイルなどとともに特別な規則を定義する実装ガイドへの参照である。  - `language`: リソースが記述されているベース言語。  - `link`: 同じ実際の患者に関する他の患者リソースへのリンク。  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `managingOrganization`: 患者記録の保管者である組織。  - `maritalStatus`: このフィールドには、患者の直近の婚姻（民事）状態が含まれる。  - `meta`: リソースに関するメタデータ。これは、インフラストラクチャによって維持されるコンテンツです。コンテンツの変更は、必ずしもリソースのバージョン変更と関連するとは限りません。  - `modifierExtension`: リソースの基本的な定義に含まれない追加情報を表すために使用され、その情報を含む要素の理解および/または含む要素の子孫の理解を変更することができる。通常，修飾子要素は，否定又は修飾を提供する。拡張の使用を安全かつ管理しやすくするために，拡張の定義及び使用に適用される厳密な統制の集合が存在する。どのような実装者でも拡張を定義することができますが、拡張の定義の一部として満たされなければならない一連の要件があります(SHALL)。リソースを処理するアプリケーションは、修飾子の拡張をチェックすることが要求されます。  
-修飾子拡張は、Resource または DomainResource の要素の意味を変更してはならない (modifierExtension自体の意味を変更してはならないことを含む)。  - `multipleBirthBoolean`: 患者が複数に属しているかどうかを示す（boolean）、または実際の出生順を示す（integer）。  - `multipleBirthInteger`: 患者が複数に属しているかどうかを示す（boolean）、または実際の出生順を示す（integer）。  - `name`: 個人に関連する名前。  - `photo`: 患者さんのイメージ。  - `resourceType`: これは患者さんの資料です  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `telecom`: 個人と連絡を取ることができる連絡先（電話番号やメールアドレスなど）。  - `text`: リソースの要約を含み、リソースの内容を人間に表現するために使用できる、人間が読めるナラティブ（Narrative）。ナラティブは構造化されたデータをすべてコード化する必要はないが、人間がナラティブを読むだけでも臨床的に安全であるように、十分な詳細を含むことが要求される。リソース定義は、臨床的安全性を確保するために、どのような内容をナラティブで表現すべきかを定義することができる。  - `type`: NGSIエンティティタイプ。それはPatientでなければならない    
+死亡した患者も同じ理由で非アクティブとマークされることがありますが、死亡後しばらくの間はアクティブである可能性があります。  - `address[array]`: 個人の住所。  - `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `birthDate[string]`: 個人の生年月日。  - `communication[array]`: 患者さんの健康に関するコミュニケーションに使用される可能性のある言語。  - `contact[array]`: 患者さんの連絡先（保護者、パートナー、友人など）。  - `contained[array]`: これらのリソースは、それを含むリソースとは別に独立した存在ではなく、独立して識別することも、独立したトランザクションのスコープを持つこともできない。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `deceasedBoolean[boolean]`: 個人が死亡しているか否かを示す。  - `deceasedDateTime[string]`: 個人が死亡しているか否かを示す。  - `description[string]`: このアイテムの説明  - `extension[array]`: リソースの基本的な定義に含まれない追加情報を表現するために使用することができる。拡張の使用を安全かつ管理しやすくするために，拡張の定義と使用に適用される厳密なガバナンスのセットが存在する。どのような実装者でも拡張機能を定義できるが，拡張機能の定義の一部として満たすべき一連の要件がある(SHALL)。  - `gender[string]`: 管理上の性別-管理および記録保持の目的で、患者が持つとみなされる性別。  - `generalPractitioner[array]`: 患者さんが指名した医療機関  - `id[*]`: エンティティの一意な識別子  - `identifier[array]`: この患者を識別するための識別子。  - `implicitRules[string]`: リソースが構築されたときに従った一連の規則への参照であり、コンテンツを処理するときに理解しなければならないもの。多くの場合、これは他のプロファイルなどとともに特別な規則を定義する実装ガイドへの参照である。  - `language[string]`: リソースが記述されているベース言語。  - `link[array]`: 同じ実際の患者に関する他の患者リソースへのリンク。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `managingOrganization[object]`: 患者記録の保管者である組織。  - `maritalStatus[object]`: このフィールドには、患者の直近の婚姻（民事）状態が含まれる。  - `meta[object]`: リソースに関するメタデータ。これは、インフラストラクチャによって維持されるコンテンツです。コンテンツの変更は、必ずしもリソースのバージョン変更と関連するとは限りません。  - `modifierExtension[array]`: リソースの基本的な定義に含まれない追加情報を表すために使用され、その情報を含む要素の理解および/または含む要素の子孫の理解を修正することができる。通常，修飾子要素は，否定又は修飾を提供する。拡張の使用を安全かつ管理しやすくするために，拡張の定義及び使用に適用される厳密な統制の集合が存在する。どのような実装者でも拡張を定義することができますが、拡張の定義の一部として満たされなければならない一連の要件があります(SHALL)。リソースを処理するアプリケーションは、修飾子の拡張をチェックすることが要求されます。  
+修飾子拡張は、Resource または DomainResource の要素の意味を変更してはならない (modifierExtension自体の意味を変更してはならないことを含む)。  - `multipleBirthBoolean[boolean]`: 患者が複数に属しているかどうかを示す（boolean）、または実際の出生順を示す（integer）。  - `multipleBirthInteger[number]`: 患者が複数に属しているかどうかを示す（boolean）、または実際の出生順を示す（integer）。  - `name[array]`: 個人に関連する名前。  - `photo[array]`: 患者さんのイメージ。  - `resourceType[string]`: これは患者さんの資料です  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `telecom[array]`: 個人と連絡を取ることができる連絡先（電話番号やメールアドレスなど）。  - `text[object]`: リソースの要約を含み、リソースの内容を人間に表現するために使用できる、人間が読めるナラティブ（Narrative）。ナラティブは構造化されたデータをすべてコード化する必要はないが、人間がナラティブを読むだけでも臨床的に安全であるように、十分な詳細を含むことが要求される。リソース定義は、臨床的安全性を確保するために、どのような内容をナラティブで表現すべきかを定義することができる。  - `type[string]`: NGSIエンティティタイプ。それはPatientでなければならない  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 HL7 標準のオリジナルバージョン 4.3 からマッピングされたデータモデル http://hl7.org/fhir/patient.html  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Patient:    
@@ -24475,7 +24488,7 @@ Patient:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'Geoproperty. Geojson reference to the item. Point'    
+        - description: 'GeoProperty. Geojson reference to the item. Point'    
           properties:    
             bbox:    
               items:    
@@ -24496,7 +24509,7 @@ Patient:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+        - description: 'GeoProperty. Geojson reference to the item. LineString'    
           properties:    
             bbox:    
               items:    
@@ -24520,7 +24533,7 @@ Patient:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
           properties:    
             bbox:    
               items:    
@@ -24546,7 +24559,7 @@ Patient:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
           properties:    
             bbox:    
               items:    
@@ -24569,7 +24582,7 @@ Patient:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -24595,7 +24608,7 @@ Patient:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -24624,7 +24637,7 @@ Patient:
           title: 'GeoJSON MultiPolygon'    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     managingOrganization:    
       additionalProperties: false    
       description: 'Organization that is the custodian of the patient record.'    
@@ -40474,9 +40487,14 @@ Patient:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### 患者NGSI-v2キー値例  
 ここでは、PatientをJSON-LD形式でkey-valuesにした例を示す。これは、`options=keyValues`を使用したときにNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "resourceType": "Patient",  
@@ -40696,8 +40714,10 @@ Patient:
   ]  
 }  
 ```  
+</details>  
 #### 患者 NGSI-v2 正規化例  
 以下は、PatientをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "resourceType": {  
@@ -40969,8 +40989,10 @@ Patient:
   }  
 }  
 ```  
+</details>  
 #### 患者 NGSI-LD キー値例  
 ここでは、PatientをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "resourceType": "Patient",  
@@ -41193,8 +41215,10 @@ Patient:
   ]  
 }  
 ```  
+</details>  
 #### 患者 NGSI-LD 正規化例  
 以下は、PatientをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "resourceType": {  
@@ -41463,7 +41487,18 @@ Patient:
         "use": "work"  
       }  
     ]  
-  }  
+  },  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Hl7/master/context.jsonld"  
+  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

@@ -1,20 +1,33 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entité : Compte  
-===============  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.Hl7/blob/master/Account/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Un outil financier permettant de suivre la valeur accumulée dans un but particulier.  Dans le domaine de la santé, il est utilisé pour suivre les charges d'un patient, les centres de coûts, etc.  
 version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `_description`: Extensions de la description  - `_implicitRules`: Extensions pour implicitRules  - `_language`: Extensions pour la langue  - `_name`: Extensions du nom  - `_status`: Extensions du statut  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `contained`: Ces ressources n'ont pas d'existence indépendante en dehors de la ressource qui les contient - elles ne peuvent pas être identifiées indépendamment et ne peuvent pas non plus avoir leur propre portée de transaction indépendante.  - `coverage`: La ou les parties qui sont chargées de couvrir le paiement de ce compte, et dans quel ordre elles doivent être appliquées au compte.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Fournit des informations supplémentaires sur ce que le compte suit et comment il est utilisé.  - `extension`: Peut être utilisé pour représenter des informations supplémentaires qui ne font pas partie de la définition de base de la ressource. Pour rendre l'utilisation des extensions sûre et gérable, un ensemble de règles strictes est appliqué à la définition et à l'utilisation des extensions. Bien que tout implémenteur puisse définir une extension, il existe un ensemble d'exigences qui DOIVENT être satisfaites dans le cadre de la définition de l'extension.  - `guarantor`: Les parties responsables de l'équilibre du compte si les autres options de paiement n'aboutissent pas.  - `hl7type`: Catégorise le compte à des fins de rapport et de recherche.  - `id`: Identifiant unique de l'entité  - `identifier`: Identifiant unique utilisé pour référencer le compte.  Peut ou non être destiné à un usage humain (par exemple, un numéro de carte de crédit).  - `implicitRules`: Une référence à un ensemble de règles qui ont été suivies lors de la construction de la ressource, et qui doivent être comprises lors du traitement du contenu. Il s'agit souvent d'une référence à un guide de mise en œuvre qui définit les règles spéciales ainsi que d'autres profils, etc.  - `language`: La langue de base dans laquelle la ressource est écrite.  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `meta`: Les métadonnées concernant la ressource. Il s'agit du contenu qui est maintenu par l'infrastructure. Les modifications apportées au contenu ne sont pas toujours associées aux changements de version de la ressource.  - `modifierExtension`: Peut être utilisé pour représenter des informations supplémentaires qui ne font pas partie de la définition de base de la ressource et qui modifient la compréhension de l'élément qui le contient et/ou la compréhension des descendants de l'élément contenant. En général, les éléments modificateurs fournissent une négation ou une qualification. Pour rendre l'utilisation des extensions sûre et gérable, un ensemble strict de règles de gouvernance est appliqué à la définition et à l'utilisation des extensions. Bien que tout implémenteur soit autorisé à définir une extension, il existe un ensemble d'exigences qui DOIVENT être satisfaites dans le cadre de la définition de l'extension. Les applications qui traitent une ressource sont tenues de vérifier la présence d'extensions de modificateurs.  
-Les extensions modificatrices NE DOIVENT PAS modifier la signification de tout élément de Resource ou DomainResource (y compris la signification de modifierExtension elle-même).  - `name`: Nom utilisé pour le compte lorsqu'il est affiché pour les humains dans les rapports, etc.  - `owner`: Indique la zone de service, l'hôpital, le service, etc. qui est responsable de la gestion du compte.  - `partOf`: Référence à un compte parent.  - `resourceType`: Il s'agit d'une ressource pour les comptes  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `servicePeriod`: La plage de dates des services associés à ce compte.  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `status`: Indique si le compte est actuellement utilisé/utilisable ou non.  - `subject`: Identifie l'entité qui a engagé les dépenses. Bien que les bénéficiaires immédiats des services ou des biens puissent être des entités liées au sujet, les dépenses ont été en fin de compte encourues par le sujet du compte.  - `text`: Un récit lisible par l'homme qui contient un résumé de la ressource et peut être utilisé pour représenter le contenu de la ressource à un humain. Il n'est pas nécessaire que la narration code toutes les données structurées, mais elle doit contenir suffisamment de détails pour qu'un humain puisse se contenter de la lire en toute sécurité clinique. Les définitions des ressources peuvent définir le contenu qui doit être représenté dans la narration pour garantir la sécurité clinique.    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `_description[object]`: Extensions de la description  - `_implicitRules[object]`: Extensions pour implicitRules  - `_language[object]`: Extensions pour la langue  - `_name[object]`: Extensions du nom  - `_status[object]`: Extensions du statut  - `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `contained[array]`: Ces ressources n'ont pas d'existence indépendante en dehors de la ressource qui les contient - elles ne peuvent pas être identifiées indépendamment et ne peuvent pas non plus avoir leur propre portée de transaction indépendante.  - `coverage[array]`: La ou les parties qui sont chargées de couvrir le paiement de ce compte, et dans quel ordre elles doivent être appliquées au compte.  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Fournit des informations supplémentaires sur ce que le compte suit et comment il est utilisé.  - `extension[array]`: Peut être utilisé pour représenter des informations supplémentaires qui ne font pas partie de la définition de base de la ressource. Pour rendre l'utilisation des extensions sûre et gérable, un ensemble de règles strictes est appliqué à la définition et à l'utilisation des extensions. Bien que tout implémenteur puisse définir une extension, il existe un ensemble d'exigences qui DOIVENT être satisfaites dans le cadre de la définition de l'extension.  - `guarantor[array]`: Les parties responsables de l'équilibre du compte si les autres options de paiement n'aboutissent pas.  - `hl7type[object]`: Catégorise le compte à des fins de rapport et de recherche.  - `id[*]`: Identifiant unique de l'entité  - `identifier[array]`: Identifiant unique utilisé pour référencer le compte.  Peut ou non être destiné à un usage humain (par exemple, un numéro de carte de crédit).  - `implicitRules[string]`: Une référence à un ensemble de règles qui ont été suivies lors de la construction de la ressource, et qui doivent être comprises lors du traitement du contenu. Il s'agit souvent d'une référence à un guide de mise en œuvre qui définit les règles spéciales ainsi que d'autres profils, etc.  - `language[string]`: La langue de base dans laquelle la ressource est écrite.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `meta[object]`: Les métadonnées relatives à la ressource. Il s'agit du contenu qui est maintenu par l'infrastructure. Les modifications apportées au contenu ne sont pas toujours associées aux changements de version de la ressource.  - `modifierExtension[array]`: Peut être utilisé pour représenter des informations supplémentaires qui ne font pas partie de la définition de base de la ressource et qui modifient la compréhension de l'élément qui le contient et/ou la compréhension des descendants de l'élément contenant. En général, les éléments modificateurs fournissent une négation ou une qualification. Pour rendre l'utilisation des extensions sûre et gérable, un ensemble strict de règles de gouvernance est appliqué à la définition et à l'utilisation des extensions. Bien que tout implémenteur soit autorisé à définir une extension, il existe un ensemble d'exigences qui DOIVENT être satisfaites dans le cadre de la définition de l'extension. Les applications qui traitent une ressource sont tenues de vérifier la présence d'extensions de modificateurs.  
+Les extensions modificatrices NE DOIVENT PAS modifier la signification de tout élément de Resource ou DomainResource (y compris la signification de modifierExtension elle-même).  - `name[string]`: Nom utilisé pour le compte lorsqu'il est affiché pour les humains dans les rapports, etc.  - `owner[object]`: Indique la zone de service, l'hôpital, le service, etc. qui est responsable de la gestion du compte.  - `partOf[object]`: Référence à un compte parent.  - `resourceType[string]`: Il s'agit d'une ressource pour les comptes  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `servicePeriod[object]`: La plage de dates des services associés à ce compte.  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `status[string]`: Indique si le compte est actuellement utilisé/utilisable ou non.  - `subject[array]`: Identifie l'entité qui a engagé les dépenses. Bien que les bénéficiaires immédiats des services ou des biens puissent être des entités liées au sujet, les dépenses ont été en fin de compte encourues par le sujet du compte.  - `text[object]`: Un récit lisible par l'homme qui contient un résumé de la ressource et peut être utilisé pour représenter le contenu de la ressource à un humain. Il n'est pas nécessaire que la narration code toutes les données structurées, mais elle doit contenir suffisamment de détails pour qu'un humain puisse se contenter de la lire en toute sécurité clinique. Les définitions des ressources peuvent définir le contenu qui doit être représenté dans la narration pour garantir la sécurité clinique.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modèle de données mappé à partir de la version originale 4.3 de la norme HL7. L'attribut original -type- a été renommé en -hl7type- en raison du conflit avec le type obligatoire dans NGSI. En outre, d'autres adaptations mineures ont été effectuées. Voir https://github.com/smart-data-models/dataModel.Hl7/blob/master/README.md à la racine du sujet  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Account:    
@@ -17612,7 +17625,7 @@ Account:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'Geoproperty. Geojson reference to the item. Point'    
+        - description: 'GeoProperty. Geojson reference to the item. Point'    
           properties:    
             bbox:    
               items:    
@@ -17633,7 +17646,7 @@ Account:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+        - description: 'GeoProperty. Geojson reference to the item. LineString'    
           properties:    
             bbox:    
               items:    
@@ -17657,7 +17670,7 @@ Account:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
           properties:    
             bbox:    
               items:    
@@ -17683,7 +17696,7 @@ Account:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
           properties:    
             bbox:    
               items:    
@@ -17706,7 +17719,7 @@ Account:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -17732,7 +17745,7 @@ Account:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -17761,7 +17774,7 @@ Account:
           title: 'GeoJSON MultiPolygon'    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     meta:    
       additionalProperties: false    
       description: 'The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.'    
@@ -35964,9 +35977,14 @@ Account:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### Compte Valeurs-clés NGSI-v2 Exemple  
 Voici un exemple de compte au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "resourceType": "Account",  
@@ -36027,8 +36045,10 @@ Account:
   }  
 }  
 ```  
+</details>  
 #### Compte NGSI-v2 normalisé Exemple  
 Voici un exemple d'un compte au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "type": "Account",  
@@ -36123,8 +36143,10 @@ Account:
     }  
 }  
 ```  
+</details>  
 #### Compte Valeurs-clés NGSI-LD Exemple  
 Voici un exemple de compte au format JSON-LD en tant que key-values. Ceci est compatible avec NGSI-LD lorsque vous utilisez `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "resourceType": "Account",  
@@ -36188,8 +36210,10 @@ Account:
   ]  
 }  
 ```  
+</details>  
 #### Compte NGSI-LD normalisé Exemple  
 Voici un exemple d'un compte au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "resourceType": {  
@@ -36287,4 +36311,12 @@ Account:
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

@@ -1,31 +1,31 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entità: Conto  
-=============<!-- /10-Header -->  
+实体。账户  
+=====<!-- /10-Header -->  
 <!-- 15-License -->  
-[Licenza aperta](https://github.com/smart-data-models//dataModel.Hl7/blob/master/Account/LICENSE.md)  
-[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[开放许可](https://github.com/smart-data-models//dataModel.Hl7/blob/master/Account/LICENSE.md)  
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descrizione globale: **Uno strumento finanziario per tracciare il valore maturato per uno scopo particolare.  In ambito sanitario, viene utilizzato per tracciare gli addebiti di un paziente, i centri di costo, ecc.  
-versione: 0.0.1  
+全球描述。**一种财务工具，用于跟踪某一特定用途的应计价值。  在医疗保健领域，用于跟踪病人的费用、成本中心等**。  
+版本：0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## Elenco delle proprietà  
+##属性列表  
 
-<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `_description[object]`: Estensioni per la descrizione  - `_implicitRules[object]`: Estensioni per implicitRules  - `_language[object]`: Estensioni per la lingua  - `_name[object]`: Estensioni per il nome  - `_status[object]`: Estensioni di stato  - `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `contained[array]`: Queste risorse non hanno un'esistenza indipendente dalla risorsa che le contiene: non possono essere identificate indipendentemente e non possono avere un proprio ambito di transazione indipendente.  - `coverage[array]`: Il/i soggetto/i responsabile/i di coprire il pagamento di questo conto e l'ordine in cui devono essere applicati al conto.  - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Fornisce ulteriori informazioni su ciò che il conto tiene sotto controllo e su come viene utilizzato.  - `extension[array]`: Può essere utilizzato per rappresentare informazioni aggiuntive che non fanno parte della definizione di base della risorsa. Per rendere l'uso delle estensioni sicuro e gestibile, esiste un rigoroso insieme di regole applicate alla definizione e all'uso delle estensioni. Sebbene qualsiasi implementatore possa definire un'estensione, esiste un insieme di requisiti che DEVONO essere soddisfatti come parte della definizione dell'estensione.  - `guarantor[array]`: Le parti responsabili del bilanciamento del conto se le altre opzioni di pagamento sono insufficienti.  - `hl7type[object]`: Categorizza il conto a fini di reportistica e ricerca.  - `id[*]`: Identificatore univoco dell'entità  - `identifier[array]`: Identificatore univoco utilizzato per fare riferimento al conto.  Può essere o meno destinato all'uso umano (ad esempio, il numero della carta di credito).  - `implicitRules[string]`: Un riferimento a un insieme di regole che sono state seguite quando la risorsa è stata costruita e che devono essere comprese durante l'elaborazione del contenuto. Spesso si tratta di un riferimento a una guida all'implementazione che definisce le regole speciali insieme ad altri profili, ecc.  - `language[string]`: La lingua di base in cui è scritta la risorsa.  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `meta[object]`: I metadati sulla risorsa. Si tratta di contenuti mantenuti dall'infrastruttura. Le modifiche al contenuto potrebbero non essere sempre associate a modifiche di versione della risorsa.  - `modifierExtension[array]`: Può essere usato per rappresentare informazioni aggiuntive che non fanno parte della definizione di base della risorsa e che modificano la comprensione dell'elemento che lo contiene e/o la comprensione dei discendenti dell'elemento contenente. Di solito gli elementi modificatori forniscono una negazione o una qualificazione. Per rendere l'uso delle estensioni sicuro e gestibile, esiste un rigoroso insieme di regole applicate alla definizione e all'uso delle estensioni. Sebbene qualsiasi implementatore possa definire un'estensione, esiste un insieme di requisiti che DEVONO essere soddisfatti come parte della definizione dell'estensione. Le applicazioni che elaborano una risorsa sono tenute a verificare la presenza di estensioni modificatrici.  
-Le estensioni del modificatore NON devono modificare il significato di alcun elemento di Resource o DomainResource (compreso il significato di modifierExtension).  - `name[string]`: Nome utilizzato per il conto quando lo si visualizza nei rapporti, ecc.  - `owner[object]`: Indica l'area di servizio, l'ospedale, il reparto, ecc. responsabile della gestione del conto.  - `partOf[object]`: Riferimento a un conto padre.  - `resourceType[string]`: Questa è una risorsa del Conto  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `servicePeriod[object]`: L'intervallo di date dei servizi associati a questo conto.  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `status[string]`: Indica se il conto è attualmente utilizzato/utilizzabile o meno.  - `subject[array]`: Identifica l'entità che ha sostenuto le spese. Sebbene i destinatari immediati dei servizi o dei beni possano essere entità collegate al soggetto, le spese sono state sostenute in ultima analisi dal soggetto del conto.  - `text[object]`: Una narrazione leggibile dall'uomo che contiene un riassunto della risorsa e può essere utilizzata per rappresentare il contenuto della risorsa a un essere umano. Non è necessario che la narrazione codifichi tutti i dati strutturati, ma è necessario che contenga dettagli sufficienti a rendere clinicamente sicura la semplice lettura della narrazione da parte di un essere umano. Le definizioni delle risorse possono definire quali contenuti devono essere rappresentati nella narrazione per garantire la sicurezza clinica.  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `_description[object]`: 描述的扩展  - `_implicitRules[object]`: 隐式规则的扩展  - `_language[object]`: 语言的扩展  - `_name[object]`: 名称的扩展  - `_status[object]`: 身份的延伸  - `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `contained[array]`: 这些资源在包含它们的资源之外没有独立的存在--它们不能被独立识别，也不能有自己独立的交易范围。  - `coverage[array]`: 负责支付这个账户的一方（或几方），以及他们应该按什么顺序应用于该账户。  - `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 提供有关账户追踪内容和使用方式的额外信息。  - `extension[array]`: 可用于表示不属于资源的基本定义的额外信息。为了使扩展的使用安全和可管理，对扩展的定义和使用有一套严格的管理。尽管任何实施者都可以定义扩展，但作为扩展定义的一部分，有一组要求必须满足。  - `guarantor[array]`: 如果其他付款方式不足，负责平衡账户的各方。  - `hl7type[object]`: 为报告和搜索目的对账户进行分类。  - `id[*]`: 实体的唯一标识符  - `identifier[array]`: 用于参考账户的唯一标识符。  可能是也可能不是供人使用的（例如，信用卡号码）。  - `implicitRules[string]`: 对构建资源时遵循的一系列规则的引用，在处理内容时必须理解这些规则。通常，这是对一个实施指南的引用，该指南定义了特殊的规则以及其他配置文件等。  - `language[string]`: 编写该资源的基础语言。  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `meta[object]`: 关于资源的元数据。这是由基础设施维护的内容。对内容的改变可能并不总是与资源的版本改变相关。  - `modifierExtension[array]`: 可以用来表示不属于资源基本定义的额外信息，这些信息修改了对包含它的元素的理解和/或对包含元素的后代的理解。通常修饰语元素提供否定或限定。为了使扩展的使用安全和可管理，对扩展的定义和使用有一套严格的管理。尽管任何实现者都可以定义扩展，但作为扩展定义的一部分，有一套必须满足的要求。处理资源的应用程序被要求检查修改器扩展。  
+修改器扩展不应改变资源或 DomainResource 上任何元素的含义（包括不能改变 modifierExtension 本身的含义）。  - `name[string]`: 在报告中向人类显示账户时使用的名称，等等。  - `owner[object]`: 表示负责管理该账户的服务区、医院、部门等。  - `partOf[object]`: 对一个父账户的引用。  - `resourceType[string]`: 这是一个账户资源  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `servicePeriod[object]`: 与该账户相关的服务的日期范围。  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `status[string]`: 表示该账户目前是否使用/可使用。  - `subject[array]`: 识别产生费用的实体。虽然服务或货物的直接接受者可能是与主体有关的实体，但费用最终是由账户主体承担的。  - `text[object]`: 一个人类可读的叙述，包含资源的摘要，可用于向人类表述资源的内容。叙述不需要对所有的结构化数据进行编码，但需要包含足够的细节，使人在临床上能够安全地阅读叙述。资源定义可以定义哪些内容应在叙述中表示，以确保临床安全。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-Proprietà richieste  
+所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Modello di dati mappato dalla versione originale 4.3 dello standard HL7. L'attributo originale -type- è stato rinominato in -hl7type- a causa del conflitto con il tipo obbligatorio in NGSI. Inoltre sono stati eseguiti altri adattamenti minori. Vedere https://github.com/smart-data-models/dataModel.Hl7/blob/master/README.md alla radice dell'argomento  
+数据模型由HL7标准的原始版本4.3映射而成。原有的属性-type-被重新命名为-hl7type-，因为它与NGSI中的强制类型有冲突。此外，还进行了其他小的调整。见https://github.com/smart-data-models/dataModel.Hl7/blob/master/README.md 在主题根部  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Modello di dati descrizione delle proprietà  
-Ordinati in ordine alfabetico (clicca per i dettagli)  
+## 数据模型的属性描述  
+按字母顺序排列（点击查看详情）。  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -35981,9 +35981,9 @@ Account:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## Esempi di payload  
-#### Account NGSI-v2 valori-chiave Esempio  
-Ecco un esempio di un conto in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+## ＃＃＃＃有效载荷的例子  
+#### 账户NGSI-v2密钥值示例  
+这里是一个以JSON-LD格式作为key-values的账户的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -36046,8 +36046,8 @@ Account:
 }  
 ```  
 </details>  
-#### Conto NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un Conto in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+#### 账户NGSI-v2规范化示例  
+下面是一个以JSON-LD格式规范化的账户的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -36144,8 +36144,8 @@ Account:
 }  
 ```  
 </details>  
-#### Valori chiave NGSI-LD del conto Esempio  
-Ecco un esempio di un conto in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+#### 账户NGSI-LD密钥值示例  
+这里是一个以JSON-LD格式作为key-values的账户的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -36211,8 +36211,8 @@ Account:
 }  
 ```  
 </details>  
-#### Conto NGSI-LD normalizzato Esempio  
-Ecco un esempio di un conto in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+#### 账户NGSI-LD规范化示例  
+这里是一个以JSON-LD格式规范化的账户的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -36315,7 +36315,7 @@ Account:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
