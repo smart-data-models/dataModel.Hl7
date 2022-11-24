@@ -21,7 +21,7 @@
 所需属性  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-为了验证这些例子，一些属性已经被修改。具体来说，编码已经从一个字符串数组转变为一个具有系统、代码和显示子属性的对象数组。同样，强度->分子->值和强度->分母->值的属性也根据书面定义从字符串变成了数字。最后，为了满足NGSI标准的要求，增加了与资源类型相当的属性类型。  
+为了验证这些例子，一些属性已经被修改。具体来说，编码已经从一个字符串数组转变为一个具有系统、代码和显示子属性的对象数组。同样，强度->分子->值和强度->分母->值的属性也根据书面定义从字符串变成了数字。最后，为了满足NGSI标准的要求，增加了相当于resourceType的属性类型。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## 数据模型的属性描述  
@@ -35230,7 +35230,7 @@ Medication:
 ```  
 </details>  
 #### 药物治疗NGSI-LD关键值示例  
-下面是一个以JSON-LD格式作为关键值的药物治疗的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+这里有一个JSON-LD格式的药物治疗的例子，作为关键值。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
