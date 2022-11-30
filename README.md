@@ -10,6 +10,8 @@ The following entity types are available:
 
 - [Patient](https://github.com/smart-data-models/dataModel.Hl7/blob/master/Patient/README.md). Demographics and other administrative information about an individual or animal receiving care or other health-related services.
 
+- [Practitioner](https://github.com/smart-data-models/dataModel.Hl7/blob/master/Practitioner/README.md). A person who is directly or indirectly involved in the provisioning of healthcare.
+
 
 
 ### Contributors
