@@ -55,6 +55,7 @@
         "owner": "https://smartdatamodels.org/owner",
         "partOf": "https://smartdatamodels.org/dataModel.Hl7/partOf",
         "photo": "https://smartdatamodels.org/dataModel.Hl7/photo",
+        "qualification": "https://smartdatamodels.org/dataModel.Hl7/qualification",
         "resourceType": "https://smartdatamodels.org/dataModel.Hl7/resourceType",
         "seeAlso": "https://smartdatamodels.org/seeAlso",
         "servicePeriod": "https://smartdatamodels.org/dataModel.Hl7/servicePeriod",
