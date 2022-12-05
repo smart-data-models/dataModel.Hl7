@@ -1,0 +1,2 @@
+"resourceType_", "type_", "id_", "text__status_", "text__div_", "status_", "meta__tag__0__system_", "meta__tag__0__code_", "meta__tag__0__display_", "@context__0_"
+"Citation", "Citation", "urn:ngsi-ld:example", "generated", "<div xmlns="http://www.w3.org/1999/xhtml">[Put rendering here]</div>", "draft", "http://terminology.hl7.org/CodeSystem/v3-ActReason", "HTEST", "test health data", "https://raw.githubusercontent.com/smart-data-models/dataModel.Hl7/master/context.jsonld"
