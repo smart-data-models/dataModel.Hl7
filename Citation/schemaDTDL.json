@@ -1,0 +1,874 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Citation;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data Models - HL7 / Citation data model based on HL7 equivalent adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Hl7/master/Citation/schema.json",
+    "description": "The Citation Resource enables reference to any knowledge artifact for purposes of identification and attribution. The Citation Resource supports existing reference structures and developing publication practices such as versioning, expressing complex contributorship roles, and referencing computable resources.",
+    "displayName": "Citation",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "approvalDate",
+            "writable": true,
+            "displayName": "approvalDate",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The date on which the resource content was approved by the publisher. Approval happens once when the content is officially approved for usage."
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "copyright",
+            "writable": true,
+            "displayName": "copyright",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Use and/or publishing restrictions for the Citation, not for the cited artifact."
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "date",
+            "writable": true,
+            "displayName": "date",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The date  (and optionally time) when the citation was published. The date must change when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the citation changes."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A free text natural language description of the citation from a consumers perspective."
+        },
+        {
+            "name": "experimental",
+            "writable": true,
+            "displayName": "experimental",
+            "@type": "Property",
+            "schema": "boolean",
+            "comment": "A Boolean value to indicate that this citation is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage."
+        },
+        {
+            "name": "implicitRules",
+            "writable": true,
+            "displayName": "implicitRules",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc."
+        },
+        {
+            "name": "language",
+            "writable": true,
+            "displayName": "language",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The base language in which the resource is written."
+        },
+        {
+            "name": "lastReviewDate",
+            "writable": true,
+            "displayName": "lastReviewDate",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The date on which the resource content was last reviewed. Review happens periodically after approval but does not change the original approval date."
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A natural language name identifying the citation. This name should be usable as an identifier for the module by machine processing applications such as code generation."
+        },
+        {
+            "name": "publisher",
+            "writable": true,
+            "displayName": "publisher",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of the organization or individual that published the citation."
+        },
+        {
+            "name": "purpose",
+            "writable": true,
+            "displayName": "purpose",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Explanation of why this citation is needed and why it has been designed as it has."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "status",
+            "writable": true,
+            "displayName": "status",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The status of this summary. Enables tracking the life-cycle of the content."
+        },
+        {
+            "name": "title",
+            "writable": true,
+            "displayName": "title",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A short, descriptive, user-friendly title for the citation."
+        },
+        {
+            "name": "url",
+            "writable": true,
+            "displayName": "url",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An absolute URI that is used to identify this citation when it is referenced in a specification, model, design or an instance; also called its canonical identifier. This SHOULD be globally unique and SHOULD be a literal address at which at which an authoritative instance of this summary is (or will be) published. This URL can be the target of a canonical reference. It SHALL remain the same when the summary is stored on different servers."
+        },
+        {
+            "name": "version",
+            "writable": true,
+            "displayName": "version",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The identifier that is used to identify this version of the citation when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the citation author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "author",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Who authored the Citation.",
+            "displayName": "author"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "classification",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "The assignment to an organizing scheme.",
+            "displayName": "classification"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "contact",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Contact details to assist a user in finding and communicating with the publisher.",
+            "displayName": "contact"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "contained",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
+            "displayName": "contained"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "currentState",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "The status of the citation.",
+            "displayName": "currentState"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "editor",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Who edited the Citation.",
+            "displayName": "editor"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "endorser",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Who endorsed the Citation.",
+            "displayName": "endorser"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "extension",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "displayName": "extension"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "identifier",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "A formal identifier that is used to identify this citation when it is represented in other formats, or referenced in a specification, model, design or an instance.",
+            "displayName": "identifier"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "jurisdiction",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "A legal or geographic region in which the citation is intended to be used.",
+            "displayName": "jurisdiction"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "modifierExtension",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing elements descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of r",
+            "displayName": "modifierExtension"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "note",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Used for general notes and annotations not coded elsewhere.",
+            "displayName": "note"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "relatesTo",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Artifact related to the Citation Resource.",
+            "displayName": "relatesTo"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "reviewer",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Who reviewed the Citation.",
+            "displayName": "reviewer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "statusDate",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "An effective date or period for a status of the citation.",
+            "displayName": "statusDate"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "summary",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "A human-readable display of the citation.",
+            "displayName": "summary"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "useContext",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "The content was developed with a focus and intent of supporting the contexts that are listed. These contexts may be general categories (gender, age, ...) or may be references to specific programs (insurance plans, studies, ...) and may be used to assist with indexing and searching for appropriate citation instances.",
+            "displayName": "useContext"
+        },
+        {
+            "@type": "object",
+            "name": "_approvalDate",
+            "comment": "Extensions for approvalDate",
+            "displayName": "_approvalDate",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_copyright",
+            "comment": "Extensions for copyright",
+            "displayName": "_copyright",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_date",
+            "comment": "Extensions for date",
+            "displayName": "_date",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_description",
+            "comment": "Extensions for description",
+            "displayName": "_description",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_experimental",
+            "comment": "Extensions for experimental",
+            "displayName": "_experimental",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_implicitRules",
+            "comment": "Extensions for implicitRules",
+            "displayName": "_implicitRules",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_language",
+            "comment": "Extensions for language",
+            "displayName": "_language",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_lastReviewDate",
+            "comment": "Extensions for lastReviewDate",
+            "displayName": "_lastReviewDate",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_name",
+            "comment": "Extensions for name",
+            "displayName": "_name",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_publisher",
+            "comment": "Extensions for publisher",
+            "displayName": "_publisher",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_purpose",
+            "comment": "Extensions for purpose",
+            "displayName": "_purpose",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_status",
+            "comment": "Extensions for status",
+            "displayName": "_status",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_title",
+            "comment": "Extensions for title",
+            "displayName": "_title",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_url",
+            "comment": "Extensions for url",
+            "displayName": "_url",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_version",
+            "comment": "Extensions for version",
+            "displayName": "_version",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "citedArtifact",
+            "comment": "The article or artifact being described.",
+            "displayName": "citedArtifact",
+            "fields": [
+                {
+                    "name": "_dateAccessed",
+                    "schema": "object"
+                },
+                {
+                    "name": "abstract",
+                    "schema": "array"
+                },
+                {
+                    "name": "classification",
+                    "schema": "array"
+                },
+                {
+                    "name": "contributorship",
+                    "schema": "object"
+                },
+                {
+                    "name": "currentState",
+                    "schema": "array"
+                },
+                {
+                    "name": "dateAccessed",
+                    "schema": "string"
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "identifier",
+                    "schema": "array"
+                },
+                {
+                    "name": "modifierExtension",
+                    "schema": "array"
+                },
+                {
+                    "name": "note",
+                    "schema": "array"
+                },
+                {
+                    "name": "part",
+                    "schema": "object"
+                },
+                {
+                    "name": "publicationForm",
+                    "schema": "array"
+                },
+                {
+                    "name": "relatedIdentifier",
+                    "schema": "array"
+                },
+                {
+                    "name": "relatesTo",
+                    "schema": "array"
+                },
+                {
+                    "name": "statusDate",
+                    "schema": "array"
+                },
+                {
+                    "name": "title",
+                    "schema": "array"
+                },
+                {
+                    "name": "version",
+                    "schema": "object"
+                },
+                {
+                    "name": "webLocation",
+                    "schema": "array"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "effectivePeriod",
+            "comment": "The period during which the citation content was or is planned to be in active use.",
+            "displayName": "effectivePeriod",
+            "fields": [
+                {
+                    "name": "_end",
+                    "schema": "object"
+                },
+                {
+                    "name": "_start",
+                    "schema": "object"
+                },
+                {
+                    "name": "end",
+                    "schema": "string"
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "start",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "meta",
+            "comment": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.",
+            "displayName": "meta",
+            "fields": [
+                {
+                    "name": "_lastUpdated",
+                    "schema": "object"
+                },
+                {
+                    "name": "_source",
+                    "schema": "object"
+                },
+                {
+                    "name": "_versionId",
+                    "schema": "object"
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "lastUpdated",
+                    "schema": "string"
+                },
+                {
+                    "name": "profile",
+                    "schema": "array"
+                },
+                {
+                    "name": "security",
+                    "schema": "array"
+                },
+                {
+                    "name": "source",
+                    "schema": "string"
+                },
+                {
+                    "name": "tag",
+                    "schema": "array"
+                },
+                {
+                    "name": "versionId",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "text",
+            "comment": "A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it clinically safe for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
+            "displayName": "text",
+            "fields": [
+                {
+                    "name": "_status",
+                    "schema": "object"
+                },
+                {
+                    "name": "div",
+                    "schema": null
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "status",
+                    "schema": null
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "resourceType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Citation",
+                        "displayName": "Citation",
+                        "enumValue": 1
+                    }
+                ]
+            }
+        }
+    ]
+}
