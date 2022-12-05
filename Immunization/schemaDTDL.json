@@ -1,0 +1,936 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Immunization;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data Models - HL7 / Immunization data model based on HL7 equivalent adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Hl7/master/Immunization/schema.json",
+    "description": "Describes the event of a patient being administered a vaccine or a record of an immunization as reported by a patient, a clinician or another party.",
+    "displayName": "Immunization",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "expirationDate",
+            "writable": true,
+            "displayName": "expirationDate",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Date vaccine batch expires."
+        },
+        {
+            "name": "implicitRules",
+            "writable": true,
+            "displayName": "implicitRules",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc."
+        },
+        {
+            "name": "isSubpotent",
+            "writable": true,
+            "displayName": "isSubpotent",
+            "@type": "Property",
+            "schema": "boolean",
+            "comment": "Indication if a dose is considered to be subpotent. By default, a dose should be considered to be potent."
+        },
+        {
+            "name": "language",
+            "writable": true,
+            "displayName": "language",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The base language in which the resource is written."
+        },
+        {
+            "name": "lotNumber",
+            "writable": true,
+            "displayName": "lotNumber",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Lot number of the  vaccine product."
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "occurrenceDateTime",
+            "writable": true,
+            "displayName": "occurrenceDateTime",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Date vaccine administered or was to be administered."
+        },
+        {
+            "name": "occurrenceString",
+            "writable": true,
+            "displayName": "occurrenceString",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Date vaccine administered or was to be administered."
+        },
+        {
+            "name": "primarySource",
+            "writable": true,
+            "displayName": "primarySource",
+            "@type": "Property",
+            "schema": "boolean",
+            "comment": "An indication that the content of the record is based on information from the person who administered the vaccine. This reflects the context under which the data was originally recorded."
+        },
+        {
+            "name": "recorded",
+            "writable": true,
+            "displayName": "recorded",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The date the occurrence of the immunization was first captured in the record - potentially significantly after the occurrence of the event."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "status",
+            "writable": true,
+            "displayName": "status",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Indicates the current status of the immunization event."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "contained",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.",
+            "displayName": "contained"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "education",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Educational material presented to the patient (or guardian) at the time of vaccine administration.",
+            "displayName": "education"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "extension",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "displayName": "extension"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "identifier",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "A unique identifier assigned to this immunization record.",
+            "displayName": "identifier"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "modifierExtension",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing elements descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of r",
+            "displayName": "modifierExtension"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "note",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Extra information about the immunization that is not conveyed by the other attributes.",
+            "displayName": "note"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "performer",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Indicates who performed the immunization event.",
+            "displayName": "performer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "programEligibility",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Indicates a patients eligibility for a funding program.",
+            "displayName": "programEligibility"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "protocolApplied",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "The protocol (set of recommendations) being followed by the provider who administered the dose.",
+            "displayName": "protocolApplied"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "reaction",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Categorical data indicating that an adverse event is associated in time to an immunization.",
+            "displayName": "reaction"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "reasonCode",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Reasons why the vaccine was administered.",
+            "displayName": "reasonCode"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "reasonReference",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Condition, Observation or DiagnosticReport that supports why the immunization was administered.",
+            "displayName": "reasonReference"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "subpotentReason",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "object"
+            },
+            "comment": "Reason why a dose is considered to be subpotent.",
+            "displayName": "subpotentReason"
+        },
+        {
+            "@type": "object",
+            "name": "_expirationDate",
+            "comment": "Extensions for expirationDate",
+            "displayName": "_expirationDate",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_implicitRules",
+            "comment": "Extensions for implicitRules",
+            "displayName": "_implicitRules",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_isSubpotent",
+            "comment": "Extensions for isSubpotent",
+            "displayName": "_isSubpotent",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_language",
+            "comment": "Extensions for language",
+            "displayName": "_language",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_lotNumber",
+            "comment": "Extensions for lotNumber",
+            "displayName": "_lotNumber",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_occurrenceDateTime",
+            "comment": "Extensions for occurrenceDateTime",
+            "displayName": "_occurrenceDateTime",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_occurrenceString",
+            "comment": "Extensions for occurrenceString",
+            "displayName": "_occurrenceString",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_primarySource",
+            "comment": "Extensions for primarySource",
+            "displayName": "_primarySource",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_recorded",
+            "comment": "Extensions for recorded",
+            "displayName": "_recorded",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "_status",
+            "comment": "Extensions for status",
+            "displayName": "_status",
+            "fields": [
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "doseQuantity",
+            "comment": "The quantity of vaccine product that was administered.",
+            "displayName": "doseQuantity",
+            "fields": [
+                {
+                    "name": "_code",
+                    "schema": "object"
+                },
+                {
+                    "name": "_comparator",
+                    "schema": "object"
+                },
+                {
+                    "name": "_system",
+                    "schema": "object"
+                },
+                {
+                    "name": "_unit",
+                    "schema": "object"
+                },
+                {
+                    "name": "_value",
+                    "schema": "object"
+                },
+                {
+                    "name": "code",
+                    "schema": "string"
+                },
+                {
+                    "name": "comparator",
+                    "schema": null
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "system",
+                    "schema": "string"
+                },
+                {
+                    "name": "unit",
+                    "schema": "string"
+                },
+                {
+                    "name": "value",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "encounter",
+            "comment": "The visit or admission or other contact between patient and health care provider the immunization was performed as part of.",
+            "displayName": "encounter",
+            "fields": [
+                {
+                    "name": "_display",
+                    "schema": "object"
+                },
+                {
+                    "name": "_reference",
+                    "schema": "object"
+                },
+                {
+                    "name": "_type",
+                    "schema": "object"
+                },
+                {
+                    "name": "display",
+                    "schema": "string"
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "identifier",
+                    "schema": "object"
+                },
+                {
+                    "name": "reference",
+                    "schema": "string"
+                },
+                {
+                    "name": "type",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "fundingSource",
+            "comment": "Indicates the source of the vaccine actually administered. This may be different than the patient eligibility (e.g. the patient may be eligible for a publically purchased vaccine but due to inventory issues, vaccine purchased with private funds was actually administered).",
+            "displayName": "fundingSource",
+            "fields": [
+                {
+                    "name": "_text",
+                    "schema": "object"
+                },
+                {
+                    "name": "coding",
+                    "schema": "array"
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "text",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "location",
+            "comment": "The service delivery location where the vaccine administration occurred.",
+            "displayName": "location",
+            "fields": [
+                {
+                    "name": "_display",
+                    "schema": "object"
+                },
+                {
+                    "name": "_reference",
+                    "schema": "object"
+                },
+                {
+                    "name": "_type",
+                    "schema": "object"
+                },
+                {
+                    "name": "display",
+                    "schema": "string"
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "identifier",
+                    "schema": "object"
+                },
+                {
+                    "name": "reference",
+                    "schema": "string"
+                },
+                {
+                    "name": "type",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "manufacturer",
+            "comment": "Name of vaccine manufacturer.",
+            "displayName": "manufacturer",
+            "fields": [
+                {
+                    "name": "_display",
+                    "schema": "object"
+                },
+                {
+                    "name": "_reference",
+                    "schema": "object"
+                },
+                {
+                    "name": "_type",
+                    "schema": "object"
+                },
+                {
+                    "name": "display",
+                    "schema": "string"
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "identifier",
+                    "schema": "object"
+                },
+                {
+                    "name": "reference",
+                    "schema": "string"
+                },
+                {
+                    "name": "type",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "meta",
+            "comment": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.",
+            "displayName": "meta",
+            "fields": [
+                {
+                    "name": "_lastUpdated",
+                    "schema": "object"
+                },
+                {
+                    "name": "_source",
+                    "schema": "object"
+                },
+                {
+                    "name": "_versionId",
+                    "schema": "object"
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "lastUpdated",
+                    "schema": "string"
+                },
+                {
+                    "name": "profile",
+                    "schema": "array"
+                },
+                {
+                    "name": "security",
+                    "schema": "array"
+                },
+                {
+                    "name": "source",
+                    "schema": "string"
+                },
+                {
+                    "name": "tag",
+                    "schema": "array"
+                },
+                {
+                    "name": "versionId",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "patient",
+            "comment": "The patient who either received or did not receive the immunization.",
+            "displayName": "patient",
+            "fields": [
+                {
+                    "name": "_display",
+                    "schema": "object"
+                },
+                {
+                    "name": "_reference",
+                    "schema": "object"
+                },
+                {
+                    "name": "_type",
+                    "schema": "object"
+                },
+                {
+                    "name": "display",
+                    "schema": "string"
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "identifier",
+                    "schema": "object"
+                },
+                {
+                    "name": "reference",
+                    "schema": "string"
+                },
+                {
+                    "name": "type",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "reportOrigin",
+            "comment": "The source of the data when the report of the immunization event is not based on information from the person who administered the vaccine.",
+            "displayName": "reportOrigin",
+            "fields": [
+                {
+                    "name": "_text",
+                    "schema": "object"
+                },
+                {
+                    "name": "coding",
+                    "schema": "array"
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "text",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "route",
+            "comment": "The path by which the vaccine product is taken into the body.",
+            "displayName": "route",
+            "fields": [
+                {
+                    "name": "_text",
+                    "schema": "object"
+                },
+                {
+                    "name": "coding",
+                    "schema": "array"
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "text",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "site",
+            "comment": "Body site where vaccine was administered.",
+            "displayName": "site",
+            "fields": [
+                {
+                    "name": "_text",
+                    "schema": "object"
+                },
+                {
+                    "name": "coding",
+                    "schema": "array"
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "text",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "statusReason",
+            "comment": "Indicates the reason the immunization event was not performed.",
+            "displayName": "statusReason",
+            "fields": [
+                {
+                    "name": "_text",
+                    "schema": "object"
+                },
+                {
+                    "name": "coding",
+                    "schema": "array"
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "text",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "text",
+            "comment": "A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it clinically safe for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.",
+            "displayName": "text",
+            "fields": [
+                {
+                    "name": "_status",
+                    "schema": "object"
+                },
+                {
+                    "name": "div",
+                    "schema": null
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "status",
+                    "schema": null
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "vaccineCode",
+            "comment": "Vaccine that was administered or was to be administered.",
+            "displayName": "vaccineCode",
+            "fields": [
+                {
+                    "name": "_text",
+                    "schema": "object"
+                },
+                {
+                    "name": "coding",
+                    "schema": "array"
+                },
+                {
+                    "name": "extension",
+                    "schema": "array"
+                },
+                {
+                    "name": "id",
+                    "schema": "string"
+                },
+                {
+                    "name": "text",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "resourceType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Immunization",
+                        "displayName": "Immunization",
+                        "enumValue": 1
+                    }
+                ]
+            }
+        }
+    ]
+}
