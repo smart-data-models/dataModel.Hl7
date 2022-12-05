@@ -1,0 +1,2 @@
+"resourceType__type_", "resourceType__value_", "type_", "id_", "text__type_", "text__value__status_", "text__value__div_", "status__type_", "status__value_", "meta__type_", "meta__value__tag__0__system_", "meta__value__tag__0__code_", "meta__value__tag__0__display_"
+"Text", "Citation", "Citation", "urn:ngsi-ld:example", "StructuredObject", "generated", "<div xmlns="http://www.w3.org/1999/xhtml">[Put rendering here]</div>", "Text", "draft", "StructuredObject", "http://terminology.hl7.org/CodeSystem/v3-ActReason", "HTEST", "test health data"
