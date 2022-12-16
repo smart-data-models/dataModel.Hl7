@@ -1,0 +1,58 @@
+{
+  "id": "uri:ngsi-ld:ABDF:0001",
+  "type": "Organization",
+  "resourceType": {
+    "type": "Property",
+    "value": "Organization"
+  },
+  "text": {
+    "type": "Property",
+    "value": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      \n      <p>Gastroenterology @ Acme Hospital. ph: +1 555 234 3523, email: \n        <a href=\"mailto:gastro@acme.org\">gastro@acme.org</a>\n      </p>\n    \n    </div>"
+    }
+  },
+  "identifier": {
+    "type": "Property",
+    "value": [
+      {
+        "system": "http://www.acme.org.au/units",
+        "value": "Gastro"
+      }
+    ]
+  },
+  "name": {
+    "type": "Property",
+    "value": "Gastroenterology"
+  },
+  "telecom": {
+    "type": "Property",
+    "value": [
+      {
+        "system": "phone",
+        "value": "+1 555 234 3523",
+        "use": "mobile"
+      },
+      {
+        "system": "email",
+        "value": "gastro@acme.org",
+        "use": "work"
+      }
+    ]
+  },
+  "meta": {
+    "type": "Property",
+    "value": {
+      "tag": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code": "HTEST",
+          "display": "test health data"
+        }
+      ]
+    }
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Hl7/master/context.jsonld"
+  ]
+}

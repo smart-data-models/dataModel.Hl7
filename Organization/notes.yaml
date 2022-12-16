@@ -1,0 +1,8 @@
+notesHeader:
+  In order to make it compatible with NGSI the first level attribute type has been rename to hl7type.
+notesMiddle:
+
+notesFooter:
+
+notesReadme:
+  In order to make it compatible with NGSI the first level attribute type has been rename to hl7type.
