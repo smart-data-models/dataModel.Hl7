@@ -12,6 +12,8 @@ The following entity types are available:
 
 - [Medication](https://github.com/smart-data-models/dataModel.Hl7/blob/master/Medication/README.md). This resource is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use.
 
+- [Organization](https://github.com/smart-data-models/dataModel.Hl7/blob/master/Organization/README.md). A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.
+
 - [Patient](https://github.com/smart-data-models/dataModel.Hl7/blob/master/Patient/README.md). Demographics and other administrative information about an individual or animal receiving care or other health-related services.
 
 - [Practitioner](https://github.com/smart-data-models/dataModel.Hl7/blob/master/Practitioner/README.md). A person who is directly or indirectly involved in the provisioning of healthcare.
