@@ -1,6 +1,7 @@
 {
     "@context": {
         "_active": "https://smartdatamodels.org/dataModel.Hl7/_active",
+        "_alias": "https://smartdatamodels.org/dataModel.Hl7/_alias",
         "_approvalDate": "https://smartdatamodels.org/dataModel.Hl7/_approvalDate",
         "_birthDate": "https://smartdatamodels.org/dataModel.Hl7/_birthDate",
         "_copyright": "https://smartdatamodels.org/dataModel.Hl7/_copyright",
@@ -31,6 +32,7 @@
         "_version": "https://smartdatamodels.org/dataModel.Hl7/_version",
         "active": "https://smartdatamodels.org/dataModel.Hl7/active",
         "address": "https://smartdatamodels.org/address",
+        "alias": "https://smartdatamodels.org/dataModel.Hl7/alias",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "amount": "https://smartdatamodels.org/dataModel.Hl7/amount",
         "approvalDate": "https://smartdatamodels.org/dataModel.Hl7/approvalDate",
@@ -60,6 +62,7 @@
         "effectivePeriod": "https://smartdatamodels.org/dataModel.Hl7/effectivePeriod",
         "encounter": "https://smartdatamodels.org/dataModel.Hl7/encounter",
         "endorser": "https://smartdatamodels.org/dataModel.Hl7/endorser",
+        "endpoint": "ngsi-ld:endpoint",
         "experimental": "https://smartdatamodels.org/dataModel.Hl7/experimental",
         "expirationDate": "https://smartdatamodels.org/dataModel.Hl7/expirationDate",
         "extension": "https://smartdatamodels.org/dataModel.Hl7/extension",
