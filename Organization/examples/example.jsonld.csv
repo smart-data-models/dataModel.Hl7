@@ -1,0 +1,8 @@
+"resourceType_", "type_", "id_", "text__status_", "text__div_", "identifier__0__system_", "identifier__0__value_", "name_", "telecom__0__system_", "telecom__0__value_", "telecom__0__use_", "telecom__1__system_", "telecom__1__value_", "telecom__1__use_", "meta__tag__0__system_", "meta__tag__0__code_", "meta__tag__0__display_", "@context__0_"
+"Organization", "Organization", "1", "generated", "<div xmlns="http://www.w3.org/1999/xhtml">
+      
+      <p>Gastroenterology @ Acme Hospital. ph: +1 555 234 3523, email: 
+        <a href="mailto:gastro@acme.org">gastro@acme.org</a>
+      </p>
+    
+    </div>", "http://www.acme.org.au/units", "Gastro", "Gastroenterology", "phone", "+1 555 234 3523", "mobile", "email", "gastro@acme.org", "work", "http://terminology.hl7.org/CodeSystem/v3-ActReason", "HTEST", "test health data", "https://raw.githubusercontent.com/smart-data-models/dataModel.Hl7/master/context.jsonld"
