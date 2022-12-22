@@ -1,8 +1,8 @@
 notesHeader:
-  In order to make it compatible with NGSI the first level attribute type has been rename to hl7type.
+  In order to make it compatible with NGSI the first level attribute type has been rename to hl7type. And the type remains as the mandatory NGSI attribuet.
 notesMiddle:
 
 notesFooter:
 
 notesReadme:
-  In order to make it compatible with NGSI the first level attribute type has been rename to hl7type.
+  In order to make it compatible with NGSI the first level attribute type has been rename to hl7type. And the type remains as the mandatory NGSI attribuet.
