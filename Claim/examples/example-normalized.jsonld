@@ -1,0 +1,172 @@
+{
+  "id": "ngsi-ld:example1:100150",
+  "type": "Claim",
+  "resourceType": {
+    "type": "Property",
+    "value": "Claim"
+  },
+  "hl7type": {
+    "type": "Property",
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+        "code": "oral"
+      }
+    ]
+  },
+  "text": {
+    "type": "Property",
+    "value": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Oral Health Claim</div>"
+    }
+  },
+  "identifier": {
+    "type": "Property",
+    "value": [
+      {
+        "system": "http://happyvalley.com/claim",
+        "value": "12345"
+      }
+    ]
+  },
+  "status": {
+    "type": "Property",
+    "value": "active"
+  },
+  "use": {
+    "type": "Property",
+    "value": "claim"
+  },
+  "patient": {
+    "type": "Property",
+    "value": {
+      "reference": "Patient/1"
+    }
+  },
+  "created": {
+    "type": "Property",
+    "value": {
+      "@type": "Date-Time",
+      "@value": "2014-08-16"
+    }
+  },
+  "insurer": {
+    "type": "Property",
+    "value": {
+      "reference": "Organization/2"
+    }
+  },
+  "provider": {
+    "type": "Property",
+    "value": {
+      "reference": "Organization/1"
+    }
+  },
+  "priority": {
+    "type": "Property",
+    "value": {
+      "coding": [
+        {
+          "code": "normal"
+        }
+      ]
+    }
+  },
+  "payee": {
+    "type": "Property",
+    "value": {
+      "type": {
+        "coding": [
+          {
+            "code": "provider"
+          }
+        ]
+      }
+    }
+  },
+  "careTeam": {
+    "type": "Property",
+    "value": [
+      {
+        "sequence": 1,
+        "provider": {
+          "reference": "Practitioner/example"
+        }
+      }
+    ]
+  },
+  "diagnosis": {
+    "type": "Property",
+    "value": [
+      {
+        "sequence": 1,
+        "diagnosisCodeableConcept": {
+          "coding": [
+            {
+              "code": "123456"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "insurance": {
+    "type": "Property",
+    "value": [
+      {
+        "sequence": 1,
+        "focal": true,
+        "identifier": {
+          "system": "http://happyvalley.com/claim",
+          "value": "12345"
+        },
+        "coverage": {
+          "reference": "Coverage/9876B1"
+        }
+      }
+    ]
+  },
+  "item": {
+    "type": "Property",
+    "value": [
+      {
+        "sequence": 1,
+        "careTeamSequence": [
+          1
+        ],
+        "productOrService": {
+          "coding": [
+            {
+              "code": "1200"
+            }
+          ]
+        },
+        "servicedDate": "2014-08-16",
+        "unitPrice": {
+          "value": 135.57,
+          "currency": "USD"
+        },
+        "net": {
+          "value": 135.57,
+          "currency": "USD"
+        }
+      }
+    ]
+  },
+  "meta": {
+    "type": "Property",
+    "value": {
+      "tag": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code": "HTEST",
+          "display": "test health data"
+        }
+      ]
+    }
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Hl7/master/context.jsonld"
+  ]
+}

@@ -1,0 +1,8 @@
+notesHeader:
+  Data models mapped from the original version 4.3 of HL7 standard http://hl7.org/fhir/claim.html. Fixed according to the examples the attribute coding. Added .attribute type to ensure compatibility with NGSI. And renamed original type to hl7type.
+notesMiddle:
+  
+notesFooter:
+  
+notesReadme:
+  Data models mapped from the original version 4.3 of HL7 standard http://hl7.org/fhir/claim.html. Fixed according to the examples the attribute coding. Added attribute type to ensure compatibility with NGSI. And renamed original type to hl7type.
