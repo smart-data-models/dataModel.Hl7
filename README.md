@@ -8,9 +8,13 @@ The following entity types are available:
 
 - [Citation](https://github.com/smart-data-models/dataModel.Hl7/blob/master/Citation/README.md). The Citation Resource enables reference to any knowledge artifact for purposes of identification and attribution. The Citation Resource supports existing reference structures and developing publication practices such as versioning, expressing complex contributorship roles, and referencing computable resources.
 
+- [Claim](https://github.com/smart-data-models/dataModel.Hl7/blob/master/Claim/README.md). A provider issued list of professional services and products which have been provided, or are to be provided, to a patient which is sent to an insurer for reimbursement.
+
 - [Immunization](https://github.com/smart-data-models/dataModel.Hl7/blob/master/Immunization/README.md). Describes the event of a patient being administered a vaccine or a record of an immunization as reported by a patient, a clinician or another party.
 
 - [Medication](https://github.com/smart-data-models/dataModel.Hl7/blob/master/Medication/README.md). This resource is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use.
+
+- [MedicationAdministration](https://github.com/smart-data-models/dataModel.Hl7/blob/master/MedicationAdministration/README.md). Describes the event of a patient consuming or otherwise being administered a medication.  This may be as simple as swallowing a tablet or it may be a long running infusion.  Related resources tie this event to the authorizing prescription, and the specific encounter between patient and health care practitioner.
 
 - [Organization](https://github.com/smart-data-models/dataModel.Hl7/blob/master/Organization/README.md). A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.
 
