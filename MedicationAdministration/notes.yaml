@@ -1,8 +1,8 @@
 notesHeader:
-  Some minor transformation has been carried out in order to validate the examples. Specifically contained attribute has been transformed from the original string into a complex array ob objects with subattributes.
+  Some minor transformation has been carried out in order to validate the examples. Specifically contained attribute has been transformed from the original string into a complex array ob objects with subattributes. Original source at http://hl7.org/fhir/medicationadministration.html
 notesMiddle:
 
 notesFooter:
 
 notesReadme:
-  Some minor transformation has been carried out in order to validate the examples. Specifically contained attribute has been transformed from the original string into a complex array ob objects with subattributes.
+  Some minor transformation has been carried out in order to validate the examples. Specifically contained attribute has been transformed from the original string into a complex array ob objects with subattributes. Original source at http://hl7.org/fhir/medicationadministration.html
