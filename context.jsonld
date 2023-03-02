@@ -1,5 +1,14 @@
 {
     "@context": {
+        "Account": "https://smartdatamodels.org/dataModel.Hl7/Account",
+        "Citation": "https://smartdatamodels.org/dataModel.Hl7/Citation",
+        "Claim": "https://smartdatamodels.org/dataModel.Hl7/Claim",
+        "Immunization": "https://smartdatamodels.org/dataModel.Hl7/Immunization",
+        "Medication": "https://smartdatamodels.org/dataModel.Hl7/Medication",
+        "MedicationAdministration": "https://smartdatamodels.org/dataModel.Hl7/MedicationAdministration",
+        "Organization": "https://smartdatamodels.org/dataModel.Hl7/Organization",
+        "Patient": "https://smartdatamodels.org/dataModel.Hl7/Patient",
+        "Practitioner": "https://smartdatamodels.org/dataModel.Hl7/Practitioner",
         "_active": "https://smartdatamodels.org/dataModel.Hl7/_active",
         "_alias": "https://smartdatamodels.org/dataModel.Hl7/_alias",
         "_approvalDate": "https://smartdatamodels.org/dataModel.Hl7/_approvalDate",
