@@ -26826,7 +26826,7 @@ MedicationAdministration:
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-        - description: Geoproperty. Geojson reference to the item. Point
+        - description: GeoProperty. Geojson reference to the item. Point
           properties:
             bbox:
               items:
@@ -26847,7 +26847,7 @@ MedicationAdministration:
             - coordinates
           title: GeoJSON Point
           type: object
-        - description: Geoproperty. Geojson reference to the item. LineString
+        - description: GeoProperty. Geojson reference to the item. LineString
           properties:
             bbox:
               items:
@@ -26871,7 +26871,7 @@ MedicationAdministration:
             - coordinates
           title: GeoJSON LineString
           type: object
-        - description: Geoproperty. Geojson reference to the item. Polygon
+        - description: GeoProperty. Geojson reference to the item. Polygon
           properties:
             bbox:
               items:
@@ -26897,7 +26897,7 @@ MedicationAdministration:
             - coordinates
           title: GeoJSON Polygon
           type: object
-        - description: Geoproperty. Geojson reference to the item. MultiPoint
+        - description: GeoProperty. Geojson reference to the item. MultiPoint
           properties:
             bbox:
               items:
@@ -26920,7 +26920,7 @@ MedicationAdministration:
             - coordinates
           title: GeoJSON MultiPoint
           type: object
-        - description: Geoproperty. Geojson reference to the item. MultiLineString
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -26946,7 +26946,7 @@ MedicationAdministration:
             - coordinates
           title: GeoJSON MultiLineString
           type: object
-        - description: Geoproperty. Geojson reference to the item. MultiLineString
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -26975,7 +26975,7 @@ MedicationAdministration:
           title: GeoJSON MultiPolygon
           type: object
       x-ngsi:
-        type: Geoproperty
+        type: GeoProperty
     medicationCodeableConcept:
       additionalProperties: false
       description: Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.
