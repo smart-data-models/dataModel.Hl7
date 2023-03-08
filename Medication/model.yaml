@@ -14073,6 +14073,7 @@ Medication:
           resourceType:
             type: string
         type: object
+      type: array
       x-ngsi:
         type: Property
     dataProvider:
@@ -35067,4 +35068,4 @@ Medication:
   x-license-url: https://github.com/smart-data-models/dataModel.Hl7/blob/master/Medication/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.HL7/Medication/schema.json
   x-model-tags: HL7
-  x-version: 0.0.1
+  x-version: 0.0.2
