@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.1",
+  "$schemaVersion": "0.0.2",
   "$id": "https://smart-data-models.github.io/dataModel.HL7/Medication/schema.json",
   "title": "Smart Data Models - HL7 / Medication data model based on HL7 equivalent",
   "description": "This resource is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use.",
@@ -11226,6 +11226,7 @@
         },
         "contained": {
           "description": "Property. These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. Change original type array to object in order to meet the actual examples ",
+          "type": "array",
           "items": {
             "type": "object",
             "properties": {
