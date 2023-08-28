@@ -29,20 +29,20 @@
         "dateCreated": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Entity creation timestamp. This will usually be allocated by the storage platform."
+          "description": "Property. Entity creation timestamp. This will usually be allocated by the storage platform"
         },
         "dateModified": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+          "description": "Property. Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
         },
         "source": {
           "type": "string",
-          "description": "Property. A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+          "description": "Property. A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
         },
         "name": {
           "type": "string",
-          "description": "Property. The name of this item."
+          "description": "Property. The name of this item"
         },
         "alternateName": {
           "type": "string",
@@ -54,7 +54,7 @@
         },
         "dataProvider": {
           "type": "string",
-          "description": "Property. A sequence of characters identifying the provider of the harmonised data entity."
+          "description": "Property. A sequence of characters identifying the provider of the harmonised data entity"
         },
         "seeAlso": {
           "oneOf": [
