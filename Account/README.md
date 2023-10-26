@@ -20,6 +20,8 @@ Link alla [specifica](https://github.com/smart-data-models/dataModel.Hl7/blob/ma
 [仕様へのリンク](https://github.com/smart-data-models/dataModel.Hl7/blob/master/Account/doc/spec_JA.md)
 
 [链接到规范](https://github.com/smart-data-models/dataModel.Hl7/blob/master/Account/doc/spec_ZH.md)
+
+[사양 링크](https://github.com/smart-data-models/dataModel.Hl7/blob/master/Account/doc/spec_KO.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.Hl7/Account/examples/example.json) (keyvalues) for NGSI v2
