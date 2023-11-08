@@ -27,14 +27,16 @@
     },
     "hl7type": {
         "type": "StructuredValue",
-        "coding": [
-            {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                "code": "PBILLACCT",
-                "display": "patient billing account"
-            }
-        ],
-        "text": "patient"
+        "value": {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                    "code": "PBILLACCT",
+                    "display": "patient billing account"
+                }
+            ],
+            "text": "patient"
+        }
     },
     "name": {
         "type": "Text",
