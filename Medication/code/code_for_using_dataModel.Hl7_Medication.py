@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Medication"
 subject = "dataModel.Hl7"
-resourceType = "{'type': 'Property', 'value': 'Medication'}"
+resourceType = "Medication"
 attribute = "resourceType"
 value = resourceType
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-text = {'type': 'StructuredValue', 'value': {'status': 'generated', 'div': "<div xmlns='http://www.w3.org/1999/xhtml'><p><b>Generated Narrative</b></p><div style='display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%'><p style='margin-bottom: 0px'>Resource &quot;med0301&quot; </p></div><p><b>code</b>: Vancomycin Hydrochloride (VANCOMYCIN HYDROCHLORIDE) <span style='background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki'> (<a href='http://terminology.hl7.org/3.1.0/CodeSystem-v3-ndc.html'>National drug codes</a>#0409-6531-02)</span></p><p><b>status</b>: active</p><p><b>manufacturer</b>: <a name='org4'> </a></p><blockquote><div style='display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%'><p style='margin-bottom: 0px'>Resource &quot;org4&quot; </p></div><p><b>name</b>: Pfizer Laboratories Div Pfizer Inc</p></blockquote><p><b>form</b>: Injection Solution (qualifier value) <span style='background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki'> (<a href='https://browser.ihtsdotools.org/'>SNOMED CT</a>#385219001)</span></p><h3>Ingredients</h3><table class='grid'><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Vancomycin Hydrochloride <span style='background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki'> (<a href='http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html'>RxNorm</a>#66955)</span></td><td>true</td><td>500 mg<span style='background: LightGoldenRodYellow'> (Details: UCUM code mg = 'mg')</span>/10 mL<span style='background: LightGoldenRodYellow'> (Details: UCUM code mL = 'mL')</span></td></tr></table><h3>Batches</h3><table class='grid'><tr><td>-</td><td><b>LotNumber</b></td><td><b>ExpirationDate</b></td></tr><tr><td>*</td><td>9494788</td><td>2017-05-22</td></tr></table></div>"}}
+text = {'status': 'generated', 'div': '<div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource &quot;med0301&quot; </p></div><p><b>code</b>: Vancomycin Hydrochloride (VANCOMYCIN HYDROCHLORIDE) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-ndc.html">National drug codes</a>#0409-6531-02)</span></p><p><b>status</b>: active</p><p><b>manufacturer</b>: <a name="org4"> </a></p><blockquote><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource &quot;org4&quot; </p></div><p><b>name</b>: Pfizer Laboratories Div Pfizer Inc</p></blockquote><p><b>form</b>: Injection Solution (qualifier value) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#385219001)</span></p><h3>Ingredients</h3><table class="grid"><tr><td>-</td><td><b>Item[x]</b></td><td><b>IsActive</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Vancomycin Hydrochloride <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html">RxNorm</a>#66955)</span></td><td>true</td><td>500 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg = \'mg\')</span>/10 mL<span style="background: LightGoldenRodYellow"> (Details: UCUM code mL = \'mL\')</span></td></tr></table><h3>Batches</h3><table class="grid"><tr><td>-</td><td><b>LotNumber</b></td><td><b>ExpirationDate</b></td></tr><tr><td>*</td><td>9494788</td><td>2017-05-22</td></tr></table></div>'}
 attribute = "text"
 value = text
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-contained = {'type': 'Property', 'value': [{'resourceType': 'Organization', 'id': 'org4', 'name': 'Pfizer Laboratories Div Pfizer Inc'}]}
+contained = [{'resourceType': 'Organization', 'id': 'org4', 'name': 'Pfizer Laboratories Div Pfizer Inc'}]
 attribute = "contained"
 value = contained
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-code = {'type': 'Property', 'value': {'coding': [{'system': 'http://hl7.org/fhir/sid/ndc', 'code': '0409-6531-02', 'display': 'Vancomycin Hydrochloride (VANCOMYCIN HYDROCHLORIDE)'}]}}
+code = {'coding': [{'system': 'http://hl7.org/fhir/sid/ndc', 'code': '0409-6531-02', 'display': 'Vancomycin Hydrochloride (VANCOMYCIN HYDROCHLORIDE)'}]}
 attribute = "code"
 value = code
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
