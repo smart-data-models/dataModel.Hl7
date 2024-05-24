@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Organization"
 subject = "dataModel.Hl7"
-resourceType = "{'type': 'Property', 'value': 'Organization'}"
+resourceType = "Organization"
 attribute = "resourceType"
 value = resourceType
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-text = {'type': 'Property', 'value': {'status': 'generated', 'div': '<div xmlns="http://www.w3.org/1999/xhtml">\n      \n      <p>Gastroenterology @ Acme Hospital. ph: +1 555 234 3523, email: \n        <a href="mailto:gastro@acme.org">gastro@acme.org</a>\n      </p>\n    \n    </div>'}}
+text = {'status': 'generated', 'div': '<div xmlns="http://www.w3.org/1999/xhtml">\n      \n      <p>Gastroenterology @ Acme Hospital. ph: +1 555 234 3523, email: \n        <a href="mailto:gastro@acme.org">gastro@acme.org</a>\n      </p>\n    \n    </div>'}
 attribute = "text"
 value = text
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-identifier = {'type': 'Property', 'value': [{'system': 'http://www.acme.org.au/units', 'value': 'Gastro'}]}
+identifier = [{'system': 'http://www.acme.org.au/units', 'value': 'Gastro'}]
 attribute = "identifier"
 value = identifier
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-telecom = {'type': 'Property', 'value': [{'system': 'phone', 'value': '+1 555 234 3523', 'use': 'mobile'}, {'system': 'email', 'value': 'gastro@acme.org', 'use': 'work'}]}
+telecom = [{'system': 'phone', 'value': '+1 555 234 3523', 'use': 'mobile'}, {'system': 'email', 'value': 'gastro@acme.org', 'use': 'work'}]
 attribute = "telecom"
 value = telecom
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
