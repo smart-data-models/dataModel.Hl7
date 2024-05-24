@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Citation"
 subject = "dataModel.Hl7"
-resourceType = "{'type': 'Property', 'value': 'Citation'}"
+resourceType = "Citation"
 attribute = "resourceType"
 value = resourceType
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-text = {'type': 'Property', 'value': {'status': 'generated', 'div': '<div xmlns="http://www.w3.org/1999/xhtml">[Put rendering here]</div>'}}
+text = {'status': 'generated', 'div': '<div xmlns="http://www.w3.org/1999/xhtml">[Put rendering here]</div>'}
 attribute = "text"
 value = text
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-status = "{'type': 'Property', 'value': 'draft'}"
+status = "draft"
 attribute = "status"
 value = status
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-meta = {'type': 'Property', 'value': {'tag': [{'system': 'http://terminology.hl7.org/CodeSystem/v3-ActReason', 'code': 'HTEST', 'display': 'test health data'}]}}
+meta = {'tag': [{'system': 'http://terminology.hl7.org/CodeSystem/v3-ActReason', 'code': 'HTEST', 'display': 'test health data'}]}
 attribute = "meta"
 value = meta
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
