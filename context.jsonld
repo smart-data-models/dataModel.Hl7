@@ -202,7 +202,7 @@
         "batch": "https://smartdatamodels.org/dataModel.Hl7/batch",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "billablePeriod": "https://smartdatamodels.org/dataModel.Hl7/billablePeriod",
         "birthDate": "https://smartdatamodels.org/dataModel.Hl7/birthDate",
@@ -241,7 +241,7 @@
         "contributorship": "https://smartdatamodels.org/dataModel.Hl7/contributorship",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "copyright": "https://smartdatamodels.org/dataModel.Hl7/copyright",
         "correspondingContact": "https://smartdatamodels.org/dataModel.Hl7/correspondingContact",
@@ -253,7 +253,7 @@
         "creation": "https://smartdatamodels.org/dataModel.Hl7/creation",
         "currency": "https://smartdatamodels.org/dataModel.Hl7/currency",
         "currentState": "https://smartdatamodels.org/dataModel.Hl7/currentState",
-        "data": "ngsi-ld:data",
+        "data": "https://uri.etsi.org/ngsi-ld/data",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "date": "https://smartdatamodels.org/dataModel.Hl7/date",
         "dateAccessed": "https://smartdatamodels.org/dataModel.Hl7/dateAccessed",
@@ -266,7 +266,7 @@
         "deceasedDateTime": "https://smartdatamodels.org/dataModel.Hl7/deceasedDateTime",
         "denominator": "https://smartdatamodels.org/dataModel.Hl7/denominator",
         "description": "http://purl.org/dc/terms/description",
-        "detail": "ngsi-ld:detail",
+        "detail": "https://uri.etsi.org/ngsi-ld/detail",
         "device": "https://smartdatamodels.org/dataModel.Hl7/device",
         "diagnosis": "https://smartdatamodels.org/dataModel.Hl7/diagnosis",
         "diagnosisCodeableConcept": "https://smartdatamodels.org/dataModel.Hl7/diagnosisCodeableConcept",
@@ -295,7 +295,7 @@
         "encounter": "https://smartdatamodels.org/dataModel.Hl7/encounter",
         "end": "https://smartdatamodels.org/dataModel.Hl7/end",
         "endorser": "https://smartdatamodels.org/dataModel.Hl7/endorser",
-        "endpoint": "ngsi-ld:endpoint",
+        "endpoint": "https://uri.etsi.org/ngsi-ld/endpoint",
         "enterer": "https://smartdatamodels.org/dataModel.Hl7/enterer",
         "entry": "https://smartdatamodels.org/dataModel.Hl7/entry",
         "event": "https://smartdatamodels.org/dataModel.Hl7/event",
@@ -333,7 +333,7 @@
         "instantiates": "https://smartdatamodels.org/dataModel.Hl7/instantiates",
         "insurance": "https://smartdatamodels.org/dataModel.Hl7/insurance",
         "insurer": "https://smartdatamodels.org/dataModel.Hl7/insurer",
-        "isActive": "ngsi-ld:isActive",
+        "isActive": "https://uri.etsi.org/ngsi-ld/isActive",
         "isSubpotent": "https://smartdatamodels.org/dataModel.Hl7/isSubpotent",
         "issue": "https://smartdatamodels.org/dataModel.Hl7/issue",
         "issuer": "https://smartdatamodels.org/dataModel.Hl7/issuer",
@@ -351,7 +351,7 @@
         "line": "https://smartdatamodels.org/dataModel.Hl7/line",
         "link": "https://smartdatamodels.org/dataModel.Hl7/link",
         "listOrder": "https://smartdatamodels.org/dataModel.Hl7/listOrder",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "locationAddress": "https://smartdatamodels.org/dataModel.Hl7/locationAddress",
         "locationCodeableConcept": "https://smartdatamodels.org/dataModel.Hl7/locationCodeableConcept",
         "locationReference": "https://smartdatamodels.org/dataModel.Hl7/locationReference",
@@ -364,7 +364,7 @@
         "maritalStatus": "https://smartdatamodels.org/dataModel.Hl7/maritalStatus",
         "max": {
             "@container": "@list",
-            "@id": "ngsi-ld:max"
+            "@id": "https://uri.etsi.org/ngsi-ld/max"
         },
         "maxDosePerAdministration": "https://smartdatamodels.org/dataModel.Hl7/maxDosePerAdministration",
         "maxDosePerLifetime": "https://smartdatamodels.org/dataModel.Hl7/maxDosePerLifetime",
@@ -375,7 +375,7 @@
         "method": "https://smartdatamodels.org/dataModel.Hl7/method",
         "min": {
             "@container": "@list",
-            "@id": "ngsi-ld:min"
+            "@id": "https://uri.etsi.org/ngsi-ld/min"
         },
         "modifier": "https://smartdatamodels.org/dataModel.Hl7/modifier",
         "modifierExtension": "https://smartdatamodels.org/dataModel.Hl7/modifierExtension",
@@ -445,7 +445,7 @@
         "rateQuantity": "https://smartdatamodels.org/dataModel.Hl7/rateQuantity",
         "rateRatio": "https://smartdatamodels.org/dataModel.Hl7/rateRatio",
         "reaction": "https://smartdatamodels.org/dataModel.Hl7/reaction",
-        "reason": "ngsi-ld:reason",
+        "reason": "https://uri.etsi.org/ngsi-ld/reason",
         "reasonCode": "https://smartdatamodels.org/dataModel.Hl7/reasonCode",
         "reasonReference": "https://smartdatamodels.org/dataModel.Hl7/reasonReference",
         "recorded": "https://smartdatamodels.org/dataModel.Hl7/recorded",
@@ -483,7 +483,7 @@
         "source": "https://smartdatamodels.org/source",
         "start": "https://smartdatamodels.org/dataModel.Hl7/start",
         "state": "https://smartdatamodels.org/dataModel.Hl7/state",
-        "status": "ngsi-ld:status",
+        "status": "https://uri.etsi.org/ngsi-ld/status",
         "statusDate": "https://smartdatamodels.org/dataModel.Hl7/statusDate",
         "statusReason": "https://smartdatamodels.org/dataModel.Hl7/statusReason",
         "streetAddress": "https://smartdatamodels.org/streetAddress",
@@ -532,7 +532,7 @@
         "useContext": "https://smartdatamodels.org/dataModel.Hl7/useContext",
         "userSelected": "https://smartdatamodels.org/dataModel.Hl7/userSelected",
         "vaccineCode": "https://smartdatamodels.org/dataModel.Hl7/vaccineCode",
-        "value": "ngsi-ld:hasValue",
+        "value": "https://uri.etsi.org/ngsi-ld/hasValue",
         "valueAddress": "https://smartdatamodels.org/dataModel.Hl7/valueAddress",
         "valueAge": "https://smartdatamodels.org/dataModel.Hl7/valueAge",
         "valueAnnotation": "https://smartdatamodels.org/dataModel.Hl7/valueAnnotation",
