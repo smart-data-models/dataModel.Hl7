@@ -1,3 +1,39 @@
 /* (Beta) Export of data model Organization of the subject dataModel.Hl7 for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE resourceType_type AS ENUM ('Organization');CREATE TYPE Organization_type AS ENUM ('Organization');
-CREATE TABLE Organization (_active JSON, _alias JSON, _implicitRules JSON, _language JSON, _name JSON, active BOOLEAN, address JSON, alias JSON, alternateName TEXT, areaServed TEXT, contact JSON, contained JSON, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, endpoint JSON, extension JSON, hl7type JSON, id TEXT PRIMARY KEY, identifier JSON, implicitRules TEXT, language TEXT, location JSON, meta JSON, modifierExtension JSON, name TEXT, partOf JSON, resourceType resourceType_type, seeAlso JSON, source TEXT, telecom JSON, text JSON, type Organization_type);
+CREATE TYPE resourceType_type AS ENUM ('Organization');
+CREATE TYPE Organization_type AS ENUM ('Organization');
+CREATE TABLE Organization (
+  "_active" JSON,
+  "_alias" JSON,
+  "_implicitRules" JSON,
+  "_language" JSON,
+  "_name" JSON,
+  "active" BOOLEAN,
+  "address" JSON,
+  "alias" JSON,
+  "alternateName" TEXT,
+  "areaServed" TEXT,
+  "contact" JSON,
+  "contained" JSON,
+  "dataProvider" TEXT,
+  "dateCreated" TIMESTAMP,
+  "dateModified" TIMESTAMP,
+  "description" TEXT,
+  "endpoint" JSON,
+  "extension" JSON,
+  "hl7type" JSON,
+  "id" TEXT PRIMARY KEY,
+  "identifier" JSON,
+  "implicitRules" TEXT,
+  "language" TEXT,
+  "location" JSON,
+  "meta" JSON,
+  "modifierExtension" JSON,
+  "name" TEXT,
+  "partOf" JSON,
+  "resourceType" resourceType_type,
+  "seeAlso" JSON,
+  "source" TEXT,
+  "telecom" JSON,
+  "text" JSON,
+  "type" Organization_type
+);
