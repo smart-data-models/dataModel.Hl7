@@ -1,3 +1,29 @@
 /* (Beta) Export of data model Practitioner of the subject dataModel.Hl7 for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE resourceType_type AS ENUM ('Practitioner');CREATE TYPE Practitioner_type AS ENUM ('Practitioner');
-CREATE TABLE Practitioner (_active JSON, _birthDate JSON, _gender JSON, _implicitRules JSON, _language JSON, active BOOLEAN, address JSON, birthDate TEXT, communication JSON, contained JSON, extension JSON, gender TEXT, identifier JSON, implicitRules TEXT, language TEXT, meta JSON, modifierExtension JSON, name JSON, photo JSON, qualification JSON, resourceType resourceType_type, telecom JSON, text JSON, type Practitioner_type);
+CREATE TYPE resourceType_type AS ENUM ('Practitioner');
+CREATE TYPE Practitioner_type AS ENUM ('Practitioner');
+CREATE TABLE Practitioner (
+  "_active" JSON,
+  "_birthDate" JSON,
+  "_gender" JSON,
+  "_implicitRules" JSON,
+  "_language" JSON,
+  "active" BOOLEAN,
+  "address" JSON,
+  "birthDate" TEXT,
+  "communication" JSON,
+  "contained" JSON,
+  "extension" JSON,
+  "gender" TEXT,
+  "identifier" JSON,
+  "implicitRules" TEXT,
+  "language" TEXT,
+  "meta" JSON,
+  "modifierExtension" JSON,
+  "name" JSON,
+  "photo" JSON,
+  "qualification" JSON,
+  "resourceType" resourceType_type,
+  "telecom" JSON,
+  "text" JSON,
+  "type" Practitioner_type
+);
