@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Patient of the subject dataModel.Hl7 for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE resourceType_type AS ENUM ('Patient');
+CREATE TYPE Patient_resourceType_type AS ENUM ('Patient');
 CREATE TYPE Patient_type AS ENUM ('Patient');
 CREATE TABLE Patient (
   "_active" JSON,
@@ -42,7 +42,7 @@ CREATE TABLE Patient (
   "multipleBirthInteger" NUMERIC,
   "name" JSON,
   "photo" JSON,
-  "resourceType" resourceType_type,
+  "resourceType" Patient_resourceType_type,
   "seeAlso" JSON,
   "source" TEXT,
   "telecom" JSON,
