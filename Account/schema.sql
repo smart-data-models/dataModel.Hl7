@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Account of the subject dataModel.Hl7 for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE resourceType_type AS ENUM ('Account');
+CREATE TYPE Account_resourceType_type AS ENUM ('Account');
 CREATE TABLE Account (
   "_description" JSON,
   "_implicitRules" JSON,
@@ -28,7 +28,7 @@ CREATE TABLE Account (
   "name" TEXT,
   "owner" JSON,
   "partOf" JSON,
-  "resourceType" resourceType_type,
+  "resourceType" Account_resourceType_type,
   "seeAlso" JSON,
   "servicePeriod" JSON,
   "source" TEXT,
