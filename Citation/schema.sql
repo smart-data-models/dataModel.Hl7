@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Citation of the subject dataModel.Hl7 for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE resourceType_type AS ENUM ('Citation');
+CREATE TYPE Citation_resourceType_type AS ENUM ('Citation');
 CREATE TYPE Citation_type AS ENUM ('Citation');
 CREATE TABLE Citation (
   "_approvalDate" JSON,
@@ -52,7 +52,7 @@ CREATE TABLE Citation (
   "publisher" TEXT,
   "purpose" TEXT,
   "relatesTo" JSON,
-  "resourceType" resourceType_type,
+  "resourceType" Citation_resourceType_type,
   "reviewer" JSON,
   "seeAlso" JSON,
   "source" TEXT,
