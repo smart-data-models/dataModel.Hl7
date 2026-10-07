@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Immunization of the subject dataModel.Hl7 for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE resourceType_type AS ENUM ('Immunization');
+CREATE TYPE Immunization_resourceType_type AS ENUM ('Immunization');
 CREATE TYPE Immunization_type AS ENUM ('Immunization');
 CREATE TABLE Immunization (
   "_expirationDate" JSON,
@@ -48,7 +48,7 @@ CREATE TABLE Immunization (
   "reasonReference" JSON,
   "recorded" TEXT,
   "reportOrigin" JSON,
-  "resourceType" resourceType_type,
+  "resourceType" Immunization_resourceType_type,
   "route" JSON,
   "seeAlso" JSON,
   "site" JSON,
