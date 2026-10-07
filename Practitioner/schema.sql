@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Practitioner of the subject dataModel.Hl7 for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE resourceType_type AS ENUM ('Practitioner');
+CREATE TYPE Practitioner_resourceType_type AS ENUM ('Practitioner');
 CREATE TYPE Practitioner_type AS ENUM ('Practitioner');
 CREATE TABLE Practitioner (
   "_active" JSON,
@@ -22,7 +22,7 @@ CREATE TABLE Practitioner (
   "name" JSON,
   "photo" JSON,
   "qualification" JSON,
-  "resourceType" resourceType_type,
+  "resourceType" Practitioner_resourceType_type,
   "telecom" JSON,
   "text" JSON,
   "type" Practitioner_type
