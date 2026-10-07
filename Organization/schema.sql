@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Organization of the subject dataModel.Hl7 for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE resourceType_type AS ENUM ('Organization');
+CREATE TYPE Organization_resourceType_type AS ENUM ('Organization');
 CREATE TYPE Organization_type AS ENUM ('Organization');
 CREATE TABLE Organization (
   "_active" JSON,
@@ -30,7 +30,7 @@ CREATE TABLE Organization (
   "modifierExtension" JSON,
   "name" TEXT,
   "partOf" JSON,
-  "resourceType" resourceType_type,
+  "resourceType" Organization_resourceType_type,
   "seeAlso" JSON,
   "source" TEXT,
   "telecom" JSON,
