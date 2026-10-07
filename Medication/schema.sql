@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Medication of the subject dataModel.Hl7 for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE resourceType_type AS ENUM ('Medication');
+CREATE TYPE Medication_resourceType_type AS ENUM ('Medication');
 CREATE TYPE Medication_type AS ENUM ('Medication');
 CREATE TABLE Medication (
   "_implicitRules" JSON,
@@ -28,7 +28,7 @@ CREATE TABLE Medication (
   "meta" JSON,
   "modifierExtension" JSON,
   "name" TEXT,
-  "resourceType" resourceType_type,
+  "resourceType" Medication_resourceType_type,
   "seeAlso" JSON,
   "source" TEXT,
   "status" TEXT,
