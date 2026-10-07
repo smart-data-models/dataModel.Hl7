@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Claim of the subject dataModel.Hl7 for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE resourceType_type AS ENUM ('Claim');
+CREATE TYPE Claim_resourceType_type AS ENUM ('Claim');
 CREATE TYPE Claim_type AS ENUM ('Claim');
 CREATE TABLE Claim (
   "_created" JSON,
@@ -45,7 +45,7 @@ CREATE TABLE Claim (
   "provider" JSON,
   "referral" JSON,
   "related" JSON,
-  "resourceType" resourceType_type,
+  "resourceType" Claim_resourceType_type,
   "seeAlso" JSON,
   "source" TEXT,
   "status" TEXT,
